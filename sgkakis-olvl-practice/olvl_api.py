@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, random, uuid
 from urllib.parse import urlparse
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
 LAST_SIGNATURE = {}
@@ -152,18 +152,34 @@ def gen_paper(subject='integrated', count=20):
         out.append(q)
         return True
 
+    # bounded generation loops to avoid hangs
+    max_attempts = max(300, target * 40)
+    attempts = 0
+
     if subject == 'integrated':
         # guarantee broad coverage first
         for s in SUBJECTS:
             tries = 0
-            while tries < 20 and len([x for x in out if x['subject'] == s]) < 2:
+            while tries < 40 and len([x for x in out if x['subject'] == s]) < 2 and attempts < max_attempts:
                 add(gen_one(s))
                 tries += 1
-        while len(out) < target:
+                attempts += 1
+        while len(out) < target and attempts < max_attempts:
             add(gen_one(random.choice(SUBJECTS)))
+            attempts += 1
     else:
-        while len(out) < target:
+        while len(out) < target and attempts < max_attempts:
             add(gen_one(subject))
+            attempts += 1
+
+    # hard fallback to ensure always returns requested count quickly
+    nonce = 1
+    while len(out) < target:
+        s = random.choice(SUBJECTS) if subject == 'integrated' else subject
+        q = gen_one(s)
+        q['question'] = f"{q['question']} [Set {nonce}]"
+        add(q)
+        nonce += 1
 
     random.shuffle(out)
     return out[:target]
@@ -270,4 +286,4 @@ class H(BaseHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    HTTPServer(('0.0.0.0', 8788), H).serve_forever()
+    ThreadingHTTPServer(('0.0.0.0', 8788), H).serve_forever()
