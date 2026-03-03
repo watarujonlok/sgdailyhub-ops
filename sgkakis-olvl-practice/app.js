@@ -75,6 +75,7 @@ const resultCard = document.getElementById('resultCard');
 const scoreText = document.getElementById('scoreText');
 const okInput = document.getElementById('okInput');
 const okBtn = document.getElementById('okBtn');
+const apiStatus = document.getElementById('apiStatus');
 
 let currentSet = [];
 let lastSetSignature = '';
@@ -90,6 +91,19 @@ function populateSubjects() {
     opt.textContent = `${s.label} (Hard)`;
     subjectSelect.appendChild(opt);
   });
+}
+
+async function refreshApiStatus() {
+  if (!apiStatus) return;
+  try {
+    const r = await fetch(`/olvl-api/health?t=${Date.now()}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error('down');
+    apiStatus.textContent = 'Real-time AI marker: online';
+    apiStatus.style.color = '#45c16d';
+  } catch (_) {
+    apiStatus.textContent = 'Real-time AI marker: offline';
+    apiStatus.style.color = '#ff6b6b';
+  }
 }
 
 function showExam() { lockScreen.classList.add('hidden'); examScreen.classList.remove('hidden'); }
@@ -269,4 +283,6 @@ okBtn.onclick = () => {
 };
 
 populateSubjects();
+refreshApiStatus();
+setInterval(refreshApiStatus, 15000);
 if (localStorage.getItem(SESSION_KEY) === '1') showExam();
