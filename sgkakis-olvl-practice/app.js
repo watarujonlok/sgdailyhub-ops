@@ -1,106 +1,64 @@
 const PASSWORD = 'eva';
 const SESSION_KEY = 'sg_exam_unlocked';
 
+const SUBJECTS = [
+  { id: 'english', label: 'English' },
+  { id: 'emath', label: 'E-Math' },
+  { id: 'amath', label: 'A-Math' },
+  { id: 'combsci', label: 'Combined Science' },
+  { id: 'purechem', label: 'Pure Chemistry' },
+  { id: 'purephys', label: 'Pure Physics' },
+  { id: 'purebio', label: 'Pure Biology' },
+  { id: 'humanities', label: 'Humanities (SS/Hist/Geog)' },
+  { id: 'poa', label: 'POA' }
+];
+
 const BANK = {
-  english: {
-    label: 'English (O-Level)',
-    questions: [
-      {q:'Choose the grammatically correct sentence.', c:['Neither of the boys were ready.','Neither of the boys was ready.','Neither boys was ready.','Neither of boys were ready.'], a:1},
-      {q:'Best replacement: "She insisted ____ paying for dinner."', c:['on','to','for','at'], a:0},
-      {q:'Tone of phrase "a cautiously optimistic outlook" is...', c:['angry','hopeful but careful','sarcastic','indifferent'], a:1},
-      {q:'Most suitable thesis sentence for formal writing:', c:['I kinda think school is stressful.','School stress can be reduced through structured rest and planning.','School is bad lol.','Everybody knows stress is everywhere.'], a:1},
-      {q:'Correct punctuation:', c:['The principal said "Work hard, rest well."','The principal said, "Work hard, rest well."','The principal, said "Work hard, rest well".','The principal said "Work hard rest well."'], a:1},
-      {q:'Best concluding phrase in argumentative writing:', c:['Whatever lah, that is all.','In conclusion, the policy should be reviewed with measurable safeguards.','So yeah, done.','Thanks for reading my rant.'], a:1},
-    ]
-  },
-  emath: {
-    label: 'E-Math (O-Level)',
-    questions: [
-      {q:'Solve 3(2x−5)=2(x+7)−9', c:['x=5','x=4','x=3','x=2'], a:2},
-      {q:'Roots of x²−7x+10=0 are', c:['2 and 5','-2 and -5','1 and 10','3 and 4'], a:0},
-      {q:'20% discount gives price $120. Original price?', c:['$130','$144','$150','$160'], a:2},
-      {q:'Mean of 4,7,7,9,13', c:['7','8','8.2','9'], a:2},
-      {q:'Gradient through (2,-1) and (6,7)', c:['1','2','-2','4'], a:1},
-      {q:'If y=2x+3 and x=5, y=?', c:['10','11','12','13'], a:3},
-    ]
-  },
-  amath: {
-    label: 'A-Math (O-Level)',
-    questions: [
-      {q:'Differentiate y=3x²−4x+7', c:['6x−4','3x−4','6x+4','2x−4'], a:0},
-      {q:'Solve 2^x = 16', c:['2','3','4','8'], a:2},
-      {q:'Factor x²+5x+6', c:['(x+2)(x+3)','(x-2)(x-3)','(x+1)(x+6)','Prime'], a:0},
-      {q:'sin 30° =', c:['1','1/2','√3/2','0'], a:1},
-      {q:'If log10 a = 2, then a =', c:['10','20','100','1000'], a:2},
-      {q:'Integrate 4x dx', c:['2x² + C','4x + C','x⁴ + C','8x + C'], a:0},
-    ]
-  },
-  combsci: {
-    label: 'Combined Science (O-Level)',
-    questions: [
-      {q:'Magnesium + hydrochloric acid forms...', c:['MgCl + H₂','MgCl₂ + H₂','MgOH + Cl₂','Mg + HCl₂'], a:1},
-      {q:'Higher reaction rate is mainly due to...', c:['fewer collisions','lower temperature','more frequent successful collisions','larger particle mass only'], a:2},
-      {q:'Speed formula is', c:['distance × time','distance / time','time / distance','force / mass'], a:1},
-      {q:'Osmosis involves movement of...', c:['solute from high to low','water through partially permeable membrane','gas through stomata','ions through metal'], a:1},
-      {q:'pH 2 solution is', c:['alkali','neutral','acidic','salt only'], a:2},
-      {q:'F = ma. If m=900kg, a=2m/s², F=?', c:['450N','902N','1800N','900N'], a:2},
-    ]
-  },
-  purechem: {
-    label: 'Pure Chemistry (O-Level)',
-    questions: [
-      {q:'Mole concept: moles =', c:['mass × Mr','mass / Mr','Mr / mass','mass + Mr'], a:1},
-      {q:'Acid + base reaction is called', c:['combustion','neutralisation','displacement','decomposition'], a:1},
-      {q:'Electrolysis of molten lead(II) bromide gives bromine at...', c:['cathode','anode','both','none'], a:1},
-      {q:'More reactive metal displaces less reactive metal from...', c:['water only','salt solution','air','alkali only'], a:1},
-      {q:'Catalyst function is to', c:['increase yield only','lower activation energy','raise activation energy','be consumed completely'], a:1},
-      {q:'Empirical formula is', c:['actual atom count','simplest whole-number ratio','molar mass','ionic charge'], a:1},
-    ]
-  },
-  purephys: {
-    label: 'Pure Physics (O-Level)',
-    questions: [
-      {q:'Unit of force is', c:['J','N','W','Pa'], a:1},
-      {q:'Power =', c:['work/time','force×distance only','mass×acceleration','energy×time'], a:0},
-      {q:'Wave with frequency 5Hz has period', c:['5s','0.5s','0.2s','2s'], a:2},
-      {q:'Current is measured in', c:['V','A','Ω','C'], a:1},
-      {q:'Object at constant velocity has resultant force', c:['maximum','zero','infinite','unknown always'], a:1},
-      {q:'Density =', c:['mass/volume','volume/mass','mass×volume','weight/volume'], a:0},
-    ]
-  },
-  purebio: {
-    label: 'Pure Biology (O-Level)',
-    questions: [
-      {q:'Main site of aerobic respiration in cells', c:['nucleus','ribosome','mitochondrion','vacuole'], a:2},
-      {q:'Enzymes are mostly', c:['lipids','proteins','carbohydrates','DNA'], a:1},
-      {q:'Xylem transports mainly', c:['sugars','water and minerals','oxygen','amino acids only'], a:1},
-      {q:'Natural selection favors organisms that', c:['never mutate','best survive and reproduce','are largest only','have shortest lifespan'], a:1},
-      {q:'Photosynthesis requires', c:['chlorophyll, light, CO₂, water','oxygen and glucose only','nitrogen only','heat only'], a:0},
-      {q:'Red blood cells primarily carry', c:['hormones','oxygen','antibodies','enzymes'], a:1},
-    ]
-  },
-  humanities: {
-    label: 'SS/History/Geography (O-Level)',
-    questions: [
-      {q:'In SBQ, reliability is judged by', c:['font size','provenance + cross-reference','source length','writer’s age only'], a:1},
-      {q:'Urban heat island effect means', c:['cities colder than rural','cities warmer than rural','equal temperatures','only at noon'], a:1},
-      {q:'Globalisation can affect local jobs by', c:['reducing all jobs','shifting demand for skills','ending trade','removing technology'], a:1},
-      {q:'A balanced SRQ paragraph uses', c:['PEEL','random facts','one sentence','rhetorical questions only'], a:0},
-      {q:'Multicultural harmony in SG often supported by', c:['segregation','shared norms and policies','no laws','single language only'], a:1},
-      {q:'Best evidence for claim strength is', c:['personal guess','specific example/data','all caps statement','repetition'], a:1},
-    ]
-  },
-  poa: {
-    label: 'POA (O-Level)',
-    questions: [
-      {q:'Assets =', c:['Liabilities + Capital','Capital - Liabilities','Income - Expenses','Cash only'], a:0},
-      {q:'Credit sale entry affects', c:['Sales and Accounts Receivable','Purchases and Cash','Bank and Wages','Inventory only'], a:0},
-      {q:'Trial balance checks mainly', c:['profit correctness','arithmetical accuracy','cash flow only','ethics'], a:1},
-      {q:'Depreciation is', c:['increase in asset value','allocation of asset cost over useful life','cash payment only','fraud adjustment'], a:1},
-      {q:'Gross profit =', c:['Sales - Cost of Sales','Revenue - Expenses','Cash - Bank','Assets - Liabilities'], a:0},
-      {q:'Bank reconciliation helps detect', c:['weather changes','timing differences/errors','tax rates only','inventory loss only'], a:1},
-    ]
-  }
+  english: [
+    { type: 'mcq', marks: 2, q: 'Choose the strongest thesis sentence for an argumentative essay on device use in schools.', choices: ['Phones are bad.', 'Schools should enforce structured phone-free periods to improve focus and sleep hygiene.', 'I think phones maybe should be less.', 'Everyone knows phones are distracting.'], answer: 1 },
+    { type: 'short', marks: 4, q: 'Write one assumption in: “Homework should be reduced because many students already attend tuition.”', keywords: ['tuition', 'effective', 'same learning', 'enough support'] },
+    { type: 'structured', marks: 6, q: 'In 4–6 sentences, evaluate whether school-based support can reduce tuition dependence in Singapore. Give one argument and one limitation.', keywords: ['support', 'access', 'equity', 'limitation', 'resource', 'teacher'] }
+  ],
+  emath: [
+    { type: 'mcq', marks: 2, q: 'Solve: 3(2x−5)=2(x+7)−9', choices: ['x=5', 'x=4', 'x=3', 'x=2'], answer: 2 },
+    { type: 'short', marks: 4, q: 'A jacket is sold at $120 after a 20% discount. Find original price.', keywords: ['150'] },
+    { type: 'structured', marks: 6, q: 'A line passes through (2,-1) and (6,7). Find gradient and equation in y=mx+c form with full working.', keywords: ['2', 'y=2x-5', 'm=2'] }
+  ],
+  amath: [
+    { type: 'mcq', marks: 2, q: 'Differentiate y=3x²−4x+7', choices: ['6x−4', '3x−4', '6x+4', '2x−4'], answer: 0 },
+    { type: 'short', marks: 4, q: 'Solve 2^x=16', keywords: ['4'] },
+    { type: 'structured', marks: 6, q: 'Solve x²−7x+10=0 and explain briefly how factorisation confirms both roots.', keywords: ['2', '5', 'factor', '(x-2)(x-5)'] }
+  ],
+  combsci: [
+    { type: 'mcq', marks: 2, q: 'In collision theory, reaction rate increases when...', choices: ['fewer particles collide', 'activation energy increases', 'frequency of successful collisions increases', 'temperature decreases'], answer: 2 },
+    { type: 'short', marks: 4, q: 'A car travels 150m in 12s. Calculate speed (m/s).', keywords: ['12.5'] },
+    { type: 'structured', marks: 6, q: 'Explain why powdered CaCO3 reacts faster than marble chips with same HCl volume/concentration. Include one controlled variable.', keywords: ['surface area', 'collision', 'successful', 'temperature', 'concentration'] }
+  ],
+  purechem: [
+    { type: 'mcq', marks: 2, q: 'Acid + base reaction is called', choices: ['combustion', 'neutralisation', 'displacement', 'decomposition'], answer: 1 },
+    { type: 'short', marks: 4, q: '25.0 cm3 of 0.200 mol/dm3 HCl reacts with NaOH. Find moles of HCl.', keywords: ['0.005', '5.00x10^-3'] },
+    { type: 'structured', marks: 6, q: 'Describe and explain observations when magnesium is added to dilute hydrochloric acid. Include balanced symbol equation.', keywords: ['effervescence', 'hydrogen', 'Mg + 2HCl', 'MgCl2', 'exothermic'] }
+  ],
+  purephys: [
+    { type: 'mcq', marks: 2, q: 'Resultant force when object moves at constant velocity is', choices: ['maximum', 'zero', 'increasing', 'unknown'], answer: 1 },
+    { type: 'short', marks: 4, q: 'If mass=900kg and acceleration=2m/s², find resultant force.', keywords: ['1800'] },
+    { type: 'structured', marks: 6, q: 'A wave has frequency 5Hz. Calculate period and explain one real-world factor that can affect wave speed.', keywords: ['0.2', 'medium', 'density', 'temperature'] }
+  ],
+  purebio: [
+    { type: 'mcq', marks: 2, q: 'Main function of red blood cells is to transport', choices: ['antibodies', 'oxygen', 'hormones', 'enzymes'], answer: 1 },
+    { type: 'short', marks: 4, q: 'State two differences between diffusion and osmosis.', keywords: ['particles', 'water', 'partially permeable', 'concentration gradient'] },
+    { type: 'structured', marks: 6, q: 'Explain how enzyme activity is affected by temperature, including denaturation.', keywords: ['optimum', 'kinetic', 'collision', 'denature', 'active site'] }
+  ],
+  humanities: [
+    { type: 'mcq', marks: 2, q: 'A strong SBQ reliability paragraph should include', choices: ['writer age only', 'provenance and cross-reference', 'long quotes only', 'own opinion only'], answer: 1 },
+    { type: 'short', marks: 4, q: 'Give one impact of urban heat island effect in Singapore.', keywords: ['higher temperature', 'energy demand', 'health', 'discomfort'] },
+    { type: 'structured', marks: 6, q: '“Meritocracy is fully fair in practice.” Evaluate this statement with one support and one challenge (PEEL style).', keywords: ['opportunity', 'mobility', 'advantage', 'inequality', 'policy'] }
+  ],
+  poa: [
+    { type: 'mcq', marks: 2, q: 'Accounting equation is', choices: ['Assets = Liabilities + Capital', 'Capital = Assets + Liabilities', 'Profit = Assets - Liabilities', 'Cash = Revenue - Expenses'], answer: 0 },
+    { type: 'short', marks: 4, q: 'If sales=$8000 and cost of sales=$5000, find gross profit.', keywords: ['3000'] },
+    { type: 'structured', marks: 6, q: 'Explain why bank reconciliation is needed and give two common reconciling items.', keywords: ['timing', 'cheque', 'deposit in transit', 'bank charges', 'errors'] }
+  ]
 };
 
 const lockScreen = document.getElementById('lockScreen');
@@ -119,13 +77,19 @@ const okInput = document.getElementById('okInput');
 const okBtn = document.getElementById('okBtn');
 
 let currentSet = [];
-let currentSubject = 'english';
 
-Object.entries(BANK).forEach(([k,v])=>{
-  const opt = document.createElement('option');
-  opt.value = k; opt.textContent = v.label;
-  subjectSelect.appendChild(opt);
-});
+function populateSubjects() {
+  const integrated = document.createElement('option');
+  integrated.value = 'integrated';
+  integrated.textContent = 'Integrated Hard Paper (All Subjects)';
+  subjectSelect.appendChild(integrated);
+  SUBJECTS.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s.id;
+    opt.textContent = `${s.label} (Hard)`;
+    subjectSelect.appendChild(opt);
+  });
+}
 
 function showExam() { lockScreen.classList.add('hidden'); examScreen.classList.remove('hidden'); }
 function showLock() { examScreen.classList.add('hidden'); lockScreen.classList.remove('hidden'); }
@@ -137,61 +101,118 @@ unlockBtn.onclick = () => {
     showExam();
   } else lockMsg.textContent = 'Wrong password';
 };
-
 logoutBtn.onclick = () => { localStorage.removeItem(SESSION_KEY); showLock(); };
 
-function sample(arr, n=6){
-  const copy = [...arr].sort(()=>Math.random()-0.5);
-  return copy.slice(0, Math.min(n, arr.length));
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-0.5); }
+
+function buildPaper(key) {
+  if (key === 'integrated') {
+    let paper = [];
+    SUBJECTS.forEach(s => {
+      const pool = shuffle(BANK[s.id]);
+      paper.push(...pool.slice(0, 2).map(q => ({ ...q, subject: s.label }))); // 2 x 9 = 18 questions
+    });
+    return shuffle(paper);
+  }
+  return shuffle(BANK[key]).map(q => ({ ...q, subject: SUBJECTS.find(s=>s.id===key)?.label || key }));
 }
 
-function renderQuestions(){
+function renderQuestions() {
   questionForm.innerHTML = '';
-  currentSet.forEach((item, idx)=>{
+  let totalMarks = 0;
+  currentSet.forEach((item, idx) => {
+    totalMarks += item.marks;
     const box = document.createElement('div');
     box.className = 'q';
-    box.innerHTML = `<h4>Q${idx+1}. ${item.q}</h4>` + item.c.map((ch, i)=>
-      `<label class="choice"><input type="radio" name="q${idx}" value="${i}" required> ${String.fromCharCode(65+i)}. ${ch}</label>`).join('');
+    const typeLabel = item.type === 'mcq' ? 'MCQ' : (item.type === 'short' ? 'Short Response' : 'Structured Response');
+    let body = '';
+    if (item.type === 'mcq') {
+      body = item.choices.map((ch, i) => `<label class="choice"><input type="radio" name="q${idx}" value="${i}" required> ${String.fromCharCode(65+i)}. ${ch}</label>`).join('');
+    } else {
+      body = `<textarea name="q${idx}" rows="${item.type === 'short' ? 3 : 5}" style="width:100%;margin-top:8px;background:#0f141c;color:#eef2f7;border:1px solid #2b3240;border-radius:10px;padding:10px" placeholder="Write your answer..."></textarea>`;
+    }
+    box.innerHTML = `<h4>Q${idx+1}. [${item.subject}] ${item.q}</h4><div class="muted">${typeLabel} · ${item.marks} marks</div>${body}`;
     questionForm.appendChild(box);
   });
   const row = document.createElement('div');
   row.className = 'submitRow';
-  row.innerHTML = `<button type="submit">Mark Now</button><span class="muted">MCQ style · instant marking</span>`;
+  row.innerHTML = `<button type="submit">Mark Now</button><span class="muted">Total: ${totalMarks} marks · SG style hard practice</span>`;
   questionForm.appendChild(row);
 }
 
-function generateSet(){
-  currentSubject = subjectSelect.value;
+function normalize(s){ return (s||'').toLowerCase().replace(/\s+/g,' ').trim(); }
+
+function markText(answer, keywords, maxMarks) {
+  const a = normalize(answer);
+  if (!a) return { got: 0, note: 'No answer provided.' };
+  let hits = 0;
+  keywords.forEach(k => {
+    const kk = normalize(k);
+    if (kk && a.includes(kk)) hits++;
+  });
+  const ratio = Math.min(1, hits / Math.max(2, keywords.length));
+  const lenBonus = a.length > 140 ? 0.15 : 0;
+  const score = Math.min(maxMarks, Math.max(1, Math.round((ratio + lenBonus) * maxMarks)));
+  return { got: score, note: `Matched ${hits}/${keywords.length} key points.` };
+}
+
+function generateSet() {
   loading.classList.remove('hidden');
   questionForm.classList.add('hidden');
   resultCard.classList.add('hidden');
-  setTimeout(()=>{
-    currentSet = sample(BANK[currentSubject].questions, 6);
+  setTimeout(() => {
+    currentSet = buildPaper(subjectSelect.value);
     renderQuestions();
     loading.classList.add('hidden');
     questionForm.classList.remove('hidden');
-  }, 900);
+  }, 1100);
 }
 
 startBtn.onclick = generateSet;
 
-questionForm.onsubmit = (e)=>{
+questionForm.onsubmit = (e) => {
   e.preventDefault();
   const data = new FormData(questionForm);
-  let score = 0;
-  currentSet.forEach((q, i)=>{
-    const pick = Number(data.get(`q${i}`));
-    if (pick === q.a) score++;
+  let scored = 0;
+  let total = 0;
+  const feedback = [];
+
+  currentSet.forEach((q, i) => {
+    total += q.marks;
+    if (q.type === 'mcq') {
+      const pick = Number(data.get(`q${i}`));
+      const got = pick === q.answer ? q.marks : 0;
+      scored += got;
+      feedback.push(`Q${i+1}: ${got}/${q.marks} (${got ? 'Correct' : 'Incorrect'})`);
+    } else {
+      const ans = data.get(`q${i}`) || '';
+      const r = markText(ans, q.keywords, q.marks);
+      scored += r.got;
+      feedback.push(`Q${i+1}: ${r.got}/${q.marks} (${r.note})`);
+    }
   });
-  scoreText.textContent = `Score: ${score}/${currentSet.length}`;
+
+  const pct = Math.round((scored/Math.max(1,total))*100);
+  scoreText.textContent = `Score: ${scored}/${total} (${pct}%)`;
+
+  const old = document.getElementById('feedbackList');
+  if (old) old.remove();
+  const p = document.createElement('pre');
+  p.id = 'feedbackList';
+  p.style.whiteSpace = 'pre-wrap';
+  p.style.fontSize = '13px';
+  p.textContent = feedback.join('\n');
+  resultCard.appendChild(p);
+
   resultCard.classList.remove('hidden');
 };
 
-okBtn.onclick = ()=>{
+okBtn.onclick = () => {
   if (okInput.value.trim().toLowerCase() === 'ok') {
     okInput.value = '';
     generateSet();
   }
 };
 
+populateSubjects();
 if (localStorage.getItem(SESSION_KEY) === '1') showExam();
