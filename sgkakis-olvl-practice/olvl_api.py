@@ -54,19 +54,28 @@ BANK = {
 }
 
 
+def variantize(q, i):
+    qq = dict(q)
+    qq['question'] = f"{q['question']} (Variant {i+1})"
+    # Slight perturbation for MCQ to avoid obvious same ordering
+    if qq.get('type') == 'mcq' and qq.get('choices'):
+      rot = i % len(qq['choices'])
+      ch = qq['choices'][rot:] + qq['choices'][:rot]
+      ans = (qq['answer'] - rot) % len(qq['choices'])
+      qq['choices'] = ch
+      qq['answer'] = ans
+    return qq
+
+
 def gen_paper(subject='integrated', count=20):
-    # Build a unique pool first (no duplicate question text within same paper)
+    # Build base pool
     if subject == 'integrated':
-      pool = []
-      for s in SUBJECTS:
-        for p in BANK[s]:
-          pool.append(to_q(s, p))
+      pool = [to_q(s, p) for s in SUBJECTS for p in BANK[s]]
     else:
       pool = [to_q(subject, p) for p in BANK.get(subject, BANK['english'])]
 
     # Deduplicate by (subject, question, type)
-    seen = set()
-    uniq = []
+    seen = set(); uniq = []
     for q in pool:
       sig = (q['subject'], q['question'], q['type'])
       if sig in seen:
@@ -77,9 +86,20 @@ def gen_paper(subject='integrated', count=20):
     if not uniq:
       return []
 
-    # If request > unique pool size, cap at pool size (avoid repeats in one paper)
-    n = min(int(count), len(uniq))
-    paper = random.sample(uniq, n)
+    target = int(count)
+
+    # Always return requested count (20), even for single-subject mode.
+    # If base unique pool is small, synthesize controlled variants.
+    expanded = list(uniq)
+    round_i = 0
+    while len(expanded) < target:
+      for q in uniq:
+        expanded.append(variantize(q, round_i))
+        if len(expanded) >= target:
+          break
+      round_i += 1
+
+    paper = random.sample(expanded, target)
     random.shuffle(paper)
     return paper
 
