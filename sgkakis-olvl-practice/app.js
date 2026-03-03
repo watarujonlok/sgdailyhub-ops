@@ -77,6 +77,7 @@ const okInput = document.getElementById('okInput');
 const okBtn = document.getElementById('okBtn');
 
 let currentSet = [];
+let lastSetSignature = '';
 
 function populateSubjects() {
   const integrated = document.createElement('option');
@@ -105,16 +106,34 @@ logoutBtn.onclick = () => { localStorage.removeItem(SESSION_KEY); showLock(); };
 
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-0.5); }
 
+function signatureOf(set) {
+  return set.map(q => `${q.subject}|${q.type}|${q.q}`).join('||');
+}
+
 function buildPaper(key) {
   if (key === 'integrated') {
-    let paper = [];
+    let core = [];
+    let leftovers = [];
+
     SUBJECTS.forEach(s => {
       const pool = shuffle(BANK[s.id]);
-      paper.push(...pool.slice(0, 2).map(q => ({ ...q, subject: s.label }))); // 2 x 9 = 18 questions
+      const tagged = pool.map(q => ({ ...q, subject: s.label }));
+      core.push(...tagged.slice(0, 2));           // 18 core questions
+      leftovers.push(...tagged.slice(2));         // remaining candidates
     });
-    return shuffle(paper);
+
+    // top up to 20 questions
+    const extra = shuffle(leftovers).slice(0, 2);
+    return shuffle([...core, ...extra]);
   }
-  return shuffle(BANK[key]).map(q => ({ ...q, subject: SUBJECTS.find(s=>s.id===key)?.label || key }));
+
+  // single-subject hard paper -> exactly 20 questions via shuffled repeats/variants from bank
+  const base = BANK[key].map(q => ({ ...q, subject: SUBJECTS.find(s => s.id === key)?.label || key }));
+  const out = [];
+  while (out.length < 20) {
+    out.push(...shuffle(base).map(x => ({ ...x })));
+  }
+  return shuffle(out.slice(0, 20));
 }
 
 function renderQuestions() {
@@ -161,7 +180,14 @@ function generateSet() {
   questionForm.classList.add('hidden');
   resultCard.classList.add('hidden');
   setTimeout(() => {
-    currentSet = buildPaper(subjectSelect.value);
+    let candidate = buildPaper(subjectSelect.value);
+    let tries = 0;
+    while (signatureOf(candidate) === lastSetSignature && tries < 8) {
+      candidate = buildPaper(subjectSelect.value);
+      tries++;
+    }
+    currentSet = candidate;
+    lastSetSignature = signatureOf(currentSet);
     renderQuestions();
     loading.classList.add('hidden');
     questionForm.classList.remove('hidden');
