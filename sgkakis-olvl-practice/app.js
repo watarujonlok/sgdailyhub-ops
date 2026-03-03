@@ -118,6 +118,7 @@ async function refreshApiStatus() {
 
 function openGiftModal() {
   if (!giftModal) return;
+  giftModal.hidden = false;
   giftModal.classList.remove('hidden');
   giftHandle.value = '';
   giftMsg.textContent = '';
@@ -127,8 +128,10 @@ function openGiftModal() {
 function closeGiftModal() {
   if (!giftModal) return;
   giftModal.classList.add('hidden');
+  giftModal.hidden = true;
 }
 
+closeGiftModal();
 if (giftCancel) giftCancel.onclick = closeGiftModal;
 if (giftSubmit) giftSubmit.onclick = async () => {
   const h = (giftHandle.value || '').trim();
