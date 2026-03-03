@@ -6,208 +6,268 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
 LAST_SIGNATURE = {}
 
-BANK = {
-  "english": [
-    ("mcq",2,"Choose the sentence with the most formal academic tone.",["I kinda disagree with this view.","This perspective warrants closer scrutiny due to unequal outcomes.","This is obviously wrong.","People always say this."],1,["formal tone"]),
-    ("short",4,"State one assumption in: 'Tuition is necessary for success.'",None,None,["tuition","necessary","school support","success"]),
-    ("structured",6,"In 5-7 sentences, evaluate if device-free school policies improve outcomes in Singapore. Give one support and one limitation.",None,None,["focus","sleep","equity","enforcement","limitation"])
-  ],
-  "emath": [
-    ("mcq",2,"Solve: 5(2x-3)=3(x+4)+7",["x=2","x=3","x=4","x=5"],1,["3"]),
-    ("short",4,"A bag costs $168 after a 30% discount. Find the original price.",None,None,["240"]),
-    ("structured",6,"Line passes through (-2,3) and (4,15). Find gradient and equation in y=mx+c with full working.",None,None,["2","y=2x+7","m=2"])
-  ],
-  "amath": [
-    ("mcq",2,"Differentiate y=4x^3-6x^2+2",["12x^2-12x","4x^2-12x","12x-12","12x^2-6x"],0,["12x^2-12x"]),
-    ("short",4,"Solve 3^x = 81",None,None,["4"]),
-    ("structured",6,"Solve x^2-9x+20=0 and explain how factorisation verifies both roots.",None,None,["4","5","(x-4)(x-5)"])
-  ],
-  "combsci": [
-    ("mcq",2,"Higher concentration increases rate mainly because...",["lower activation energy always","more frequent successful collisions","fewer collisions","temperature drops"],1,["collisions"]),
-    ("short",4,"A runner travels 180m in 15s. Find speed.",None,None,["12"]),
-    ("structured",6,"Explain why powdered zinc reacts faster than zinc granules with same HCl. Include one controlled variable.",None,None,["surface area","collision","temperature","concentration"])
-  ],
-  "purechem": [
-    ("mcq",2,"Acid + carbonate produces",["salt+water","salt+water+CO2","salt+H2","salt only"],1,["co2"]),
-    ("short",4,"Find moles in 25.0 cm3 of 0.40 mol/dm3 NaOH.",None,None,["0.01"]),
-    ("structured",6,"Describe observations and equation when calcium carbonate reacts with hydrochloric acid.",None,None,["effervescence","co2","cacl2","h2o"])
-  ],
-  "purephys": [
-    ("mcq",2,"If velocity is constant, resultant force is",["positive","negative","zero","maximum"],2,["zero"]),
-    ("short",4,"Calculate force when m=1200kg, a=1.5m/s^2",None,None,["1800"]),
-    ("structured",6,"A wave has frequency 8Hz. Find period and explain one factor affecting wave speed.",None,None,["0.125","medium","temperature","density"])
-  ],
-  "purebio": [
-    ("mcq",2,"Osmosis is movement of",["any molecules","water through partially permeable membrane","ions from low to high","oxygen into blood"],1,["water"]),
-    ("short",4,"State two differences between arteries and veins.",None,None,["thick wall","pressure","valves","lumen"]),
-    ("structured",6,"Explain effect of pH on enzyme activity including denaturation.",None,None,["optimum","active site","denature","rate"])
-  ],
-  "humanities": [
-    ("mcq",2,"Best SBQ reliability method is",["quote length","cross-reference + provenance","author age","emotive words only"],1,["provenance"]),
-    ("short",4,"State one impact of globalisation on local employment.",None,None,["skills","competition","wages","outsourcing"]),
-    ("structured",6,"'Meritocracy is fully fair in practice.' Evaluate with one support and one challenge.",None,None,["opportunity","mobility","inequality","advantage"])
-  ],
-  "poa": [
-    ("mcq",2,"Accounting equation",["Assets=Liabilities+Capital","Capital=Assets+Liabilities","Profit=Assets-Liabilities","Cash=Revenue-Expenses"],0,["assets"]),
-    ("short",4,"If revenue=9500 and expenses=6200, find profit.",None,None,["3300"]),
-    ("structured",6,"Explain why trial balance may still balance despite errors. Give two examples.",None,None,["compensating","omission","principle","commission"])
-  ]
-}
+
+def q_mcq(subject, q, choices, answer, marks=2, points=None):
+    return {
+        "subject": subject,
+        "type": "mcq",
+        "marks": marks,
+        "question": q,
+        "choices": choices,
+        "answer": answer,
+        "keywords": points or []
+    }
 
 
-def variantize(q, i):
-    qq = dict(q)
-    qq['question'] = f"{q['question']} (Variant {i+1})"
-    # Slight perturbation for MCQ to avoid obvious same ordering
-    if qq.get('type') == 'mcq' and qq.get('choices'):
-      rot = i % len(qq['choices'])
-      ch = qq['choices'][rot:] + qq['choices'][:rot]
-      ans = (qq['answer'] - rot) % len(qq['choices'])
-      qq['choices'] = ch
-      qq['answer'] = ans
-    return qq
+def q_text(subject, qtype, q, marks=4, points=None):
+    return {
+        "subject": subject,
+        "type": qtype,
+        "marks": marks,
+        "question": q,
+        "keywords": points or []
+    }
+
+
+def gen_english():
+    topic = random.choice(["social media use", "device-free recess", "homework load", "tuition dependence", "sleep hygiene"])
+    return random.choice([
+        q_mcq("english", f"Choose the strongest thesis sentence for an essay on {topic}.",
+              ["This is bad.", "This issue deserves balanced policy reform with measurable outcomes.", "I don’t like this.", "Everyone says this matters."], 1, points=["thesis", "academic tone"]),
+        q_text("english", "short", f"State one assumption in this claim: '{topic.title()} should be reduced in schools.'", 4,
+               points=["assumption", "evidence", "context"]),
+        q_text("english", "structured", f"In 5-7 sentences, evaluate one benefit and one limitation of policies on {topic} in Singapore.", 6,
+               points=["benefit", "limitation", "evidence", "evaluation"])])
+
+
+def gen_emath():
+    a = random.randint(2, 7); b = random.randint(1, 9); c = random.randint(2, 6)
+    x = random.randint(2, 9)
+    y = a * x + b
+    return random.choice([
+        q_mcq("emath", f"Solve: {a}(x-{b}) = {c}(x+{b})", ["x=1", f"x={x}", "x=0", f"x={x+1}"], 1, points=[str(x)]),
+        q_text("emath", "short", f"A price is discounted by {random.choice([15,20,25,30])}% to $ {y*10}. Find original price.", 4, points=["percentage", "original price"]),
+        q_text("emath", "structured", f"Line passes through ({x},{b}) and ({x+4},{b+8}). Find gradient and equation in y=mx+c.", 6,
+               points=["gradient", "equation", "working"])])
+
+
+def gen_amath():
+    n = random.randint(2, 6)
+    return random.choice([
+        q_mcq("amath", f"Differentiate y={n}x^3-4x^2+2", [f"{3*n}x^2-8x", f"{n}x^2-8x", f"{3*n}x-8", "None"], 0,
+              points=["differentiate"]),
+        q_text("amath", "short", f"Solve 2^x = {2**random.randint(3,7)}", 4, points=["log", "power"]),
+        q_text("amath", "structured", f"Solve x^2-{random.randint(7,12)}x+{random.randint(18,35)}=0 and show method.", 6,
+               points=["factorise", "roots", "check"])])
+
+
+def gen_combsci():
+    return random.choice([
+        q_mcq("combsci", "Higher reaction rate is mainly due to...",
+              ["fewer collisions", "more frequent successful collisions", "lower concentration", "decrease in particles"], 1,
+              points=["collision theory"]),
+        q_text("combsci", "short", f"A runner travels {random.choice([120,150,180,210])} m in {random.choice([10,12,15,18])} s. Find speed.", 4,
+               points=["speed", "distance/time"]),
+        q_text("combsci", "structured", "Explain why powdered carbonate reacts faster than chips with same acid. Include one controlled variable.", 6,
+               points=["surface area", "successful collisions", "control variable"])])
+
+
+def gen_purechem():
+    mol = random.choice([0.20, 0.25, 0.40]); vol = random.choice([20.0, 25.0, 30.0])
+    return random.choice([
+        q_mcq("purechem", "Acid + carbonate produces", ["salt+water", "salt+water+CO2", "salt+H2", "salt only"], 1,
+              points=["co2", "salt", "water"]),
+        q_text("purechem", "short", f"Find moles in {vol} cm3 of {mol:.2f} mol/dm3 NaOH.", 4, points=["moles", "convert cm3 to dm3"]),
+        q_text("purechem", "structured", "Describe observations and write balanced equation for magnesium + dilute hydrochloric acid.", 6,
+               points=["effervescence", "hydrogen", "balanced equation"])])
+
+
+def gen_purephys():
+    m = random.choice([800, 900, 1200]); a = random.choice([1.5, 2.0, 2.5])
+    return random.choice([
+        q_mcq("purephys", "If velocity is constant, resultant force is", ["positive", "negative", "zero", "maximum"], 2,
+              points=["newton first law"]),
+        q_text("purephys", "short", f"Calculate force when mass={m} kg and acceleration={a} m/s^2.", 4,
+               points=["F=ma"]),
+        q_text("purephys", "structured", f"A wave has frequency {random.choice([4,5,8,10])} Hz. Find period and explain one factor affecting wave speed.", 6,
+               points=["period", "medium", "speed factor"])])
+
+
+def gen_purebio():
+    return random.choice([
+        q_mcq("purebio", "Osmosis is movement of", ["any molecules", "water through partially permeable membrane", "ions only", "oxygen"], 1,
+              points=["water", "partially permeable membrane"]),
+        q_text("purebio", "short", "State two differences between arteries and veins.", 4,
+               points=["thick walls", "valves", "pressure", "lumen"]),
+        q_text("purebio", "structured", "Explain effect of temperature on enzyme activity, including denaturation.", 6,
+               points=["optimum", "kinetic energy", "active site", "denature"])])
+
+
+def gen_humanities():
+    issue = random.choice(["meritocracy", "globalisation", "urban heat island", "social mobility"])
+    return random.choice([
+        q_mcq("humanities", "Best SBQ reliability method is", ["quote length", "cross-reference + provenance", "author age", "emotive words only"], 1,
+              points=["cross-reference", "provenance"]),
+        q_text("humanities", "short", f"State one impact of {issue} on Singapore society/economy.", 4,
+               points=["impact", "example", "Singapore context"]),
+        q_text("humanities", "structured", f"Evaluate the statement: '{issue.title()} policy outcomes are fully fair.' Give one support and one challenge.", 6,
+               points=["support", "challenge", "evidence", "evaluation"])])
+
+
+def gen_poa():
+    rev = random.choice([8500, 9200, 9500]); exp = random.choice([5400, 6200, 7100])
+    return random.choice([
+        q_mcq("poa", "Accounting equation is", ["Assets=Liabilities+Capital", "Capital=Assets+Liabilities", "Profit=Assets-Liabilities", "Cash=Revenue-Expenses"], 0,
+              points=["accounting equation"]),
+        q_text("poa", "short", f"If revenue=${rev} and expenses=${exp}, find profit.", 4,
+               points=["profit", "revenue-expenses"]),
+        q_text("poa", "structured", "Explain why trial balance may still balance despite errors. Give two examples.", 6,
+               points=["omission", "commission", "principle", "compensating errors"])])
+
+
+def gen_one(subject):
+    return {
+        "english": gen_english,
+        "emath": gen_emath,
+        "amath": gen_amath,
+        "combsci": gen_combsci,
+        "purechem": gen_purechem,
+        "purephys": gen_purephys,
+        "purebio": gen_purebio,
+        "humanities": gen_humanities,
+        "poa": gen_poa,
+    }.get(subject, gen_english)()
 
 
 def gen_paper(subject='integrated', count=20):
-    # Build base pool
-    if subject == 'integrated':
-      pool = [to_q(s, p) for s in SUBJECTS for p in BANK[s]]
-    else:
-      pool = [to_q(subject, p) for p in BANK.get(subject, BANK['english'])]
-
-    # Deduplicate by (subject, question, type)
-    seen = set(); uniq = []
-    for q in pool:
-      sig = (q['subject'], q['question'], q['type'])
-      if sig in seen:
-        continue
-      seen.add(sig)
-      uniq.append(q)
-
-    if not uniq:
-      return []
-
     target = int(count)
+    out = []
+    seen = set()
 
-    # Always return requested count (20), even for single-subject mode.
-    # If base unique pool is small, synthesize controlled variants.
-    expanded = list(uniq)
-    round_i = 0
-    while len(expanded) < target:
-      for q in uniq:
-        expanded.append(variantize(q, round_i))
-        if len(expanded) >= target:
-          break
-      round_i += 1
+    def add(q):
+        sig = (q['subject'], q['type'], q['question'])
+        if sig in seen:
+            return False
+        seen.add(sig)
+        out.append(q)
+        return True
 
-    paper = random.sample(expanded, target)
-    random.shuffle(paper)
-    return paper
+    if subject == 'integrated':
+        # guarantee broad coverage first
+        for s in SUBJECTS:
+            tries = 0
+            while tries < 20 and len([x for x in out if x['subject'] == s]) < 2:
+                add(gen_one(s))
+                tries += 1
+        while len(out) < target:
+            add(gen_one(random.choice(SUBJECTS)))
+    else:
+        while len(out) < target:
+            add(gen_one(subject))
 
-
-def to_q(subject, tpl):
-  qtype, marks, q, choices, ans, keywords = tpl
-  base = {"subject": subject, "type": qtype, "marks": marks, "question": q, "keywords": keywords}
-  if qtype == 'mcq':
-    base.update({"choices": choices, "answer": ans})
-  return base
+    random.shuffle(out)
+    return out[:target]
 
 
 def norm(s):
-  return (s or '').lower().strip()
+    return (s or '').lower().strip()
 
 
 def mark(paper, answers):
-  total = 0
-  got = 0
-  detail = []
-  for i,q in enumerate(paper):
-    total += q.get('marks',0)
-    a = answers.get(str(i), '')
-    if q['type']=='mcq':
-      ok = str(a)==str(q.get('answer'))
-      sc = q['marks'] if ok else 0
-      got += sc
-      correct_idx = int(q.get('answer', 0)) if isinstance(q.get('answer', 0), int) or str(q.get('answer',0)).isdigit() else 0
-      correct_choice = (q.get('choices') or [''])[correct_idx] if q.get('choices') else ''
-      picked = ''
-      if str(a).isdigit() and q.get('choices') and int(a) < len(q['choices']):
-        picked = q['choices'][int(a)]
-      reason = "Your selected option matches the model key." if ok else "Selected option does not match the model key."
-      detail.append({
-        "q":i+1,
-        "score":sc,
-        "max":q['marks'],
-        "feedback":"Correct" if ok else "Incorrect",
-        "reason": reason + (f" You chose: {picked}." if picked else ""),
-        "correctAnswer": correct_choice
-      })
-    else:
-      txt = norm(a)
-      keys = [norm(k) for k in q.get('keywords',[])]
-      hits_list = [k for k in keys if k and k in txt]
-      miss_list = [k for k in keys if k and k not in txt]
-      hits = len(hits_list)
-      ratio = hits / max(1, len(keys))
-      sc = max(0, min(q['marks'], round((ratio + (0.15 if len(txt)>120 else 0))*q['marks'])))
-      got += sc
-      reason = f"Matched {hits}/{len(keys)} key points"
-      if miss_list:
-        reason += f". Missing concepts: {', '.join(miss_list[:4])}"
-      detail.append({
-        "q":i+1,
-        "score":sc,
-        "max":q['marks'],
-        "feedback":f"Matched {hits}/{len(keys)} key points",
-        "reason": reason,
-        "correctAnswer": ("Key points: " + ", ".join(keys[:5])) if keys else "Model answer not available"
-      })
-  return {"score": got, "total": total, "percent": round(100*got/max(1,total)), "details": detail}
+    total = 0
+    got = 0
+    detail = []
+    for i, q in enumerate(paper):
+        total += q.get('marks', 0)
+        a = answers.get(str(i), '')
+        if q['type'] == 'mcq':
+            ok = str(a) == str(q.get('answer'))
+            sc = q['marks'] if ok else 0
+            got += sc
+            idx = int(q.get('answer', 0))
+            correct = (q.get('choices') or [''])[idx] if q.get('choices') else ''
+            picked = ''
+            if str(a).isdigit() and q.get('choices') and int(a) < len(q['choices']):
+                picked = q['choices'][int(a)]
+            detail.append({
+                "q": i + 1,
+                "score": sc,
+                "max": q['marks'],
+                "feedback": "Correct" if ok else "Incorrect",
+                "reason": ("Matches answer key." if ok else "Does not match answer key.") + (f" You chose: {picked}." if picked else ""),
+                "correctAnswer": correct
+            })
+        else:
+            txt = norm(a)
+            keys = [norm(k) for k in q.get('keywords', [])]
+            hits = [k for k in keys if k and k in txt]
+            miss = [k for k in keys if k and k not in txt]
+            ratio = len(hits) / max(1, len(keys))
+            sc = max(0, min(q['marks'], round((ratio + (0.15 if len(txt) > 120 else 0)) * q['marks'])))
+            got += sc
+            reason = f"Matched {len(hits)}/{len(keys)} key points"
+            if miss:
+                reason += f". Missing: {', '.join(miss[:4])}"
+            detail.append({
+                "q": i + 1,
+                "score": sc,
+                "max": q['marks'],
+                "feedback": f"Matched {len(hits)}/{len(keys)} key points",
+                "reason": reason,
+                "correctAnswer": "Key points: " + ", ".join(keys[:5]) if keys else "Model answer not available"
+            })
+
+    return {"score": got, "total": total, "percent": round(100 * got / max(1, total)), "details": detail}
+
 
 class H(BaseHTTPRequestHandler):
-  def _send(self, code, obj):
-    b = json.dumps(obj).encode()
-    self.send_response(code)
-    self.send_header('Content-Type','application/json')
-    self.send_header('Content-Length', str(len(b)))
-    self.send_header('Access-Control-Allow-Origin','*')
-    self.end_headers()
-    self.wfile.write(b)
+    def _send(self, code, obj):
+        b = json.dumps(obj).encode()
+        self.send_response(code)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Content-Length', str(len(b)))
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.end_headers()
+        self.wfile.write(b)
 
-  def do_OPTIONS(self):
-    self.send_response(204)
-    self.send_header('Access-Control-Allow-Origin','*')
-    self.send_header('Access-Control-Allow-Methods','POST,GET,OPTIONS')
-    self.send_header('Access-Control-Allow-Headers','Content-Type')
-    self.end_headers()
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'POST,GET,OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
 
-  def do_GET(self):
-    path = urlparse(self.path).path
-    if path == '/health':
-      return self._send(200, {"ok": True})
-    self._send(404, {"error":"not found"})
+    def do_GET(self):
+        path = urlparse(self.path).path
+        if path == '/health':
+            return self._send(200, {"ok": True})
+        self._send(404, {"error": "not found"})
 
-  def do_POST(self):
-    path = urlparse(self.path).path
-    n = int(self.headers.get('Content-Length','0'))
-    body = json.loads(self.rfile.read(n) or b'{}') if n else {}
-    if path in ('/api/generate-paper','/generate-paper'):
-      subject = body.get('subject','integrated')
-      count = int(body.get('count',20))
-      paper = gen_paper(subject, count)
-      sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
-      tries = 0
-      while LAST_SIGNATURE.get(subject) == sig and tries < 6:
-        paper = gen_paper(subject, count)
-        sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
-        tries += 1
-      LAST_SIGNATURE[subject] = sig
-      return self._send(200, {"paper": paper, "paperId": str(uuid.uuid4()), "engine":"realtime-generator"})
-    if path in ('/api/mark-paper','/mark-paper'):
-      paper = body.get('paper',[])
-      answers = body.get('answers',{})
-      return self._send(200, {"result": mark(paper, answers), "engine":"realtime-rubric"})
-    return self._send(404, {"error":"not found"})
+    def do_POST(self):
+        path = urlparse(self.path).path
+        n = int(self.headers.get('Content-Length', '0'))
+        body = json.loads(self.rfile.read(n) or b'{}') if n else {}
+
+        if path in ('/api/generate-paper', '/generate-paper'):
+            subject = body.get('subject', 'integrated')
+            count = int(body.get('count', 20))
+            paper = gen_paper(subject, count)
+            sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
+            tries = 0
+            while LAST_SIGNATURE.get(subject) == sig and tries < 6:
+                paper = gen_paper(subject, count)
+                sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
+                tries += 1
+            LAST_SIGNATURE[subject] = sig
+            return self._send(200, {"paper": paper, "paperId": str(uuid.uuid4()), "engine": "dynamic-generator"})
+
+        if path in ('/api/mark-paper', '/mark-paper'):
+            paper = body.get('paper', [])
+            answers = body.get('answers', {})
+            return self._send(200, {"result": mark(paper, answers), "engine": "realtime-rubric"})
+
+        return self._send(404, {"error": "not found"})
+
 
 if __name__ == '__main__':
-  HTTPServer(('0.0.0.0', 8788), H).serve_forever()
+    HTTPServer(('0.0.0.0', 8788), H).serve_forever()
