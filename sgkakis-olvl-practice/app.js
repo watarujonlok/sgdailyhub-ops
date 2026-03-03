@@ -130,7 +130,7 @@ function closeGiftModal() {
 }
 
 if (giftCancel) giftCancel.onclick = closeGiftModal;
-if (giftSubmit) giftSubmit.onclick = () => {
+if (giftSubmit) giftSubmit.onclick = async () => {
   const h = (giftHandle.value || '').trim();
   if (!h || !h.startsWith('@')) {
     giftMsg.textContent = 'Please enter a valid Telegram handle (e.g. @username).';
@@ -138,9 +138,21 @@ if (giftSubmit) giftSubmit.onclick = () => {
     return;
   }
   const subjText = subjectSelect.options[subjectSelect.selectedIndex]?.text || 'Selected subject';
-  const claim = `Gift claim request: I scored 100% in ${subjText} ${paperMeta || ''}. Telegram handle: ${h}`;
-  giftMsg.textContent = 'Claim captured. Please copy and send this in this Telegram chat: ' + claim;
-  giftMsg.style.color = '#45c16d';
+  giftMsg.textContent = 'Submitting claim...';
+  giftMsg.style.color = '#9aa5b5';
+  try {
+    const r = await fetch('/olvl-api/claim', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ handle: h, subject: subjText, paperId: lastPaperId, percent: 100 })
+    });
+    if (!r.ok) throw new Error('claim failed');
+    giftMsg.textContent = '✅ Claim submitted. This will be processed for a gift (not given yet).';
+    giftMsg.style.color = '#45c16d';
+  } catch (e) {
+    giftMsg.textContent = 'Claim saved locally, but auto-forward failed. Please send your @username in this chat manually.';
+    giftMsg.style.color = '#ff6b6b';
+  }
 };
 
 function showExam() { lockScreen.classList.add('hidden'); examScreen.classList.remove('hidden'); }

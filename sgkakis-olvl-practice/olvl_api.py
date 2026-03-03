@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-import json, random, uuid
+import json, random, uuid, os
 from urllib.parse import urlparse
+from urllib import request, parse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
 LAST_SIGNATURE = {}
 RECENT_QUESTIONS = {}  # subject -> recent question stems across papers
 RECENT_PAPERS = {}     # subject -> list[list[stem]] last N papers
+
+TG_BOT_TOKEN = os.environ.get('TG_BOT_TOKEN', '').strip()
+TG_CHAT_ID = os.environ.get('TG_CHAT_ID', '').strip()
+
 
 
 def q_mcq(subject, q, choices, answer, marks=2, points=None, concept=None):
@@ -220,6 +225,24 @@ def norm(s):
     return (s or '').lower().strip()
 
 
+def send_claim_to_telegram(text):
+    if not TG_BOT_TOKEN or not TG_CHAT_ID:
+        return {"sent": False, "reason": "telegram_not_configured"}
+    try:
+        url = f"https://api.telegram.org/bot{TG_BOT_TOKEN}/sendMessage"
+        payload = parse.urlencode({
+            "chat_id": TG_CHAT_ID,
+            "text": text,
+            "disable_web_page_preview": "true"
+        }).encode()
+        req = request.Request(url, data=payload)
+        with request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read().decode())
+        return {"sent": bool(data.get('ok')), "reason": "ok" if data.get('ok') else "telegram_api_error"}
+    except Exception as e:
+        return {"sent": False, "reason": f"send_failed:{e}"}
+
+
 def mark(paper, answers):
     total = 0
     got = 0
@@ -312,6 +335,18 @@ class H(BaseHTTPRequestHandler):
             paper = body.get('paper', [])
             answers = body.get('answers', {})
             return self._send(200, {"result": mark(paper, answers), "engine": "realtime-rubric"})
+
+        if path in ('/api/claim', '/claim'):
+            handle = (body.get('handle') or '').strip()
+            subject = (body.get('subject') or 'Unknown subject').strip()
+            paper_id = (body.get('paperId') or '').strip()
+            pct = body.get('percent')
+            if not handle.startswith('@'):
+                return self._send(400, {"ok": False, "error": "invalid_handle"})
+
+            msg = f"🏆 Gift claim submission\nHandle: {handle}\nSubject: {subject}\nScore: {pct}%\nPaper: {paper_id or 'N/A'}\nStatus: Pending manual processing (gift not yet given)."
+            sent = send_claim_to_telegram(msg)
+            return self._send(200, {"ok": True, "forwarded": sent.get('sent', False), "status": "pending_manual_processing"})
 
         return self._send(404, {"error": "not found"})
 
