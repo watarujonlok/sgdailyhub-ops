@@ -5,9 +5,10 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
 LAST_SIGNATURE = {}
+RECENT_QUESTIONS = {}  # subject -> recent question stems across papers
 
 
-def q_mcq(subject, q, choices, answer, marks=2, points=None):
+def q_mcq(subject, q, choices, answer, marks=2, points=None, concept=None):
     return {
         "subject": subject,
         "type": "mcq",
@@ -15,17 +16,19 @@ def q_mcq(subject, q, choices, answer, marks=2, points=None):
         "question": q,
         "choices": choices,
         "answer": answer,
-        "keywords": points or []
+        "keywords": points or [],
+        "concept": concept or "general"
     }
 
 
-def q_text(subject, qtype, q, marks=4, points=None):
+def q_text(subject, qtype, q, marks=4, points=None, concept=None):
     return {
         "subject": subject,
         "type": qtype,
         "marks": marks,
         "question": q,
-        "keywords": points or []
+        "keywords": points or [],
+        "concept": concept or "general"
     }
 
 
@@ -76,10 +79,10 @@ def gen_purechem():
     mol = random.choice([0.20, 0.25, 0.40]); vol = random.choice([20.0, 25.0, 30.0])
     return random.choice([
         q_mcq("purechem", "Acid + carbonate produces", ["salt+water", "salt+water+CO2", "salt+H2", "salt only"], 1,
-              points=["co2", "salt", "water"]),
-        q_text("purechem", "short", f"Find moles in {vol} cm3 of {mol:.2f} mol/dm3 NaOH.", 4, points=["moles", "convert cm3 to dm3"]),
+              points=["co2", "salt", "water"], concept="reaction-products"),
+        q_text("purechem", "short", f"Find moles in {vol} cm3 of {mol:.2f} mol/dm3 NaOH.", 4, points=["moles", "convert cm3 to dm3"], concept="mole-calculation"),
         q_text("purechem", "structured", "Describe observations and write balanced equation for magnesium + dilute hydrochloric acid.", 6,
-               points=["effervescence", "hydrogen", "balanced equation"])])
+               points=["effervescence", "hydrogen", "balanced equation"], concept="acid-metal-reaction")])
 
 
 def gen_purephys():
@@ -143,24 +146,37 @@ def gen_paper(subject='integrated', count=20):
     target = int(count)
     out = []
     seen = set()
+    concept_count = {}
+    max_per_concept = 2 if subject == 'integrated' else 1
+    recent = set(RECENT_QUESTIONS.get(subject, []))
 
     def add(q):
-        sig = (q['subject'], q['type'], q['question'])
+        stem = q['question'].split(' [Set ')[0].strip()
+        sig = (q['subject'], q['type'], stem)
+        concept = q.get('concept', 'general')
+        ckey = (q['subject'], concept)
+
         if sig in seen:
             return False
+        if stem in recent:
+            return False
+        if concept != 'general' and concept_count.get(ckey, 0) >= max_per_concept:
+            return False
+
         seen.add(sig)
+        if concept != 'general':
+            concept_count[ckey] = concept_count.get(ckey, 0) + 1
         out.append(q)
         return True
 
     # bounded generation loops to avoid hangs
-    max_attempts = max(300, target * 40)
+    max_attempts = max(500, target * 70)
     attempts = 0
 
     if subject == 'integrated':
-        # guarantee broad coverage first
         for s in SUBJECTS:
             tries = 0
-            while tries < 40 and len([x for x in out if x['subject'] == s]) < 2 and attempts < max_attempts:
+            while tries < 60 and len([x for x in out if x['subject'] == s]) < 2 and attempts < max_attempts:
                 add(gen_one(s))
                 tries += 1
                 attempts += 1
@@ -172,16 +188,27 @@ def gen_paper(subject='integrated', count=20):
             add(gen_one(subject))
             attempts += 1
 
-    # hard fallback to ensure always returns requested count quickly
+    # fallback ensures completion while preserving non-identical display
     nonce = 1
     while len(out) < target:
         s = random.choice(SUBJECTS) if subject == 'integrated' else subject
         q = gen_one(s)
         q['question'] = f"{q['question']} [Set {nonce}]"
-        add(q)
+        # fallback bypasses recent/concept locks but still avoids exact duplicates
+        stem = q['question'].split(' [Set ')[0].strip()
+        sig = (q['subject'], q['type'], stem, nonce)
+        if sig not in seen:
+            seen.add(sig)
+            out.append(q)
         nonce += 1
 
     random.shuffle(out)
+
+    # save recent stems (rolling window)
+    stems = [x['question'].split(' [Set ')[0].strip() for x in out]
+    prev = RECENT_QUESTIONS.get(subject, [])
+    RECENT_QUESTIONS[subject] = (stems + prev)[:120]
+
     return out[:target]
 
 
