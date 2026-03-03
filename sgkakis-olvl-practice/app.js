@@ -110,30 +110,37 @@ function signatureOf(set) {
   return set.map(q => `${q.subject}|${q.type}|${q.q}`).join('||');
 }
 
-function buildPaper(key) {
-  if (key === 'integrated') {
-    let core = [];
-    let leftovers = [];
-
-    SUBJECTS.forEach(s => {
-      const pool = shuffle(BANK[s.id]);
-      const tagged = pool.map(q => ({ ...q, subject: s.label }));
-      core.push(...tagged.slice(0, 2));           // 18 core questions
-      leftovers.push(...tagged.slice(2));         // remaining candidates
-    });
-
-    // top up to 20 questions
-    const extra = shuffle(leftovers).slice(0, 2);
-    return shuffle([...core, ...extra]);
+function mapFromApi(p) {
+  const subjectLabel = SUBJECTS.find(s => s.id === p.subject)?.label || p.subject;
+  if (p.type === 'mcq') {
+    return {
+      subject: subjectLabel,
+      type: 'mcq',
+      marks: p.marks,
+      q: p.question,
+      choices: p.choices,
+      answer: p.answer,
+      keywords: p.keywords || []
+    };
   }
+  return {
+    subject: subjectLabel,
+    type: p.type,
+    marks: p.marks,
+    q: p.question,
+    keywords: p.keywords || []
+  };
+}
 
-  // single-subject hard paper -> exactly 20 questions via shuffled repeats/variants from bank
-  const base = BANK[key].map(q => ({ ...q, subject: SUBJECTS.find(s => s.id === key)?.label || key }));
-  const out = [];
-  while (out.length < 20) {
-    out.push(...shuffle(base).map(x => ({ ...x })));
-  }
-  return shuffle(out.slice(0, 20));
+async function fetchPaper(key) {
+  const res = await fetch('/olvl-api/generate-paper', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ subject: key, count: 20 })
+  });
+  if (!res.ok) throw new Error('generate failed');
+  const data = await res.json();
+  return (data.paper || []).map(mapFromApi);
 }
 
 function renderQuestions() {
@@ -175,62 +182,75 @@ function markText(answer, keywords, maxMarks) {
   return { got: score, note: `Matched ${hits}/${keywords.length} key points.` };
 }
 
-function generateSet() {
+async function generateSet() {
   loading.classList.remove('hidden');
   questionForm.classList.add('hidden');
   resultCard.classList.add('hidden');
-  setTimeout(() => {
-    let candidate = buildPaper(subjectSelect.value);
+  try {
+    let candidate = await fetchPaper(subjectSelect.value);
     let tries = 0;
-    while (signatureOf(candidate) === lastSetSignature && tries < 8) {
-      candidate = buildPaper(subjectSelect.value);
+    while (signatureOf(candidate) === lastSetSignature && tries < 3) {
+      candidate = await fetchPaper(subjectSelect.value);
       tries++;
     }
     currentSet = candidate;
     lastSetSignature = signatureOf(currentSet);
     renderQuestions();
-    loading.classList.add('hidden');
     questionForm.classList.remove('hidden');
-  }, 1100);
+  } catch (e) {
+    alert('Failed to generate paper. Please try again.');
+  } finally {
+    loading.classList.add('hidden');
+  }
 }
 
 startBtn.onclick = generateSet;
 
-questionForm.onsubmit = (e) => {
+questionForm.onsubmit = async (e) => {
   e.preventDefault();
   const data = new FormData(questionForm);
-  let scored = 0;
-  let total = 0;
-  const feedback = [];
-
-  currentSet.forEach((q, i) => {
-    total += q.marks;
-    if (q.type === 'mcq') {
-      const pick = Number(data.get(`q${i}`));
-      const got = pick === q.answer ? q.marks : 0;
-      scored += got;
-      feedback.push(`Q${i+1}: ${got}/${q.marks} (${got ? 'Correct' : 'Incorrect'})`);
-    } else {
-      const ans = data.get(`q${i}`) || '';
-      const r = markText(ans, q.keywords, q.marks);
-      scored += r.got;
-      feedback.push(`Q${i+1}: ${r.got}/${q.marks} (${r.note})`);
-    }
+  const answers = {};
+  currentSet.forEach((_, i) => {
+    const v = data.get(`q${i}`);
+    answers[String(i)] = v == null ? '' : String(v);
   });
 
-  const pct = Math.round((scored/Math.max(1,total))*100);
-  scoreText.textContent = `Score: ${scored}/${total} (${pct}%)`;
+  loading.classList.remove('hidden');
+  try {
+    const res = await fetch('/olvl-api/mark-paper', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ paper: currentSet.map((q)=>({
+        subject: (SUBJECTS.find(s=>s.label===q.subject)?.id || q.subject || '').toLowerCase().replace(/[^a-z]/g,''),
+        type: q.type,
+        marks: q.marks,
+        question: q.q,
+        choices: q.choices,
+        answer: q.answer,
+        keywords: q.keywords || []
+      })), answers })
+    });
+    if (!res.ok) throw new Error('mark failed');
+    const out = await res.json();
+    const r = out.result;
 
-  const old = document.getElementById('feedbackList');
-  if (old) old.remove();
-  const p = document.createElement('pre');
-  p.id = 'feedbackList';
-  p.style.whiteSpace = 'pre-wrap';
-  p.style.fontSize = '13px';
-  p.textContent = feedback.join('\n');
-  resultCard.appendChild(p);
+    scoreText.textContent = `Score: ${r.score}/${r.total} (${r.percent}%)`;
 
-  resultCard.classList.remove('hidden');
+    const old = document.getElementById('feedbackList');
+    if (old) old.remove();
+    const p = document.createElement('pre');
+    p.id = 'feedbackList';
+    p.style.whiteSpace = 'pre-wrap';
+    p.style.fontSize = '13px';
+    p.textContent = (r.details || []).map(d => `Q${d.q}: ${d.score}/${d.max} (${d.feedback})`).join('\n');
+    resultCard.appendChild(p);
+
+    resultCard.classList.remove('hidden');
+  } catch (err) {
+    alert('Failed to mark paper. Please retry.');
+  } finally {
+    loading.classList.add('hidden');
+  }
 };
 
 okBtn.onclick = () => {
