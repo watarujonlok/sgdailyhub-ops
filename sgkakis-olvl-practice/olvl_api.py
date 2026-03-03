@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import json, random
+import json, random, uuid
+from urllib.parse import urlparse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
@@ -54,23 +55,33 @@ BANK = {
 
 
 def gen_paper(subject='integrated', count=20):
-    out = []
+    # Build a unique pool first (no duplicate question text within same paper)
     if subject == 'integrated':
+      pool = []
       for s in SUBJECTS:
-        pool = BANK[s]
-        picked = random.sample(pool, min(2, len(pool)))
-        for p in picked:
-          out.append(to_q(s, p))
-      while len(out) < count:
-        s = random.choice(SUBJECTS)
-        out.append(to_q(s, random.choice(BANK[s])))
-      random.shuffle(out)
-      return out[:count]
-    pool = BANK.get(subject, BANK['english'])
-    while len(out) < count:
-      out.append(to_q(subject, random.choice(pool)))
-    random.shuffle(out)
-    return out[:count]
+        for p in BANK[s]:
+          pool.append(to_q(s, p))
+    else:
+      pool = [to_q(subject, p) for p in BANK.get(subject, BANK['english'])]
+
+    # Deduplicate by (subject, question, type)
+    seen = set()
+    uniq = []
+    for q in pool:
+      sig = (q['subject'], q['question'], q['type'])
+      if sig in seen:
+        continue
+      seen.add(sig)
+      uniq.append(q)
+
+    if not uniq:
+      return []
+
+    # If request > unique pool size, cap at pool size (avoid repeats in one paper)
+    n = min(int(count), len(uniq))
+    paper = random.sample(uniq, n)
+    random.shuffle(paper)
+    return paper
 
 
 def to_q(subject, tpl):
@@ -125,19 +136,21 @@ class H(BaseHTTPRequestHandler):
     self.end_headers()
 
   def do_GET(self):
-    if self.path == '/health':
+    path = urlparse(self.path).path
+    if path == '/health':
       return self._send(200, {"ok": True})
     self._send(404, {"error":"not found"})
 
   def do_POST(self):
+    path = urlparse(self.path).path
     n = int(self.headers.get('Content-Length','0'))
     body = json.loads(self.rfile.read(n) or b'{}') if n else {}
-    if self.path in ('/api/generate-paper','/generate-paper'): 
+    if path in ('/api/generate-paper','/generate-paper'):
       subject = body.get('subject','integrated')
       count = int(body.get('count',20))
       paper = gen_paper(subject, count)
-      return self._send(200, {"paper": paper, "engine":"realtime-generator"})
-    if self.path in ('/api/mark-paper','/mark-paper'):
+      return self._send(200, {"paper": paper, "paperId": str(uuid.uuid4()), "engine":"realtime-generator"})
+    if path in ('/api/mark-paper','/mark-paper'):
       paper = body.get('paper',[])
       answers = body.get('answers',{})
       return self._send(200, {"result": mark(paper, answers), "engine":"realtime-rubric"})

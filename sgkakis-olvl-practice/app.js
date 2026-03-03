@@ -132,15 +132,18 @@ function mapFromApi(p) {
   };
 }
 
+let lastPaperId = '';
+
 async function fetchPaper(key) {
-  const res = await fetch('/olvl-api/generate-paper', {
+  const res = await fetch(`/olvl-api/generate-paper?t=${Date.now()}`, {
     method: 'POST',
+    cache: 'no-store',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ subject: key, count: 20 })
   });
   if (!res.ok) throw new Error('generate failed');
   const data = await res.json();
-  return (data.paper || []).map(mapFromApi);
+  return { paper: (data.paper || []).map(mapFromApi), paperId: data.paperId || '' };
 }
 
 function renderQuestions() {
@@ -187,14 +190,19 @@ async function generateSet() {
   questionForm.classList.add('hidden');
   resultCard.classList.add('hidden');
   try {
-    let candidate = await fetchPaper(subjectSelect.value);
+    let fetched = await fetchPaper(subjectSelect.value);
+    let candidate = fetched.paper;
+    let pid = fetched.paperId;
     let tries = 0;
-    while (signatureOf(candidate) === lastSetSignature && tries < 3) {
-      candidate = await fetchPaper(subjectSelect.value);
+    while ((signatureOf(candidate) === lastSetSignature || (pid && pid === lastPaperId)) && tries < 5) {
+      fetched = await fetchPaper(subjectSelect.value);
+      candidate = fetched.paper;
+      pid = fetched.paperId;
       tries++;
     }
     currentSet = candidate;
     lastSetSignature = signatureOf(currentSet);
+    lastPaperId = pid;
     renderQuestions();
     questionForm.classList.remove('hidden');
   } catch (e) {
