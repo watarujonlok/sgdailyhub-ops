@@ -1,0 +1,16 @@
+:root{--bg:#0f1115;--card:#191d24;--text:#eef2f7;--muted:#9aa5b5;--accent:#6ea8fe;--ok:#45c16d;--err:#ff6b6b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.app{max-width:900px;margin:24px auto;padding:0 12px}
+.card{background:var(--card);border-radius:14px;padding:16px;margin-bottom:14px}
+.center{text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center}
+input,select,button{font:inherit;border-radius:10px;border:1px solid #2b3240;padding:10px 12px;background:#0f141c;color:var(--text)}
+button{background:var(--accent);border:none;color:#07111f;font-weight:700;cursor:pointer}
+button.ghost{background:transparent;border:1px solid #3a4458;color:var(--text)}
+.hidden{display:none}.muted{color:var(--muted)}.error{color:var(--err);min-height:20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.q{padding:12px;border:1px solid #2a3040;border-radius:10px;margin:10px 0}
+.q h4{margin:0 0 8px 0}
+.choice{display:block;margin:6px 0}
+.submitRow{display:flex;gap:10px;align-items:center;margin-top:12px}
+#scoreText{color:var(--ok)}
+.okRow{display:flex;gap:8px}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SG O-Level Practice Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="lockScreen" class="card center">
+      <h1>SG O-Level Practice Hub</h1>
+      <p class="muted">Protected access</p>
+      <input id="passwordInput" type="password" placeholder="Enter password" />
+      <button id="unlockBtn">Unlock</button>
+      <p id="lockMsg" class="error"></p>
+    </section>
+
+    <section id="examScreen" class="hidden">
+      <header class="topbar">
+        <h2>O/N-Level MCQ Trainer</h2>
+        <button id="logoutBtn" class="ghost">Lock</button>
+      </header>
+
+      <div class="controls card">
+        <label for="subjectSelect">Select subject set</label>
+        <select id="subjectSelect"></select>
+        <button id="startBtn">Start / New Set</button>
+      </div>
+
+      <div id="loading" class="card hidden">Generating a fresh set... please wait.</div>
+
+      <form id="questionForm" class="card hidden"></form>
+
+      <div id="resultCard" class="card hidden">
+        <h3 id="scoreText"></h3>
+        <p>Type <b>ok</b> below to generate a reshuffled new paper.</p>
+        <div class="okRow">
+          <input id="okInput" placeholder="Type ok" />
+          <button id="okBtn" type="button">Submit</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
