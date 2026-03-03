@@ -6,6 +6,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
 LAST_SIGNATURE = {}
 RECENT_QUESTIONS = {}  # subject -> recent question stems across papers
+RECENT_PAPERS = {}     # subject -> list[list[stem]] last N papers
 
 
 def q_mcq(subject, q, choices, answer, marks=2, points=None, concept=None):
@@ -148,6 +149,8 @@ def gen_paper(subject='integrated', count=20):
     seen = set()
     concept_count = {}
     max_per_concept = 2 if subject == 'integrated' else 1
+
+    # recent stems from last ~3 papers
     recent = set(RECENT_QUESTIONS.get(subject, []))
 
     def add(q):
@@ -169,7 +172,6 @@ def gen_paper(subject='integrated', count=20):
         out.append(q)
         return True
 
-    # bounded generation loops to avoid hangs
     max_attempts = max(500, target * 70)
     attempts = 0
 
@@ -188,13 +190,12 @@ def gen_paper(subject='integrated', count=20):
             add(gen_one(subject))
             attempts += 1
 
-    # fallback ensures completion while preserving non-identical display
+    # fallback (only if needed) with unique suffix to avoid exact duplicates
     nonce = 1
     while len(out) < target:
         s = random.choice(SUBJECTS) if subject == 'integrated' else subject
         q = gen_one(s)
         q['question'] = f"{q['question']} [Set {nonce}]"
-        # fallback bypasses recent/concept locks but still avoids exact duplicates
         stem = q['question'].split(' [Set ')[0].strip()
         sig = (q['subject'], q['type'], stem, nonce)
         if sig not in seen:
@@ -203,13 +204,16 @@ def gen_paper(subject='integrated', count=20):
         nonce += 1
 
     random.shuffle(out)
+    out = out[:target]
 
-    # save recent stems (rolling window)
+    # Persist recent stems across last 3 papers
     stems = [x['question'].split(' [Set ')[0].strip() for x in out]
-    prev = RECENT_QUESTIONS.get(subject, [])
-    RECENT_QUESTIONS[subject] = (stems + prev)[:120]
+    papers = RECENT_PAPERS.get(subject, [])
+    papers = [stems] + papers[:2]
+    RECENT_PAPERS[subject] = papers
+    RECENT_QUESTIONS[subject] = [s for paper in papers for s in paper]
 
-    return out[:target]
+    return out
 
 
 def norm(s):

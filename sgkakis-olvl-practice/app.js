@@ -266,6 +266,22 @@ questionForm.onsubmit = async (e) => {
 
     scoreText.textContent = `Score: ${r.score}/${r.total} (${r.percent}%)`;
 
+    const oldPrize = document.getElementById('prizeNotice');
+    if (oldPrize) oldPrize.remove();
+    if (r.percent === 100) {
+      const subjText = subjectSelect.options[subjectSelect.selectedIndex]?.text || 'Selected subject';
+      const prize = document.createElement('div');
+      prize.id = 'prizeNotice';
+      prize.style.marginTop = '10px';
+      prize.style.padding = '10px';
+      prize.style.border = '1px solid #2b3240';
+      prize.style.borderRadius = '10px';
+      prize.style.background = '#111722';
+      prize.innerHTML = `🏆 Perfect score!<br/>Send this to this Telegram chat to claim gift:<br/><code>I scored 100% in ${subjText} (${paperMeta || 'paper'}) . My Telegram ID/username: @YOUR_USERNAME</code>`;
+      resultCard.appendChild(prize);
+      setTimeout(() => alert('🏆 Perfect score! Please send your Telegram @username in this chat to claim your gift.'), 100);
+    }
+
     const old = document.getElementById('feedbackList');
     if (old) old.remove();
     const p = document.createElement('pre');
