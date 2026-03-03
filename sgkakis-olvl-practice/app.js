@@ -80,6 +80,11 @@ const scoreText = document.getElementById('scoreText');
 const okInput = document.getElementById('okInput');
 const okBtn = document.getElementById('okBtn');
 const apiStatus = document.getElementById('apiStatus');
+const giftModal = document.getElementById('giftModal');
+const giftHandle = document.getElementById('giftHandle');
+const giftSubmit = document.getElementById('giftSubmit');
+const giftCancel = document.getElementById('giftCancel');
+const giftMsg = document.getElementById('giftMsg');
 let paperMeta = '';
 
 let currentSet = [];
@@ -110,6 +115,33 @@ async function refreshApiStatus() {
     apiStatus.style.color = '#ff6b6b';
   }
 }
+
+function openGiftModal() {
+  if (!giftModal) return;
+  giftModal.classList.remove('hidden');
+  giftHandle.value = '';
+  giftMsg.textContent = '';
+  setTimeout(() => giftHandle.focus(), 50);
+}
+
+function closeGiftModal() {
+  if (!giftModal) return;
+  giftModal.classList.add('hidden');
+}
+
+if (giftCancel) giftCancel.onclick = closeGiftModal;
+if (giftSubmit) giftSubmit.onclick = () => {
+  const h = (giftHandle.value || '').trim();
+  if (!h || !h.startsWith('@')) {
+    giftMsg.textContent = 'Please enter a valid Telegram handle (e.g. @username).';
+    giftMsg.style.color = '#ff6b6b';
+    return;
+  }
+  const subjText = subjectSelect.options[subjectSelect.selectedIndex]?.text || 'Selected subject';
+  const claim = `Gift claim request: I scored 100% in ${subjText} ${paperMeta || ''}. Telegram handle: ${h}`;
+  giftMsg.textContent = 'Claim captured. Please copy and send this in this Telegram chat: ' + claim;
+  giftMsg.style.color = '#45c16d';
+};
 
 function showExam() { lockScreen.classList.add('hidden'); examScreen.classList.remove('hidden'); }
 function showLock() { examScreen.classList.add('hidden'); lockScreen.classList.remove('hidden'); }
@@ -269,17 +301,7 @@ questionForm.onsubmit = async (e) => {
     const oldPrize = document.getElementById('prizeNotice');
     if (oldPrize) oldPrize.remove();
     if (r.percent === 100) {
-      const subjText = subjectSelect.options[subjectSelect.selectedIndex]?.text || 'Selected subject';
-      const prize = document.createElement('div');
-      prize.id = 'prizeNotice';
-      prize.style.marginTop = '10px';
-      prize.style.padding = '10px';
-      prize.style.border = '1px solid #2b3240';
-      prize.style.borderRadius = '10px';
-      prize.style.background = '#111722';
-      prize.innerHTML = `🏆 Perfect score!<br/>Send this to this Telegram chat to claim gift:<br/><code>I scored 100% in ${subjText} (${paperMeta || 'paper'}) . My Telegram ID/username: @YOUR_USERNAME</code>`;
-      resultCard.appendChild(prize);
-      setTimeout(() => alert('🏆 Perfect score! Please send your Telegram @username in this chat to claim your gift.'), 100);
+      openGiftModal();
     }
 
     const old = document.getElementById('feedbackList');
