@@ -128,15 +128,40 @@ def mark(paper, answers):
       ok = str(a)==str(q.get('answer'))
       sc = q['marks'] if ok else 0
       got += sc
-      detail.append({"q":i+1,"score":sc,"max":q['marks'],"feedback":"Correct" if ok else "Incorrect"})
+      correct_idx = int(q.get('answer', 0)) if isinstance(q.get('answer', 0), int) or str(q.get('answer',0)).isdigit() else 0
+      correct_choice = (q.get('choices') or [''])[correct_idx] if q.get('choices') else ''
+      picked = ''
+      if str(a).isdigit() and q.get('choices') and int(a) < len(q['choices']):
+        picked = q['choices'][int(a)]
+      reason = "Your selected option matches the model key." if ok else "Selected option does not match the model key."
+      detail.append({
+        "q":i+1,
+        "score":sc,
+        "max":q['marks'],
+        "feedback":"Correct" if ok else "Incorrect",
+        "reason": reason + (f" You chose: {picked}." if picked else ""),
+        "correctAnswer": correct_choice
+      })
     else:
       txt = norm(a)
       keys = [norm(k) for k in q.get('keywords',[])]
-      hits = sum(1 for k in keys if k and k in txt)
+      hits_list = [k for k in keys if k and k in txt]
+      miss_list = [k for k in keys if k and k not in txt]
+      hits = len(hits_list)
       ratio = hits / max(1, len(keys))
       sc = max(0, min(q['marks'], round((ratio + (0.15 if len(txt)>120 else 0))*q['marks'])))
       got += sc
-      detail.append({"q":i+1,"score":sc,"max":q['marks'],"feedback":f"Matched {hits}/{len(keys)} key points"})
+      reason = f"Matched {hits}/{len(keys)} key points"
+      if miss_list:
+        reason += f". Missing concepts: {', '.join(miss_list[:4])}"
+      detail.append({
+        "q":i+1,
+        "score":sc,
+        "max":q['marks'],
+        "feedback":f"Matched {hits}/{len(keys)} key points",
+        "reason": reason,
+        "correctAnswer": ("Key points: " + ", ".join(keys[:5])) if keys else "Model answer not available"
+      })
   return {"score": got, "total": total, "percent": round(100*got/max(1,total)), "details": detail}
 
 class H(BaseHTTPRequestHandler):

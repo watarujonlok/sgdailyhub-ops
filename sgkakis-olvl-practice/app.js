@@ -71,6 +71,10 @@ const subjectSelect = document.getElementById('subjectSelect');
 const startBtn = document.getElementById('startBtn');
 const questionForm = document.getElementById('questionForm');
 const loading = document.getElementById('loading');
+
+function setLoading(msg) {
+  if (loading) loading.textContent = msg || 'Please wait...';
+}
 const resultCard = document.getElementById('resultCard');
 const scoreText = document.getElementById('scoreText');
 const okInput = document.getElementById('okInput');
@@ -201,6 +205,7 @@ function markText(answer, keywords, maxMarks) {
 }
 
 async function generateSet() {
+  setLoading('Generating new paper...');
   loading.classList.remove('hidden');
   questionForm.classList.add('hidden');
   resultCard.classList.add('hidden');
@@ -239,6 +244,7 @@ questionForm.onsubmit = async (e) => {
     answers[String(i)] = v == null ? '' : String(v);
   });
 
+  setLoading('Marking answers...');
   loading.classList.remove('hidden');
   try {
     const res = await fetch('/olvl-api/mark-paper', {
@@ -266,7 +272,12 @@ questionForm.onsubmit = async (e) => {
     p.id = 'feedbackList';
     p.style.whiteSpace = 'pre-wrap';
     p.style.fontSize = '13px';
-    p.textContent = (r.details || []).map(d => `Q${d.q}: ${d.score}/${d.max} (${d.feedback})`).join('\n');
+    p.textContent = (r.details || []).map(d => {
+      const base = `Q${d.q}: ${d.score}/${d.max} (${d.feedback})`;
+      const reason = d.reason ? `\n  Reason: ${d.reason}` : '';
+      const correct = d.correctAnswer ? `\n  Correct answer: ${d.correctAnswer}` : '';
+      return `${base}${reason}${correct}`;
+    }).join('\n');
     resultCard.appendChild(p);
 
     resultCard.classList.remove('hidden');
