@@ -147,7 +147,7 @@ if (giftSubmit) giftSubmit.onclick = async () => {
       body: JSON.stringify({ handle: h, subject: subjText, paperId: lastPaperId, percent: 100 })
     });
     if (!r.ok) throw new Error('claim failed');
-    giftMsg.textContent = '✅ Claim submitted. This will be processed for a gift (not given yet).';
+    giftMsg.textContent = 'submitted / pending manual processing (if gift not given yet)';
     giftMsg.style.color = '#45c16d';
   } catch (e) {
     giftMsg.textContent = 'Claim saved locally, but auto-forward failed. Please send your @username in this chat manually.';
