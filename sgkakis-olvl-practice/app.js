@@ -76,6 +76,7 @@ const scoreText = document.getElementById('scoreText');
 const okInput = document.getElementById('okInput');
 const okBtn = document.getElementById('okBtn');
 const apiStatus = document.getElementById('apiStatus');
+let paperMeta = '';
 
 let currentSet = [];
 let lastSetSignature = '';
@@ -179,7 +180,7 @@ function renderQuestions() {
   });
   const row = document.createElement('div');
   row.className = 'submitRow';
-  row.innerHTML = `<button type="submit">Mark Now</button><span class="muted">Total: ${totalMarks} marks · SG style hard practice</span>`;
+  row.innerHTML = `<button type="submit">Mark Now</button><span class="muted">Total: ${totalMarks} marks · SG style hard practice${paperMeta}</span>`;
   questionForm.appendChild(row);
 }
 
@@ -217,6 +218,7 @@ async function generateSet() {
     currentSet = candidate;
     lastSetSignature = signatureOf(currentSet);
     lastPaperId = pid;
+    paperMeta = pid ? ` · Paper ID: ${pid.slice(0,8)}` : '';
     renderQuestions();
     questionForm.classList.remove('hidden');
   } catch (e) {

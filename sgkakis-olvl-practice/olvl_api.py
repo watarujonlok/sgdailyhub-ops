@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 SUBJECTS = ["english","emath","amath","combsci","purechem","purephys","purebio","humanities","poa"]
+LAST_SIGNATURE = {}
 
 BANK = {
   "english": [
@@ -169,6 +170,13 @@ class H(BaseHTTPRequestHandler):
       subject = body.get('subject','integrated')
       count = int(body.get('count',20))
       paper = gen_paper(subject, count)
+      sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
+      tries = 0
+      while LAST_SIGNATURE.get(subject) == sig and tries < 6:
+        paper = gen_paper(subject, count)
+        sig = '|'.join([f"{x.get('subject')}::{x.get('type')}::{x.get('question')}" for x in paper])
+        tries += 1
+      LAST_SIGNATURE[subject] = sig
       return self._send(200, {"paper": paper, "paperId": str(uuid.uuid4()), "engine":"realtime-generator"})
     if path in ('/api/mark-paper','/mark-paper'):
       paper = body.get('paper',[])
