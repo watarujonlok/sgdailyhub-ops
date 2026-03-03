@@ -14,3 +14,6 @@ button.ghost{background:transparent;border:1px solid #3a4458;color:var(--text)}
 .submitRow{display:flex;gap:10px;align-items:center;margin-top:12px}
 #scoreText{color:var(--ok)}
 .okRow{display:flex;gap:8px}
+
+.gift-modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;z-index:9999}
+.gift-modal.hidden{display:none}
