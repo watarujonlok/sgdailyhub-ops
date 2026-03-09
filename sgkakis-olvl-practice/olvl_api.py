@@ -9,6 +9,23 @@ LAST_SIGNATURE = {}
 RECENT_QUESTIONS = {}  # subject -> recent question stems across papers
 RECENT_PAPERS = {}     # subject -> list[list[stem]] last N papers
 
+
+def semantic_signature(q):
+    """Light semantic dedupe key for language-heavy subjects.
+    Prevent near-identical prompts that differ only by audience words.
+    """
+    import re
+    s = (q.get('question') or '').lower().strip()
+    # normalize numbers/placeholders
+    s = re.sub(r"\d+(?:\.\d+)?", "<n>", s)
+    # normalize audience slot for common english prompt templates
+    s = re.sub(r"to\s+.+?\s+on whether", "to <audience> on whether", s)
+    s = re.sub(r"to\s+.+?\s+against the statement", "to <audience> against the statement", s)
+    # remove common audience tokens that can create superficial variation
+    s = re.sub(r"\b(parents?|students?|school leaders?|moe officers?|a principal|teachers' committee|school board|education policy panel)\b", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return f"{q.get('subject','')}|{q.get('type','')}|{s}"
+
 TG_BOT_TOKEN = os.environ.get('TG_BOT_TOKEN', '').strip()
 TG_CHAT_ID = os.environ.get('TG_CHAT_ID', '').strip()
 
@@ -225,9 +242,20 @@ def synthesize_variant(subject, nonce, force_type=None):
         exp = random.choice([7300, 8100, 9200, 10100, 11300])
         return q_text('poa', 'short', f"Revenue is ${rev} and expenses are ${exp}. Compute net profit and show the formula.", 4, points=['profit = revenue - expenses'], concept='profit-variant')
 
-    # english default
+    # english default: diversify task forms to avoid near-duplicate prompts
     topic = random.choice(['AI drafting tools', 'school attendance policy', 'screen-time limits', 'project-based assessment'])
     audience = random.choice(['parents', 'school leaders', 'students', 'MOE officers', 'a principal', 'a teachers\' committee', 'a school board', 'an education policy panel'])
+    mode = random.choice(['argument', 'counter', 'editing', 'evidence', 'rebuttal'])
+
+    if mode == 'counter':
+        return q_text('english', 'structured', f"Construct a counter-argument to this claim: '{topic} should be strictly enforced in all schools.' Then refute your own counter in 2 sentences.", 6, points=['counter-argument', 'refutation', 'logic'], concept='counter-variant')
+    if mode == 'editing':
+        return q_text('english', 'short', f"Rewrite this claim into formal academic tone: '{topic} rules are kinda too much'.", 4, points=['formal tone', 'clarity', 'precision'], concept='editing-variant')
+    if mode == 'evidence':
+        return q_text('english', 'short', f"Give one measurable indicator schools can track to evaluate whether tighter {topic} policy works.", 4, points=['metric', 'measurable', 'outcome'], concept='evidence-variant')
+    if mode == 'rebuttal':
+        return q_text('english', 'structured', f"Write a rebuttal paragraph to {audience} against the statement: 'Tightening {topic} always harms student creativity.'", 6, points=['rebuttal', 'evidence', 'balance'], concept='rebuttal-variant')
+
     return q_text('english', 'structured', f"Write a 6-8 sentence argument to {audience} on whether schools should tighten {topic}. Include one practical safeguard and one measurable outcome.", 6, points=['argument', 'evidence', 'safeguard'], concept='argument-variant')
 
 
@@ -235,6 +263,7 @@ def gen_paper(subject='integrated', count=20):
     target = int(count)
     out = []
     seen = set()
+    seen_semantic = set()
     concept_count = {}
     # Integrated papers should be broad; single-subject papers can repeat, but not dominate one concept.
     max_per_concept = 2 if subject == 'integrated' else 4
@@ -245,10 +274,14 @@ def gen_paper(subject='integrated', count=20):
     def add(q):
         stem = q['question'].split(' [Set ')[0].strip()
         sig = (q['subject'], q['type'], stem)
+        sem = semantic_signature(q)
         concept = q.get('concept', 'general')
         ckey = (q['subject'], concept)
 
         if sig in seen:
+            return False
+        # apply semantic dedupe mainly where wording variation can be superficial
+        if q.get('subject') in ('english', 'humanities') and sem in seen_semantic:
             return False
         if stem in recent:
             return False
@@ -256,6 +289,8 @@ def gen_paper(subject='integrated', count=20):
             return False
 
         seen.add(sig)
+        if q.get('subject') in ('english', 'humanities'):
+            seen_semantic.add(sem)
         if concept != 'general':
             concept_count[ckey] = concept_count.get(ckey, 0) + 1
         out.append(q)
