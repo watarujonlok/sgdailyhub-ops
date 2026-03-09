@@ -148,14 +148,43 @@ def gen_one(subject):
     }.get(subject, gen_english)()
 
 
-def synthesize_variant(subject, nonce):
+def synthesize_variant(subject, nonce, force_type=None):
     """Create extra unique questions when normal pool is exhausted.
     Avoid fake '[Set X]' suffix duplicates by generating true wording/number variants.
     """
     if subject == 'purechem':
-        vol = random.choice([15.0, 18.0, 22.5, 27.5, 32.0, 35.0, 40.0])
-        mol = random.choice([0.10, 0.12, 0.15, 0.18, 0.22, 0.28, 0.30, 0.35, 0.45])
-        return q_text('purechem', 'short', f"A technician prepares NaOH at {mol:.2f} mol/dm3. Calculate moles in {vol:.1f} cm3.", 4, points=["convert cm3 to dm3", "moles = concentration × volume"], concept='mole-calculation-variant')
+        if force_type == 'mcq':
+            mode = random.choice(['products-mcq', 'electrolysis-mcq'])
+        elif force_type == 'structured':
+            mode = random.choice(['reaction-structured', 'rate-structured'])
+        elif force_type == 'short':
+            mode = 'mole-short'
+        else:
+            mode = random.choice(['mole-short', 'reaction-structured', 'products-mcq', 'electrolysis-mcq', 'rate-structured'])
+        if mode == 'mole-short':
+            vol = random.choice([15.0, 18.0, 22.5, 27.5, 32.0, 35.0, 40.0])
+            mol = random.choice([0.10, 0.12, 0.15, 0.18, 0.22, 0.28, 0.30, 0.35, 0.45])
+            return q_text('purechem', 'short', f"A technician prepares NaOH at {mol:.2f} mol/dm3. Calculate moles in {vol:.1f} cm3.", 4, points=["convert cm3 to dm3", "moles = concentration × volume"], concept='mole-calculation-variant')
+        if mode == 'products-mcq':
+            metal = random.choice(['magnesium', 'zinc', 'iron'])
+            return q_mcq('purechem', f'Acid + {metal} gives', ['salt + hydrogen', 'salt + water', 'salt + carbon dioxide', 'base only'], 0, points=['salt', 'hydrogen'], concept='reaction-products-variant')
+        if mode == 'electrolysis-mcq':
+            comp, anode_product = random.choice([
+                ('molten lead(II) bromide', 'bromine'),
+                ('molten sodium chloride', 'chlorine'),
+                ('acidified water', 'oxygen')
+            ])
+            return q_mcq('purechem', f'In electrolysis of {comp}, {anode_product} forms at the', ['cathode', 'anode', 'electrolyte surface', 'power supply'], 1, points=['anode', 'oxidation'], concept='electrolysis-variant')
+        if mode == 'rate-structured':
+            solid = random.choice(['CaCO3 chips', 'marble chips', 'zinc granules'])
+            acid = random.choice(['HCl', 'H2SO4'])
+            return q_text('purechem', 'structured', f'Explain two ways to increase reaction rate for {solid} with dilute {acid}, using collision theory.', 6, points=['surface area', 'temperature or concentration', 'successful collisions'], concept='rate-variant')
+        metal, acid, eq = random.choice([
+            ('zinc', 'dilute sulfuric acid', 'Zn + H2SO4 -> ZnSO4 + H2'),
+            ('magnesium', 'dilute hydrochloric acid', 'Mg + 2HCl -> MgCl2 + H2'),
+            ('iron', 'dilute hydrochloric acid', 'Fe + 2HCl -> FeCl2 + H2')
+        ])
+        return q_text('purechem', 'structured', f'A student reacts {metal} with {acid}. Describe observations and write a balanced symbol equation.', 6, points=['effervescence', 'hydrogen', eq], concept='acid-metal-reaction-variant')
 
     if subject == 'emath':
         p = random.choice([12, 18, 22, 28, 35])
@@ -207,8 +236,8 @@ def gen_paper(subject='integrated', count=20):
     out = []
     seen = set()
     concept_count = {}
-    # Integrated papers should be broad; single-subject papers can repeat a concept with different numbers/contexts.
-    max_per_concept = 2 if subject == 'integrated' else 8
+    # Integrated papers should be broad; single-subject papers can repeat, but not dominate one concept.
+    max_per_concept = 2 if subject == 'integrated' else 4
 
     # recent stems from last ~3 papers
     recent = set(RECENT_QUESTIONS.get(subject, []))
@@ -253,16 +282,56 @@ def gen_paper(subject='integrated', count=20):
     # fallback (only if needed): synthesize true variants, no fake [Set X] suffix clones
     nonce = 1
     fallback_attempts = 0
-    while len(out) < target and fallback_attempts < target * 40:
+    while len(out) < target and fallback_attempts < target * 80:
         s = random.choice(SUBJECTS) if subject == 'integrated' else subject
         q = synthesize_variant(s, nonce)
-        stem = q['question'].strip()
-        sig = (q['subject'], q['type'], stem)
-        if sig not in seen:
-            seen.add(sig)
-            out.append(q)
+        added = add(q)
+
+        # Escape hatch: if pool constraints are too tight, allow unique synthesized stems
+        # without recent/concept checks so we still deliver a full 20-question paper.
+        if not added and fallback_attempts > target * 20:
+            stem = q['question'].strip()
+            sig = (q['subject'], q['type'], stem)
+            if sig not in seen:
+                seen.add(sig)
+                out.append(q)
+
         nonce += 1
         fallback_attempts += 1
+
+    # Type rebalance for single-subject papers (avoid one-type-heavy sets)
+    if subject != 'integrated' and len(out) >= target:
+        from collections import Counter
+        type_counts = Counter([q['type'] for q in out])
+        desired_min = {'mcq': 4, 'short': 4, 'structured': 4}
+
+        def pick_replace_index(prefer_type):
+            # replace from most overrepresented type first
+            over = sorted(type_counts.items(), key=lambda kv: kv[1], reverse=True)
+            for t, _ in over:
+                if t != prefer_type and type_counts[t] > desired_min.get(t, 0):
+                    for idx, q in enumerate(out):
+                        if q['type'] == t:
+                            return idx
+            return None
+
+        nonce2 = 1000
+        for t, min_needed in desired_min.items():
+            guard = 0
+            while type_counts.get(t, 0) < min_needed and guard < 120:
+                idx = pick_replace_index(t)
+                if idx is None:
+                    break
+                q = synthesize_variant(subject, nonce2, force_type=t)
+                sig = (q['subject'], q['type'], q['question'].strip())
+                existing = {(x['subject'], x['type'], x['question'].strip()) for x in out}
+                if sig not in existing:
+                    old_t = out[idx]['type']
+                    out[idx] = q
+                    type_counts[old_t] -= 1
+                    type_counts[t] += 1
+                nonce2 += 1
+                guard += 1
 
     random.shuffle(out)
     out = out[:target]
