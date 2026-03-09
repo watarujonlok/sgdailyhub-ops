@@ -148,12 +148,67 @@ def gen_one(subject):
     }.get(subject, gen_english)()
 
 
+def synthesize_variant(subject, nonce):
+    """Create extra unique questions when normal pool is exhausted.
+    Avoid fake '[Set X]' suffix duplicates by generating true wording/number variants.
+    """
+    if subject == 'purechem':
+        vol = random.choice([15.0, 18.0, 22.5, 27.5, 32.0, 35.0, 40.0])
+        mol = random.choice([0.10, 0.12, 0.15, 0.18, 0.22, 0.28, 0.30, 0.35, 0.45])
+        return q_text('purechem', 'short', f"A technician prepares NaOH at {mol:.2f} mol/dm3. Calculate moles in {vol:.1f} cm3.", 4, points=["convert cm3 to dm3", "moles = concentration × volume"], concept='mole-calculation-variant')
+
+    if subject == 'emath':
+        p = random.choice([12, 18, 22, 28, 35])
+        final = random.choice([96, 128, 144, 180, 224, 252, 320])
+        return q_text('emath', 'short', f"A price after a {p}% discount is ${final}. Find the original price.", 4, points=['percentage', 'reverse percentage'], concept='discount-variant')
+
+    if subject == 'amath':
+        a = random.randint(2, 8)
+        b = random.randint(5, 16)
+        c = random.randint(6, 40)
+        return q_text('amath', 'structured', f"Solve x^2 - {b}x + {c} = 0 and verify your roots by substitution.", 6, points=['factorisation or formula', 'roots', 'verification'], concept='quadratic-variant')
+
+    if subject == 'purephys':
+        f = random.choice([3, 4, 5, 6, 8, 10, 12])
+        v = random.choice([12, 15, 18, 20, 24, 30])
+        return q_text('purephys', 'structured', f"A wave travels at {v} m/s with frequency {f} Hz. Calculate wavelength and state one condition that changes wave speed.", 6, points=['wavelength = speed/frequency', 'medium/property'], concept='wave-variant')
+
+    if subject == 'combsci':
+        d = random.choice([96, 132, 168, 216, 250])
+        t = random.choice([8, 11, 12, 14, 16, 20])
+        return q_text('combsci', 'short', f"A moving object covers {d} m in {t} s. Calculate average speed and state the formula used.", 4, points=['speed', 'distance/time'], concept='speed-variant')
+
+    if subject == 'purebio':
+        prompt = random.choice([
+            'Describe two adaptations of alveoli for efficient gas exchange and explain why each matters.',
+            'Explain why enzyme activity increases first with temperature and then drops sharply beyond optimum.',
+            'Compare arteries and veins using structure and pressure in one concise paragraph.'
+        ])
+        return q_text('purebio', 'structured', prompt, 6, points=['structure', 'function', 'explanation'], concept='bio-variant')
+
+    if subject == 'humanities':
+        issue = random.choice(['cost of living', 'social mobility', 'urban heat mitigation', 'ageing population'])
+        district = random.choice(['Tampines', 'Jurong', 'Woodlands', 'Pasir Ris', 'Ang Mo Kio', 'Punggol'])
+        return q_text('humanities', 'structured', f"A town-level pilot in {district} targets {issue}. Assess one policy benefit and one trade-off, then end with a justified judgement.", 6, points=['benefit', 'trade-off', 'judgement'], concept='policy-variant')
+
+    if subject == 'poa':
+        rev = random.choice([10200, 11400, 12800, 13600, 14900])
+        exp = random.choice([7300, 8100, 9200, 10100, 11300])
+        return q_text('poa', 'short', f"Revenue is ${rev} and expenses are ${exp}. Compute net profit and show the formula.", 4, points=['profit = revenue - expenses'], concept='profit-variant')
+
+    # english default
+    topic = random.choice(['AI drafting tools', 'school attendance policy', 'screen-time limits', 'project-based assessment'])
+    audience = random.choice(['parents', 'school leaders', 'students', 'MOE officers', 'a principal', 'a teachers\' committee', 'a school board', 'an education policy panel'])
+    return q_text('english', 'structured', f"Write a 6-8 sentence argument to {audience} on whether schools should tighten {topic}. Include one practical safeguard and one measurable outcome.", 6, points=['argument', 'evidence', 'safeguard'], concept='argument-variant')
+
+
 def gen_paper(subject='integrated', count=20):
     target = int(count)
     out = []
     seen = set()
     concept_count = {}
-    max_per_concept = 2 if subject == 'integrated' else 1
+    # Integrated papers should be broad; single-subject papers can repeat a concept with different numbers/contexts.
+    max_per_concept = 2 if subject == 'integrated' else 8
 
     # recent stems from last ~3 papers
     recent = set(RECENT_QUESTIONS.get(subject, []))
@@ -195,18 +250,19 @@ def gen_paper(subject='integrated', count=20):
             add(gen_one(subject))
             attempts += 1
 
-    # fallback (only if needed) with unique suffix to avoid exact duplicates
+    # fallback (only if needed): synthesize true variants, no fake [Set X] suffix clones
     nonce = 1
-    while len(out) < target:
+    fallback_attempts = 0
+    while len(out) < target and fallback_attempts < target * 40:
         s = random.choice(SUBJECTS) if subject == 'integrated' else subject
-        q = gen_one(s)
-        q['question'] = f"{q['question']} [Set {nonce}]"
-        stem = q['question'].split(' [Set ')[0].strip()
-        sig = (q['subject'], q['type'], stem, nonce)
+        q = synthesize_variant(s, nonce)
+        stem = q['question'].strip()
+        sig = (q['subject'], q['type'], stem)
         if sig not in seen:
             seen.add(sig)
             out.append(q)
         nonce += 1
+        fallback_attempts += 1
 
     random.shuffle(out)
     out = out[:target]
