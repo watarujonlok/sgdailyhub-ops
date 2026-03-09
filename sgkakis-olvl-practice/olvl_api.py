@@ -59,11 +59,11 @@ def gen_english():
     topic = random.choice(["social media use", "device-free recess", "homework load", "tuition dependence", "sleep hygiene"])
     return random.choice([
         q_mcq("english", f"Choose the strongest thesis sentence for an essay on {topic}.",
-              ["This is bad.", "This issue deserves balanced policy reform with measurable outcomes.", "I don’t like this.", "Everyone says this matters."], 1, points=["thesis", "academic tone"]),
+              ["This is bad.", "This issue deserves balanced policy reform with measurable outcomes.", "I don’t like this.", "Everyone says this matters."], 1, points=["thesis", "academic tone"], concept="thesis-mcq"),
         q_text("english", "short", f"State one assumption in this claim: '{topic.title()} should be reduced in schools.'", 4,
-               points=["assumption", "evidence", "context"]),
+               points=["assumption", "evidence", "context"], concept="assumption-short"),
         q_text("english", "structured", f"In 5-7 sentences, evaluate one benefit and one limitation of policies on {topic} in Singapore.", 6,
-               points=["benefit", "limitation", "evidence", "evaluation"])])
+               points=["benefit", "limitation", "evidence", "evaluation"], concept="policy-eval-structured")])
 
 
 def gen_emath():
@@ -133,11 +133,11 @@ def gen_humanities():
     issue = random.choice(["meritocracy", "globalisation", "urban heat island", "social mobility"])
     return random.choice([
         q_mcq("humanities", "Best SBQ reliability method is", ["quote length", "cross-reference + provenance", "author age", "emotive words only"], 1,
-              points=["cross-reference", "provenance"]),
+              points=["cross-reference", "provenance"], concept="sbq-mcq"),
         q_text("humanities", "short", f"State one impact of {issue} on Singapore society/economy.", 4,
-               points=["impact", "example", "Singapore context"]),
+               points=["impact", "example", "Singapore context"], concept="impact-short"),
         q_text("humanities", "structured", f"Evaluate the statement: '{issue.title()} policy outcomes are fully fair.' Give one support and one challenge.", 6,
-               points=["support", "challenge", "evidence", "evaluation"])])
+               points=["support", "challenge", "evidence", "evaluation"], concept="policy-eval-structured")])
 
 
 def gen_poa():
@@ -266,7 +266,7 @@ def gen_paper(subject='integrated', count=20):
     seen_semantic = set()
     concept_count = {}
     # Integrated papers should be broad; single-subject papers can repeat, but not dominate one concept.
-    max_per_concept = 2 if subject == 'integrated' else 4
+    max_per_concept = 2 if subject == 'integrated' else 3
 
     # recent stems from last ~3 papers
     recent = set(RECENT_QUESTIONS.get(subject, []))
