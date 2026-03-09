@@ -1,0 +1,973 @@
+{
+  "date": "2026-03-09",
+  "paper_id": "7f9a31be-2026-03-09-refresh",
+  "subjects": {
+    "English": [
+      {
+        "type": "mcq",
+        "question": "Choose the strongest thesis on AI note-taking in class.",
+        "marks": 2,
+        "choices": [
+          "AI is everywhere.",
+          "AI note tools should be allowed only after direct teaching, with source-check rules.",
+          "Notes are useful.",
+          "Students like technology."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "Rewrite in formal register: “The school plan sounds smart, but it kinda backfires.”",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one hidden assumption in: “If classes are recorded, attendance will collapse.”",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "In 6–8 sentences, evaluate one benefit and one risk of anonymous teacher feedback platforms.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Best evidence sentence is:",
+        "marks": 2,
+        "choices": [
+          "Many students are anxious.",
+          "In a cohort survey (n=410), 46% reported sleep below 7 hours on weekdays.",
+          "Everyone sleeps late now.",
+          "Sleep is a huge problem."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "State one flaw in: “My cousin quit social media and improved grades, so social media causes low grades.”",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Write one PEEL paragraph: Should schools cap homework hours per week?",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Best rebuttal to “Longer school hours always improve outcomes” is:",
+        "marks": 2,
+        "choices": [
+          "Students dislike long days.",
+          "Quality of instruction and recovery time matter more than duration alone.",
+          "Teachers are tired.",
+          "Canteens close early."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "Turn “students are distracted” into a measurable claim with timeframe.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain how triadic structure (rule of three) strengthens persuasion.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "Most credible source for national literacy trends is:",
+        "marks": 2,
+        "choices": [
+          "Meme page",
+          "Peer-reviewed longitudinal report",
+          "Anonymous forum post",
+          "Viral short video"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "State one limitation of using only testimonials in argument writing.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "In 6–8 sentences, assess whether oral marks should count toward graduation criteria.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Choose the most balanced opening line on school uniforms.",
+        "marks": 2,
+        "choices": [
+          "Uniforms are pointless.",
+          "Uniform policy can improve identity, but cost and comfort must be managed.",
+          "Uniforms solve discipline fully.",
+          "Everyone hates uniforms."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "Explain connotation difference between “assertive” and “aggressive.”",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Why is cherry-picking statistics unethical?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Best connector: “____ exam scores improved, attendance fell.”",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Evaluate: “Publishing school rank bands increases accountability.” Include one harm.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Write one thesis with a numeric target to reduce late-coming.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Draft one counter-argument to: “All assignments should be group-based.”",
+        "marks": 4
+      }
+    ],
+    "E-Math": [
+      {
+        "type": "short",
+        "question": "Solve: 7(x-1)=3(x+11).",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A watch costs $306 after a 15% discount. Find original price.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Find gradient and equation of line through (2,5) and (8,17).",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Solve simultaneously: 2x+3y=19 and x-y=1.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Arithmetic sequence: 11, 15, 19, ... Find 25th term.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Factorise: 6x^2+x-2.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A bag has 5 red, 8 blue, 7 green beads. Find P(blue or green).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Rectangle area is 154 cm^2; length is width + 4. Find dimensions.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Solve inequality: 4-2x<10.",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Expand: (2x-7)(3x+4).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Ratio adults:children = 5:7, total 288. Find children.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Write 0.00058 in standard form.",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A car travels 252 km in 3 h 30 min. Find average speed.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve: x^2-9x+20=0.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Find k if (x-3) is a factor of x^2+kx-18.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Radius is 10.5 cm. Find circumference (π=22/7).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Given f(x)=4x-5, find f^-1(x).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Mean of 15 numbers is 18. Sum of first 14 numbers is 241. Find 15th number.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "For y=5x-9, find x when y=31.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Price rises 20% then falls 20%. Overall change:",
+        "marks": 2
+      }
+    ],
+    "A-Math": [
+      {
+        "type": "short",
+        "question": "Differentiate y=7x^3-4x^2+6.",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Find ∫(9x^2+6x-5)dx.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve 3^(x+1)=81.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve x^2-2x-35=0.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Given y=(2x-3)^5, find dy/dx.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Find stationary point of y=x^2-10x+29 and state nature.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Given log10(5)=0.6990, find log10(5000).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve simultaneously: y=2x+1 and y=x^2-3x+1.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Differentiate y=(5x+2)^-3.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Exact value of sin30°cos60° is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Solve 2sinθ=1 for 0°≤θ≤360°.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "If f(x)=x^2-6x+8, find f(4) and f(-2).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Complete the square: x^2-12x+5.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve inequality: 3x-7 ≤ x+9.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Differentiate y=(x^2+9)/x.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Find gradient of tangent to y=3x^3-4x at x=2.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Solve ln(3x-2)=2.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Geometric sequence: 2, 6, 18, ... Find 7th term.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Equation of normal to y=x^2-4x at x=1.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "If tanθ=8/15 and θ acute, find sinθ.",
+        "marks": 2
+      }
+    ],
+    "Combined Science": [
+      {
+        "type": "short",
+        "question": "A runner covers 210 m in 14 s. Calculate speed.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain why powdered calcium carbonate reacts faster than marble chips.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Which pH is alkaline?",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A wave has speed 18 m/s and frequency 3 Hz. Find wavelength.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one function of platelets.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain why increasing temperature speeds reaction between acid and zinc.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Name test for hydrogen and expected observation.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A cyclist changes velocity from 6 m/s to 18 m/s in 4 s. Find acceleration.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Which is a chemical change?",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Give one method to reduce dengue spread and explain mechanism.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one advantage and one limitation of wind energy.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Current is 2.5 A, resistance 8 Ω. Find voltage.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Why does catalyst speed both forward and backward reactions?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Describe separation of sand and salt from mixture with water.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A boat travels 900 m in 3 min. Find speed in m/s.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Main site of respiration in cells is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain one effect of eutrophication on aquatic life.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give two differences between series and parallel circuits.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "A 12 kg object is pulled by 48 N. Find acceleration.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Suggest one control variable in enzyme temperature experiment.",
+        "marks": 4
+      }
+    ],
+    "Pure Chemistry": [
+      {
+        "type": "short",
+        "question": "Calculate moles in 0.200 dm3 of 0.40 mol/dm3 HCl.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Balance: Fe + O2 -> Fe2O3.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "Correct statement is:",
+        "marks": 2,
+        "choices": [
+          "Isotopes have different proton numbers",
+          "Isotopes have same proton number, different neutron number",
+          "Relative atomic mass is always whole number",
+          "Neutrons determine ion charge"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "Describe test for chloride ions.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain why graphite conducts electricity but diamond does not.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Determine empirical formula: 27.3% C, 72.7% O.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Effect of increasing pressure on Haber process yield:",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Oxidation is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "0.40 mol solute in 800 cm3 solution. Find concentration.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain, via collision theory, effect of concentration on rate.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State observations when magnesium reacts with dilute hydrochloric acid.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one use of chlorine and one hazard precaution.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "In electrolysis of molten NaCl, product at cathode is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Distinguish strong and weak alkalis in ionisation terms.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate Mr of H2SO4.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain two methods to prevent corrosion of steel pipelines.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Write ionic equation for precipitation of silver chloride.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Why may methyl orange suit strong acid–weak base titration better?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Acid + carbonate gives:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A 12.0 g sample of CuO contains 9.6 g Cu. Find mass of oxygen.",
+        "marks": 4
+      }
+    ],
+    "Pure Physics": [
+      {
+        "type": "short",
+        "question": "Calculate force when mass=1200 kg and acceleration=1.5 m/s^2.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State Newton’s First Law in words.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A 15 Ω resistor carries 0.8 A. Find potential difference.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "SI unit of energy is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Frequency 12 Hz, wavelength 0.25 m. Find wave speed.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain why pressure increases when same force acts on smaller area.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one function of a fuse in household circuits.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A 2.5 kg trolley moving at 4 m/s has momentum:",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Instrument for potential difference is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Describe energy conversions in an electric kettle.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate power if 7200 J transferred in 4 min.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Why do shiny silver surfaces reduce heat loss by radiation?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one reason national grid uses high voltage transmission.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "A motorbike slows from 22 m/s to 10 m/s in 6 s. Find acceleration.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Define density and give formula.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "In a closed system, momentum is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "State two characteristics of image formed by plane mirror.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Find weight of 6.4 kg object (g=10 N/kg).",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one advantage and one drawback of nuclear power.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Light bends away from normal when entering a medium where it:",
+        "marks": 2
+      }
+    ],
+    "Pure Biology": [
+      {
+        "type": "short",
+        "question": "Define osmosis.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State two adaptations of alveoli for gas exchange.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Main role of phloem is to transport:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain why enzyme activity falls beyond optimum temperature.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Name one product of photosynthesis.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Describe two adaptations of arteries for high-pressure flow.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Structure that houses genetic material in eukaryotic cells:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain one way smoking harms gas exchange in lungs.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one role of the pancreas in homeostasis.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give two adaptations of root hair cells.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Mitosis produces:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Describe hormonal response when blood glucose rises after meal.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "State one cause of malnutrition and one consequence.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one function of kidneys in excretion.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Genetic engineering can be used to:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain why vaccines reduce spread of infectious disease.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Define transpiration stream.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Site of aerobic respiration is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "State two limiting factors of photosynthesis.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain oxygen debt after intense exercise.",
+        "marks": 4
+      }
+    ],
+    "Humanities (SS/Hist/Geog)": [
+      {
+        "type": "short",
+        "question": "Define “standard of living.”",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "Best way to test reliability of a historical source is:",
+        "marks": 2,
+        "choices": [
+          "assess paper quality",
+          "cross-reference content, provenance, and context",
+          "choose longest source",
+          "trust only government sources"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "State one push factor for rural-urban migration.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Assess one benefit and one risk of cashless societies.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Explain why inflation may widen inequality.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Evaluate: “Meritocracy alone guarantees fairness.”",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Urban heat island is intensified by:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "State one social impact of ageing population.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Describe one policy to reduce private car usage.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Compare education campaigns vs law enforcement for vaping control.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "In SBQ, “message” asks for:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Give one way misinformation spreads faster on social media.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Discuss one vulnerability of export-dependent economies.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Assess whether congestion pricing is fair for low-income commuters.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "“Stakeholder” means:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Why do states track youth unemployment separately?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Evaluate two responses to online disinformation.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "One challenge in urban redevelopment is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain why corroboration improves historical judgement.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Assess whether hybrid work can reduce transport peak demand long-term.",
+        "marks": 6
+      }
+    ],
+    "POA": [
+      {
+        "type": "short",
+        "question": "Which is a non-current asset?",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Revenue=$52,400; expenses=$46,950. Find profit.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Journal entry: received $2,700 from credit customer by bank.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Distinguish trade discount and cash discount.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Asset cost $36,000, residual $6,000, life 10 years. Annual straight-line depreciation?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Error not revealed by trial balance:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Current ratio=2.4:1, current liabilities=$50,000. Find current assets.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Explain matching concept using prepaid insurance example.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Net profit margin measures:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Opening capital $95,000; additional capital $12,000; profit $18,400; drawings $9,500. Closing capital?",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one internal control over petty cash and why useful.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Bank reconciliation may include:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Classify: equipment, bank loan (5-year), wages expense.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "If gross profit margin rises while sales fall, one interpretation is:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Journal entry for credit purchase of goods $4,900.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one limitation of ratio comparison across firms in different industries.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Cost=$720, selling price=$900. Find margin %.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Error of principle means:",
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain why allowance for doubtful debts affects profit.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "If assets increase $6,000 and liabilities increase $1,800, equity changes by:",
+        "marks": 2
+      }
+    ]
+  }
+}

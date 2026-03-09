@@ -1,0 +1,2549 @@
+{
+  "date": "2026-03-03",
+  "paper_id": "aa85b1d6-ad05-4ba2-9218-17b9a5563aed",
+  "subjects": {
+    "english": [
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "From an exam strategy viewpoint, Choose the strongest thesis sentence for an essay on sleep hygiene.",
+        "choices": [
+          "I don\u2019t like this.",
+          "This issue deserves balanced policy reform with measurable outcomes.",
+          "Everyone says this matters.",
+          "This is bad."
+        ],
+        "answer": 1,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "choose the strongest thesis sentence for an essay on sleep hygiene."
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State one assumption in this claim: 'Tuition Dependence should be reduced in schools.'",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "state one assumption in this claim: 'tuition dependence should be reduced in schools.'"
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, In 5-7 sentences, evaluate one benefit and one limitation of policies on tuition dependence in Singapore.",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "in 5-7 sentences, evaluate one benefit and one limitation of policies on tuition dependence in singapore."
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State one assumption in this claim: 'Social Media Use should be reduced in schools.'",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "state one assumption in this claim: 'social media use should be reduced in schools.'"
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, In 5-7 sentences, evaluate one benefit and one limitation of policies on device-free recess in Singapore.",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "in 5-7 sentences, evaluate one benefit and one limitation of policies on device-free recess in singapore."
+      },
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Choose the strongest thesis sentence for an essay on social media use.",
+        "choices": [
+          "This issue deserves balanced policy reform with measurable outcomes.",
+          "This is bad.",
+          "I don\u2019t like this.",
+          "Everyone says this matters."
+        ],
+        "answer": 0,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "choose the strongest thesis sentence for an essay on social media use."
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, State one assumption in this claim: 'Sleep Hygiene should be reduced in schools.'",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "state one assumption in this claim: 'sleep hygiene should be reduced in schools.'"
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that State one assumption in this claim: 'Homework Load should be reduced in schools.'",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "state one assumption in this claim: 'homework load should be reduced in schools.'"
+      },
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "In a real-life Singapore context, Choose the strongest thesis sentence for an essay on tuition dependence.",
+        "choices": [
+          "I don\u2019t like this.",
+          "This is bad.",
+          "This issue deserves balanced policy reform with measurable outcomes.",
+          "Everyone says this matters."
+        ],
+        "answer": 2,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "choose the strongest thesis sentence for an essay on tuition dependence."
+      },
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Consider that Choose the strongest thesis sentence for an essay on homework load.",
+        "choices": [
+          "Everyone says this matters.",
+          "This is bad.",
+          "I don\u2019t like this.",
+          "This issue deserves balanced policy reform with measurable outcomes."
+        ],
+        "answer": 3,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "choose the strongest thesis sentence for an essay on homework load."
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a classroom scenario, In 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in Singapore.",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "in 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in singapore."
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that State one assumption in this claim: 'Device-Free Recess should be reduced in schools.'",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "state one assumption in this claim: 'device-free recess should be reduced in schools.'"
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "During revision week, In 5-7 sentences, evaluate one benefit and one limitation of policies on social media use in Singapore.",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "in 5-7 sentences, evaluate one benefit and one limitation of policies on social media use in singapore."
+      },
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Choose the strongest thesis sentence for an essay on device-free recess.",
+        "choices": [
+          "This is bad.",
+          "This issue deserves balanced policy reform with measurable outcomes.",
+          "I don\u2019t like this.",
+          "Everyone says this matters."
+        ],
+        "answer": 1,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "choose the strongest thesis sentence for an essay on device-free recess."
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "From an exam strategy viewpoint, In 5-7 sentences, evaluate one benefit and one limitation of policies on sleep hygiene in Singapore.",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "in 5-7 sentences, evaluate one benefit and one limitation of policies on sleep hygiene in singapore."
+      },
+      {
+        "subject": "english",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Consider that Choose the strongest thesis sentence for an essay on sleep hygiene. [Variant 03Mar-1]",
+        "choices": [
+          "I don\u2019t like this.",
+          "This is bad.",
+          "This issue deserves balanced policy reform with measurable outcomes.",
+          "Everyone says this matters."
+        ],
+        "answer": 2,
+        "keywords": [
+          "thesis",
+          "academic tone"
+        ],
+        "concept": "general",
+        "stem": "consider that choose the strongest thesis sentence for an essay on sleep hygiene. [variant 03mar-1]"
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that In 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in Singapore. [Variant 03Mar-2]",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "suppose that in 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in singapore. [variant 03mar-2]"
+      },
+      {
+        "subject": "english",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that In 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in Singapore. [Variant 03Mar-3]",
+        "keywords": [
+          "benefit",
+          "limitation",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "suppose that in 5-7 sentences, evaluate one benefit and one limitation of policies on homework load in singapore. [variant 03mar-3]"
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that State one assumption in this claim: 'Homework Load should be reduced in schools.'. [Variant 03Mar-4]",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "assume that state one assumption in this claim: 'homework load should be reduced in schools.'. [variant 03mar-4]"
+      },
+      {
+        "subject": "english",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that State one assumption in this claim: 'Tuition Dependence should be reduced in schools.'. [Variant 03Mar-5]",
+        "keywords": [
+          "assumption",
+          "evidence",
+          "context"
+        ],
+        "concept": "general",
+        "stem": "imagine that state one assumption in this claim: 'tuition dependence should be reduced in schools.'. [variant 03mar-5]"
+      }
+    ],
+    "emath": [
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "From an exam strategy viewpoint, A price is discounted by 20% to $ 580. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 20% to $ 580. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that A price is discounted by 20% to $ 630. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 20% to $ 630. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "During revision week, Solve: 2(x-5) = 3(x+5)",
+        "choices": [
+          "x=4",
+          "x=1",
+          "x=3",
+          "x=0"
+        ],
+        "answer": 2,
+        "keywords": [
+          "3"
+        ],
+        "concept": "general",
+        "stem": "solve: 2(x-5) = 3(x+5)"
+      },
+      {
+        "subject": "emath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Solve: 4(x-1) = 6(x+1)",
+        "choices": [
+          "x=1",
+          "x=6",
+          "x=5",
+          "x=0"
+        ],
+        "answer": 2,
+        "keywords": [
+          "5"
+        ],
+        "concept": "general",
+        "stem": "solve: 4(x-1) = 6(x+1)"
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "From an exam strategy viewpoint, A price is discounted by 25% to $ 390. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 25% to $ 390. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that A price is discounted by 25% to $ 460. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 25% to $ 460. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Line passes through (7,8) and (11,16). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (7,8) and (11,16). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that A price is discounted by 20% to $ 90. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 20% to $ 90. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "From an exam strategy viewpoint, A price is discounted by 20% to $ 210. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 20% to $ 210. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Line passes through (7,1) and (11,9). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (7,1) and (11,9). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "During revision week, Line passes through (6,2) and (10,10). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (6,2) and (10,10). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Line passes through (2,5) and (6,13). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (2,5) and (6,13). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Line passes through (5,6) and (9,14). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (5,6) and (9,14). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that A price is discounted by 30% to $ 200. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 30% to $ 200. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "From an exam strategy viewpoint, Solve: 4(x-3) = 4(x+3)",
+        "choices": [
+          "x=1",
+          "x=3",
+          "x=2",
+          "x=0"
+        ],
+        "answer": 2,
+        "keywords": [
+          "2"
+        ],
+        "concept": "general",
+        "stem": "solve: 4(x-3) = 4(x+3)"
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Line passes through (5,3) and (9,11). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (5,3) and (9,11). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, A price is discounted by 25% to $ 500. Find original price.",
+        "keywords": [
+          "percentage",
+          "original price"
+        ],
+        "concept": "general",
+        "stem": "a price is discounted by 25% to $ 500. find original price."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Assume that Line passes through (3,3) and (7,11). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (3,3) and (7,11). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Line passes through (9,1) and (13,9). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (9,1) and (13,9). find gradient and equation in y=mx+c."
+      },
+      {
+        "subject": "emath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Line passes through (3,1) and (7,9). Find gradient and equation in y=mx+c.",
+        "keywords": [
+          "gradient",
+          "equation",
+          "working"
+        ],
+        "concept": "general",
+        "stem": "line passes through (3,1) and (7,9). find gradient and equation in y=mx+c."
+      }
+    ],
+    "amath": [
+      {
+        "subject": "amath",
+        "type": "short",
+        "marks": 4,
+        "question": "In an applied setting, Solve 2^x = 8",
+        "keywords": [
+          "log",
+          "power"
+        ],
+        "concept": "general",
+        "stem": "solve 2^x = 8"
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Solve x^2-7x+21=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-7x+21=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given typical O-Level data, Differentiate y=3x^3-4x^2+2",
+        "choices": [
+          "3x^2-8x",
+          "None",
+          "9x^2-8x",
+          "9x-8"
+        ],
+        "answer": 2,
+        "keywords": [
+          "differentiate"
+        ],
+        "concept": "general",
+        "stem": "differentiate y=3x^3-4x^2+2"
+      },
+      {
+        "subject": "amath",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that Solve 2^x = 128",
+        "keywords": [
+          "log",
+          "power"
+        ],
+        "concept": "general",
+        "stem": "solve 2^x = 128"
+      },
+      {
+        "subject": "amath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "In a classroom scenario, Differentiate y=4x^3-4x^2+2",
+        "choices": [
+          "4x^2-8x",
+          "12x^2-8x",
+          "None",
+          "12x-8"
+        ],
+        "answer": 1,
+        "keywords": [
+          "differentiate"
+        ],
+        "concept": "general",
+        "stem": "differentiate y=4x^3-4x^2+2"
+      },
+      {
+        "subject": "amath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Differentiate y=5x^3-4x^2+2",
+        "choices": [
+          "15x-8",
+          "None",
+          "5x^2-8x",
+          "15x^2-8x"
+        ],
+        "answer": 3,
+        "keywords": [
+          "differentiate"
+        ],
+        "concept": "general",
+        "stem": "differentiate y=5x^3-4x^2+2"
+      },
+      {
+        "subject": "amath",
+        "type": "mcq",
+        "marks": 2,
+        "question": "In an applied setting, Differentiate y=2x^3-4x^2+2",
+        "choices": [
+          "None",
+          "6x^2-8x",
+          "2x^2-8x",
+          "6x-8"
+        ],
+        "answer": 1,
+        "keywords": [
+          "differentiate"
+        ],
+        "concept": "general",
+        "stem": "differentiate y=2x^3-4x^2+2"
+      },
+      {
+        "subject": "amath",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that Solve 2^x = 64",
+        "keywords": [
+          "log",
+          "power"
+        ],
+        "concept": "general",
+        "stem": "solve 2^x = 64"
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, Solve x^2-9x+34=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-9x+34=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Assume that Solve x^2-8x+21=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-8x+21=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Solve x^2-9x+24=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-9x+24=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Solve x^2-11x+22=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-11x+22=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "short",
+        "marks": 4,
+        "question": "In a real-life Singapore context, Solve 2^x = 32",
+        "keywords": [
+          "log",
+          "power"
+        ],
+        "concept": "general",
+        "stem": "solve 2^x = 32"
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Solve x^2-8x+28=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-8x+28=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a classroom scenario, Solve x^2-7x+30=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-7x+30=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Solve x^2-7x+22=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-7x+22=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, Solve x^2-7x+19=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-7x+19=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Assume that Solve x^2-12x+23=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-12x+23=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, Solve x^2-11x+33=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-11x+33=0 and show method."
+      },
+      {
+        "subject": "amath",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Solve x^2-10x+18=0 and show method.",
+        "keywords": [
+          "factorise",
+          "roots",
+          "check"
+        ],
+        "concept": "general",
+        "stem": "solve x^2-10x+18=0 and show method."
+      }
+    ],
+    "combsci": [
+      {
+        "subject": "combsci",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given typical O-Level data, Explain why powdered carbonate reacts faster than chips with same acid. Include one controlled variable.",
+        "keywords": [
+          "surface area",
+          "successful collisions",
+          "control variable"
+        ],
+        "concept": "general",
+        "stem": "explain why powdered carbonate reacts faster than chips with same acid. include one controlled variable."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that A runner travels 120 m in 10 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 120 m in 10 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "From an exam strategy viewpoint, A runner travels 120 m in 18 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 120 m in 18 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Higher reaction rate is mainly due to...",
+        "choices": [
+          "lower concentration",
+          "fewer collisions",
+          "more frequent successful collisions",
+          "decrease in particles"
+        ],
+        "answer": 2,
+        "keywords": [
+          "collision theory"
+        ],
+        "concept": "general",
+        "stem": "higher reaction rate is mainly due to..."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, A runner travels 120 m in 15 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 120 m in 15 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that A runner travels 150 m in 15 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 150 m in 15 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, A runner travels 120 m in 12 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 120 m in 12 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that A runner travels 210 m in 12 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 210 m in 12 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "In a real-life Singapore context, A runner travels 150 m in 18 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 150 m in 18 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that A runner travels 210 m in 15 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 210 m in 15 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, A runner travels 210 m in 10 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 210 m in 10 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that A runner travels 210 m in 18 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 210 m in 18 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, A runner travels 150 m in 12 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 150 m in 12 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that A runner travels 180 m in 12 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 180 m in 12 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "In a classroom scenario, A runner travels 180 m in 18 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 180 m in 18 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that A runner travels 150 m in 10 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 150 m in 10 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "In a real-life Singapore context, A runner travels 180 m in 15 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 180 m in 15 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that A runner travels 180 m in 10 s. Find speed.",
+        "keywords": [
+          "speed",
+          "distance/time"
+        ],
+        "concept": "general",
+        "stem": "a runner travels 180 m in 10 s. find speed."
+      },
+      {
+        "subject": "combsci",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Explain why powdered carbonate reacts faster than chips with same acid. Include one controlled variable. [Variant 03Mar-1]",
+        "keywords": [
+          "surface area",
+          "successful collisions",
+          "control variable"
+        ],
+        "concept": "general",
+        "stem": "imagine that explain why powdered carbonate reacts faster than chips with same acid. include one controlled variable. [variant 03mar-1]"
+      },
+      {
+        "subject": "combsci",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Higher reaction rate is mainly due to. [Variant 03Mar-2]",
+        "choices": [
+          "more frequent successful collisions",
+          "lower concentration",
+          "decrease in particles",
+          "fewer collisions"
+        ],
+        "answer": 0,
+        "keywords": [
+          "collision theory"
+        ],
+        "concept": "general",
+        "stem": "assume that higher reaction rate is mainly due to. [variant 03mar-2]"
+      }
+    ],
+    "purechem": [
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, Find moles in 25.0 cm3 of 0.20 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 25.0 cm3 of 0.20 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Describe observations and write balanced equation for magnesium + dilute hydrochloric acid.",
+        "keywords": [
+          "effervescence",
+          "hydrogen",
+          "balanced equation"
+        ],
+        "concept": "acid-metal-reaction",
+        "stem": "describe observations and write balanced equation for magnesium + dilute hydrochloric acid."
+      },
+      {
+        "subject": "purechem",
+        "type": "mcq",
+        "marks": 2,
+        "question": "During revision week, Acid + carbonate produces",
+        "choices": [
+          "salt+H2",
+          "salt+water+CO2",
+          "salt+water",
+          "salt only"
+        ],
+        "answer": 1,
+        "keywords": [
+          "co2",
+          "salt",
+          "water"
+        ],
+        "concept": "reaction-products",
+        "stem": "acid + carbonate produces"
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that Find moles in 20.0 cm3 of 0.40 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 20.0 cm3 of 0.40 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, Find moles in 30.0 cm3 of 0.25 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 30.0 cm3 of 0.25 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that Find moles in 30.0 cm3 of 0.40 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 30.0 cm3 of 0.40 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "In a real-life Singapore context, Find moles in 25.0 cm3 of 0.25 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 25.0 cm3 of 0.25 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that Find moles in 20.0 cm3 of 0.25 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 20.0 cm3 of 0.25 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, Find moles in 25.0 cm3 of 0.40 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 25.0 cm3 of 0.40 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that Find moles in 30.0 cm3 of 0.20 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 30.0 cm3 of 0.20 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, Find moles in 20.0 cm3 of 0.20 mol/dm3 NaOH.",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "find moles in 20.0 cm3 of 0.20 mol/dm3 naoh."
+      },
+      {
+        "subject": "purechem",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [Variant 03Mar-1]",
+        "keywords": [
+          "effervescence",
+          "hydrogen",
+          "balanced equation"
+        ],
+        "concept": "acid-metal-reaction",
+        "stem": "given that describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [variant 03mar-1]"
+      },
+      {
+        "subject": "purechem",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Acid + carbonate produces. [Variant 03Mar-2]",
+        "choices": [
+          "salt+water",
+          "salt+water+CO2",
+          "salt+H2",
+          "salt only"
+        ],
+        "answer": 1,
+        "keywords": [
+          "co2",
+          "salt",
+          "water"
+        ],
+        "concept": "reaction-products",
+        "stem": "assume that acid + carbonate produces. [variant 03mar-2]"
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that Find moles in 20.0 cm3 of 0.20 mol/dm3 NaOH. [Variant 03Mar-3]",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "suppose that find moles in 20.0 cm3 of 0.20 mol/dm3 naoh. [variant 03mar-3]"
+      },
+      {
+        "subject": "purechem",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Acid + carbonate produces. [Variant 03Mar-4]",
+        "choices": [
+          "salt+water+CO2",
+          "salt+H2",
+          "salt only",
+          "salt+water"
+        ],
+        "answer": 0,
+        "keywords": [
+          "co2",
+          "salt",
+          "water"
+        ],
+        "concept": "reaction-products",
+        "stem": "given that acid + carbonate produces. [variant 03mar-4]"
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that Find moles in 30.0 cm3 of 0.40 mol/dm3 NaOH. [Variant 03Mar-5]",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "suppose that find moles in 30.0 cm3 of 0.40 mol/dm3 naoh. [variant 03mar-5]"
+      },
+      {
+        "subject": "purechem",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [Variant 03Mar-6]",
+        "keywords": [
+          "effervescence",
+          "hydrogen",
+          "balanced equation"
+        ],
+        "concept": "acid-metal-reaction",
+        "stem": "imagine that describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [variant 03mar-6]"
+      },
+      {
+        "subject": "purechem",
+        "type": "structured",
+        "marks": 6,
+        "question": "Consider that Describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [Variant 03Mar-7]",
+        "keywords": [
+          "effervescence",
+          "hydrogen",
+          "balanced equation"
+        ],
+        "concept": "acid-metal-reaction",
+        "stem": "consider that describe observations and write balanced equation for magnesium + dilute hydrochloric acid. [variant 03mar-7]"
+      },
+      {
+        "subject": "purechem",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that Find moles in 20.0 cm3 of 0.40 mol/dm3 NaOH. [Variant 03Mar-8]",
+        "keywords": [
+          "moles",
+          "convert cm3 to dm3"
+        ],
+        "concept": "mole-calculation",
+        "stem": "given that find moles in 20.0 cm3 of 0.40 mol/dm3 naoh. [variant 03mar-8]"
+      },
+      {
+        "subject": "purechem",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Acid + carbonate produces. [Variant 03Mar-9]",
+        "choices": [
+          "salt+water",
+          "salt+H2",
+          "salt only",
+          "salt+water+CO2"
+        ],
+        "answer": 3,
+        "keywords": [
+          "co2",
+          "salt",
+          "water"
+        ],
+        "concept": "reaction-products",
+        "stem": "assume that acid + carbonate produces. [variant 03mar-9]"
+      }
+    ],
+    "purephys": [
+      {
+        "subject": "purephys",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given typical O-Level data, If velocity is constant, resultant force is",
+        "choices": [
+          "zero",
+          "positive",
+          "negative",
+          "maximum"
+        ],
+        "answer": 0,
+        "keywords": [
+          "newton first law"
+        ],
+        "concept": "general",
+        "stem": "if velocity is constant, resultant force is"
+      },
+      {
+        "subject": "purephys",
+        "type": "structured",
+        "marks": 6,
+        "question": "Assume that A wave has frequency 5 Hz. Find period and explain one factor affecting wave speed.",
+        "keywords": [
+          "period",
+          "medium",
+          "speed factor"
+        ],
+        "concept": "general",
+        "stem": "a wave has frequency 5 hz. find period and explain one factor affecting wave speed."
+      },
+      {
+        "subject": "purephys",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given typical O-Level data, A wave has frequency 10 Hz. Find period and explain one factor affecting wave speed.",
+        "keywords": [
+          "period",
+          "medium",
+          "speed factor"
+        ],
+        "concept": "general",
+        "stem": "a wave has frequency 10 hz. find period and explain one factor affecting wave speed."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that Calculate force when mass=1200 kg and acceleration=2.0 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=1200 kg and acceleration=2.0 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "structured",
+        "marks": 6,
+        "question": "In an applied setting, A wave has frequency 4 Hz. Find period and explain one factor affecting wave speed.",
+        "keywords": [
+          "period",
+          "medium",
+          "speed factor"
+        ],
+        "concept": "general",
+        "stem": "a wave has frequency 4 hz. find period and explain one factor affecting wave speed."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that Calculate force when mass=800 kg and acceleration=2.0 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=800 kg and acceleration=2.0 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "In an applied setting, Calculate force when mass=1200 kg and acceleration=2.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=1200 kg and acceleration=2.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that Calculate force when mass=800 kg and acceleration=1.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=800 kg and acceleration=1.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, Calculate force when mass=900 kg and acceleration=2.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=900 kg and acceleration=2.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that A wave has frequency 8 Hz. Find period and explain one factor affecting wave speed.",
+        "keywords": [
+          "period",
+          "medium",
+          "speed factor"
+        ],
+        "concept": "general",
+        "stem": "a wave has frequency 8 hz. find period and explain one factor affecting wave speed."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, Calculate force when mass=900 kg and acceleration=1.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=900 kg and acceleration=1.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that Calculate force when mass=1200 kg and acceleration=1.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=1200 kg and acceleration=1.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "In an applied setting, Calculate force when mass=900 kg and acceleration=2.0 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=900 kg and acceleration=2.0 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that Calculate force when mass=800 kg and acceleration=2.5 m/s^2.",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "calculate force when mass=800 kg and acceleration=2.5 m/s^2."
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that Calculate force when mass=900 kg and acceleration=2.0 m/s^2. [Variant 03Mar-1]",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "given that calculate force when mass=900 kg and acceleration=2.0 m/s^2. [variant 03mar-1]"
+      },
+      {
+        "subject": "purephys",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that If velocity is constant, resultant force is. [Variant 03Mar-2]",
+        "choices": [
+          "positive",
+          "maximum",
+          "zero",
+          "negative"
+        ],
+        "answer": 2,
+        "keywords": [
+          "newton first law"
+        ],
+        "concept": "general",
+        "stem": "assume that if velocity is constant, resultant force is. [variant 03mar-2]"
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that Calculate force when mass=1200 kg and acceleration=2.0 m/s^2. [Variant 03Mar-3]",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "consider that calculate force when mass=1200 kg and acceleration=2.0 m/s^2. [variant 03mar-3]"
+      },
+      {
+        "subject": "purephys",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that If velocity is constant, resultant force is. [Variant 03Mar-4]",
+        "choices": [
+          "maximum",
+          "zero",
+          "negative",
+          "positive"
+        ],
+        "answer": 1,
+        "keywords": [
+          "newton first law"
+        ],
+        "concept": "general",
+        "stem": "given that if velocity is constant, resultant force is. [variant 03mar-4]"
+      },
+      {
+        "subject": "purephys",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that A wave has frequency 10 Hz. Find period and explain one factor affecting wave speed. [Variant 03Mar-5]",
+        "keywords": [
+          "period",
+          "medium",
+          "speed factor"
+        ],
+        "concept": "general",
+        "stem": "imagine that a wave has frequency 10 hz. find period and explain one factor affecting wave speed. [variant 03mar-5]"
+      },
+      {
+        "subject": "purephys",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that Calculate force when mass=800 kg and acceleration=2.5 m/s^2. [Variant 03Mar-6]",
+        "keywords": [
+          "F=ma"
+        ],
+        "concept": "general",
+        "stem": "assume that calculate force when mass=800 kg and acceleration=2.5 m/s^2. [variant 03mar-6]"
+      }
+    ],
+    "purebio": [
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "In a classroom scenario, Osmosis is movement of",
+        "choices": [
+          "ions only",
+          "any molecules",
+          "water through partially permeable membrane",
+          "oxygen"
+        ],
+        "answer": 2,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "osmosis is movement of"
+      },
+      {
+        "subject": "purebio",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that State two differences between arteries and veins.",
+        "keywords": [
+          "thick walls",
+          "valves",
+          "pressure",
+          "lumen"
+        ],
+        "concept": "general",
+        "stem": "state two differences between arteries and veins."
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given typical O-Level data, Explain effect of temperature on enzyme activity, including denaturation.",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "explain effect of temperature on enzyme activity, including denaturation."
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Assume that Osmosis is movement of. [Variant 03Mar-1]",
+        "choices": [
+          "any molecules",
+          "water through partially permeable membrane",
+          "oxygen",
+          "ions only"
+        ],
+        "answer": 1,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "assume that osmosis is movement of. [variant 03mar-1]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Osmosis is movement of. [Variant 03Mar-2]",
+        "choices": [
+          "water through partially permeable membrane",
+          "any molecules",
+          "ions only",
+          "oxygen"
+        ],
+        "answer": 0,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "given that osmosis is movement of. [variant 03mar-2]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Osmosis is movement of. [Variant 03Mar-3]",
+        "choices": [
+          "water through partially permeable membrane",
+          "ions only",
+          "any molecules",
+          "oxygen"
+        ],
+        "answer": 0,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "imagine that osmosis is movement of. [variant 03mar-3]"
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Explain effect of temperature on enzyme activity, including denaturation. [Variant 03Mar-4]",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "imagine that explain effect of temperature on enzyme activity, including denaturation. [variant 03mar-4]"
+      },
+      {
+        "subject": "purebio",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that State two differences between arteries and veins. [Variant 03Mar-5]",
+        "keywords": [
+          "thick walls",
+          "valves",
+          "pressure",
+          "lumen"
+        ],
+        "concept": "general",
+        "stem": "assume that state two differences between arteries and veins. [variant 03mar-5]"
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Explain effect of temperature on enzyme activity, including denaturation. [Variant 03Mar-6]",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "given that explain effect of temperature on enzyme activity, including denaturation. [variant 03mar-6]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Osmosis is movement of. [Variant 03Mar-7]",
+        "choices": [
+          "any molecules",
+          "water through partially permeable membrane",
+          "oxygen",
+          "ions only"
+        ],
+        "answer": 1,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "suppose that osmosis is movement of. [variant 03mar-7]"
+      },
+      {
+        "subject": "purebio",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that State two differences between arteries and veins. [Variant 03Mar-8]",
+        "keywords": [
+          "thick walls",
+          "valves",
+          "pressure",
+          "lumen"
+        ],
+        "concept": "general",
+        "stem": "assume that state two differences between arteries and veins. [variant 03mar-8]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Osmosis is movement of. [Variant 03Mar-9]",
+        "choices": [
+          "ions only",
+          "any molecules",
+          "oxygen",
+          "water through partially permeable membrane"
+        ],
+        "answer": 3,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "suppose that osmosis is movement of. [variant 03mar-9]"
+      },
+      {
+        "subject": "purebio",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that State two differences between arteries and veins. [Variant 03Mar-10]",
+        "keywords": [
+          "thick walls",
+          "valves",
+          "pressure",
+          "lumen"
+        ],
+        "concept": "general",
+        "stem": "assume that state two differences between arteries and veins. [variant 03mar-10]"
+      },
+      {
+        "subject": "purebio",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State two differences between arteries and veins. [Variant 03Mar-11]",
+        "keywords": [
+          "thick walls",
+          "valves",
+          "pressure",
+          "lumen"
+        ],
+        "concept": "general",
+        "stem": "given that state two differences between arteries and veins. [variant 03mar-11]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Osmosis is movement of. [Variant 03Mar-12]",
+        "choices": [
+          "oxygen",
+          "ions only",
+          "any molecules",
+          "water through partially permeable membrane"
+        ],
+        "answer": 3,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "imagine that osmosis is movement of. [variant 03mar-12]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Osmosis is movement of. [Variant 03Mar-13]",
+        "choices": [
+          "oxygen",
+          "ions only",
+          "any molecules",
+          "water through partially permeable membrane"
+        ],
+        "answer": 3,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "suppose that osmosis is movement of. [variant 03mar-13]"
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Explain effect of temperature on enzyme activity, including denaturation. [Variant 03Mar-14]",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "suppose that explain effect of temperature on enzyme activity, including denaturation. [variant 03mar-14]"
+      },
+      {
+        "subject": "purebio",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Osmosis is movement of. [Variant 03Mar-15]",
+        "choices": [
+          "oxygen",
+          "any molecules",
+          "ions only",
+          "water through partially permeable membrane"
+        ],
+        "answer": 3,
+        "keywords": [
+          "water",
+          "partially permeable membrane"
+        ],
+        "concept": "general",
+        "stem": "imagine that osmosis is movement of. [variant 03mar-15]"
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Explain effect of temperature on enzyme activity, including denaturation. [Variant 03Mar-16]",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "given that explain effect of temperature on enzyme activity, including denaturation. [variant 03mar-16]"
+      },
+      {
+        "subject": "purebio",
+        "type": "structured",
+        "marks": 6,
+        "question": "Consider that Explain effect of temperature on enzyme activity, including denaturation. [Variant 03Mar-17]",
+        "keywords": [
+          "optimum",
+          "kinetic energy",
+          "active site",
+          "denature"
+        ],
+        "concept": "general",
+        "stem": "consider that explain effect of temperature on enzyme activity, including denaturation. [variant 03mar-17]"
+      }
+    ],
+    "humanities": [
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given typical O-Level data, Evaluate the statement: 'Globalisation policy outcomes are fully fair.' Give one support and one challenge.",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "evaluate the statement: 'globalisation policy outcomes are fully fair.' give one support and one challenge."
+      },
+      {
+        "subject": "humanities",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Suppose that Best SBQ reliability method is",
+        "choices": [
+          "quote length",
+          "author age",
+          "cross-reference + provenance",
+          "emotive words only"
+        ],
+        "answer": 2,
+        "keywords": [
+          "cross-reference",
+          "provenance"
+        ],
+        "concept": "general",
+        "stem": "best sbq reliability method is"
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given typical O-Level data, Evaluate the statement: 'Meritocracy policy outcomes are fully fair.' Give one support and one challenge.",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "evaluate the statement: 'meritocracy policy outcomes are fully fair.' give one support and one challenge."
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Imagine that State one impact of urban heat island on Singapore society/economy.",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "state one impact of urban heat island on singapore society/economy."
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Evaluate the statement: 'Social Mobility policy outcomes are fully fair.' Give one support and one challenge.",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "evaluate the statement: 'social mobility policy outcomes are fully fair.' give one support and one challenge."
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State one impact of social mobility on Singapore society/economy.",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "state one impact of social mobility on singapore society/economy."
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, State one impact of globalisation on Singapore society/economy.",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "state one impact of globalisation on singapore society/economy."
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Evaluate the statement: 'Urban Heat Island policy outcomes are fully fair.' Give one support and one challenge.",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "evaluate the statement: 'urban heat island policy outcomes are fully fair.' give one support and one challenge."
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "From an exam strategy viewpoint, State one impact of meritocracy on Singapore society/economy.",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "state one impact of meritocracy on singapore society/economy."
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Evaluate the statement: 'Social Mobility policy outcomes are fully fair.' Give one support and one challenge. [Variant 03Mar-1]",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "imagine that evaluate the statement: 'social mobility policy outcomes are fully fair.' give one support and one challenge. [variant 03mar-1]"
+      },
+      {
+        "subject": "humanities",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Best SBQ reliability method is. [Variant 03Mar-2]",
+        "choices": [
+          "emotive words only",
+          "author age",
+          "cross-reference + provenance",
+          "quote length"
+        ],
+        "answer": 2,
+        "keywords": [
+          "cross-reference",
+          "provenance"
+        ],
+        "concept": "general",
+        "stem": "given that best sbq reliability method is. [variant 03mar-2]"
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Imagine that Evaluate the statement: 'Social Mobility policy outcomes are fully fair.' Give one support and one challenge. [Variant 03Mar-3]",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "imagine that evaluate the statement: 'social mobility policy outcomes are fully fair.' give one support and one challenge. [variant 03mar-3]"
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State one impact of globalisation on Singapore society/economy. [Variant 03Mar-4]",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "given that state one impact of globalisation on singapore society/economy. [variant 03mar-4]"
+      },
+      {
+        "subject": "humanities",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Best SBQ reliability method is. [Variant 03Mar-5]",
+        "choices": [
+          "emotive words only",
+          "quote length",
+          "cross-reference + provenance",
+          "author age"
+        ],
+        "answer": 2,
+        "keywords": [
+          "cross-reference",
+          "provenance"
+        ],
+        "concept": "general",
+        "stem": "given that best sbq reliability method is. [variant 03mar-5]"
+      },
+      {
+        "subject": "humanities",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Best SBQ reliability method is. [Variant 03Mar-6]",
+        "choices": [
+          "cross-reference + provenance",
+          "emotive words only",
+          "author age",
+          "quote length"
+        ],
+        "answer": 0,
+        "keywords": [
+          "cross-reference",
+          "provenance"
+        ],
+        "concept": "general",
+        "stem": "imagine that best sbq reliability method is. [variant 03mar-6]"
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Evaluate the statement: 'Urban Heat Island policy outcomes are fully fair.' Give one support and one challenge. [Variant 03Mar-7]",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "suppose that evaluate the statement: 'urban heat island policy outcomes are fully fair.' give one support and one challenge. [variant 03mar-7]"
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Consider that Evaluate the statement: 'Urban Heat Island policy outcomes are fully fair.' Give one support and one challenge. [Variant 03Mar-8]",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "consider that evaluate the statement: 'urban heat island policy outcomes are fully fair.' give one support and one challenge. [variant 03mar-8]"
+      },
+      {
+        "subject": "humanities",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Evaluate the statement: 'Meritocracy policy outcomes are fully fair.' Give one support and one challenge. [Variant 03Mar-9]",
+        "keywords": [
+          "support",
+          "challenge",
+          "evidence",
+          "evaluation"
+        ],
+        "concept": "general",
+        "stem": "suppose that evaluate the statement: 'meritocracy policy outcomes are fully fair.' give one support and one challenge. [variant 03mar-9]"
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that State one impact of urban heat island on Singapore society/economy. [Variant 03Mar-10]",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "given that state one impact of urban heat island on singapore society/economy. [variant 03mar-10]"
+      },
+      {
+        "subject": "humanities",
+        "type": "short",
+        "marks": 4,
+        "question": "Consider that State one impact of globalisation on Singapore society/economy. [Variant 03Mar-11]",
+        "keywords": [
+          "impact",
+          "example",
+          "Singapore context"
+        ],
+        "concept": "general",
+        "stem": "consider that state one impact of globalisation on singapore society/economy. [variant 03mar-11]"
+      }
+    ],
+    "poa": [
+      {
+        "subject": "poa",
+        "type": "mcq",
+        "marks": 2,
+        "question": "In a classroom scenario, Accounting equation is",
+        "choices": [
+          "Assets=Liabilities+Capital",
+          "Cash=Revenue-Expenses",
+          "Profit=Assets-Liabilities",
+          "Capital=Assets+Liabilities"
+        ],
+        "answer": 0,
+        "keywords": [
+          "accounting equation"
+        ],
+        "concept": "general",
+        "stem": "accounting equation is"
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that If revenue=$9500 and expenses=$5400, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9500 and expenses=$5400, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Given typical O-Level data, If revenue=$8500 and expenses=$6200, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$8500 and expenses=$6200, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Suppose that If revenue=$9200 and expenses=$6200, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9200 and expenses=$6200, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "structured",
+        "marks": 6,
+        "question": "In a real-life Singapore context, Explain why trial balance may still balance despite errors. Give two examples.",
+        "keywords": [
+          "omission",
+          "commission",
+          "principle",
+          "compensating errors"
+        ],
+        "concept": "general",
+        "stem": "explain why trial balance may still balance despite errors. give two examples."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that If revenue=$9500 and expenses=$7100, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9500 and expenses=$7100, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "In an applied setting, If revenue=$9200 and expenses=$5400, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9200 and expenses=$5400, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that If revenue=$8500 and expenses=$7100, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$8500 and expenses=$7100, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "During revision week, If revenue=$9200 and expenses=$7100, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9200 and expenses=$7100, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Given that If revenue=$8500 and expenses=$5400, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$8500 and expenses=$5400, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "In a real-life Singapore context, If revenue=$9500 and expenses=$6200, find profit.",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "if revenue=$9500 and expenses=$6200, find profit."
+      },
+      {
+        "subject": "poa",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Explain why trial balance may still balance despite errors. Give two examples. [Variant 03Mar-1]",
+        "keywords": [
+          "omission",
+          "commission",
+          "principle",
+          "compensating errors"
+        ],
+        "concept": "general",
+        "stem": "suppose that explain why trial balance may still balance despite errors. give two examples. [variant 03mar-1]"
+      },
+      {
+        "subject": "poa",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Accounting equation is. [Variant 03Mar-2]",
+        "choices": [
+          "Assets=Liabilities+Capital",
+          "Cash=Revenue-Expenses",
+          "Profit=Assets-Liabilities",
+          "Capital=Assets+Liabilities"
+        ],
+        "answer": 0,
+        "keywords": [
+          "accounting equation"
+        ],
+        "concept": "general",
+        "stem": "imagine that accounting equation is. [variant 03mar-2]"
+      },
+      {
+        "subject": "poa",
+        "type": "structured",
+        "marks": 6,
+        "question": "Given that Explain why trial balance may still balance despite errors. Give two examples. [Variant 03Mar-3]",
+        "keywords": [
+          "omission",
+          "commission",
+          "principle",
+          "compensating errors"
+        ],
+        "concept": "general",
+        "stem": "given that explain why trial balance may still balance despite errors. give two examples. [variant 03mar-3]"
+      },
+      {
+        "subject": "poa",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Accounting equation is. [Variant 03Mar-4]",
+        "choices": [
+          "Profit=Assets-Liabilities",
+          "Assets=Liabilities+Capital",
+          "Capital=Assets+Liabilities",
+          "Cash=Revenue-Expenses"
+        ],
+        "answer": 1,
+        "keywords": [
+          "accounting equation"
+        ],
+        "concept": "general",
+        "stem": "given that accounting equation is. [variant 03mar-4]"
+      },
+      {
+        "subject": "poa",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Given that Accounting equation is. [Variant 03Mar-5]",
+        "choices": [
+          "Profit=Assets-Liabilities",
+          "Capital=Assets+Liabilities",
+          "Cash=Revenue-Expenses",
+          "Assets=Liabilities+Capital"
+        ],
+        "answer": 3,
+        "keywords": [
+          "accounting equation"
+        ],
+        "concept": "general",
+        "stem": "given that accounting equation is. [variant 03mar-5]"
+      },
+      {
+        "subject": "poa",
+        "type": "structured",
+        "marks": 6,
+        "question": "Suppose that Explain why trial balance may still balance despite errors. Give two examples. [Variant 03Mar-6]",
+        "keywords": [
+          "omission",
+          "commission",
+          "principle",
+          "compensating errors"
+        ],
+        "concept": "general",
+        "stem": "suppose that explain why trial balance may still balance despite errors. give two examples. [variant 03mar-6]"
+      },
+      {
+        "subject": "poa",
+        "type": "mcq",
+        "marks": 2,
+        "question": "Imagine that Accounting equation is. [Variant 03Mar-7]",
+        "choices": [
+          "Cash=Revenue-Expenses",
+          "Profit=Assets-Liabilities",
+          "Assets=Liabilities+Capital",
+          "Capital=Assets+Liabilities"
+        ],
+        "answer": 2,
+        "keywords": [
+          "accounting equation"
+        ],
+        "concept": "general",
+        "stem": "imagine that accounting equation is. [variant 03mar-7]"
+      },
+      {
+        "subject": "poa",
+        "type": "short",
+        "marks": 4,
+        "question": "Assume that If revenue=$8500 and expenses=$7100, find profit. [Variant 03Mar-8]",
+        "keywords": [
+          "profit",
+          "revenue-expenses"
+        ],
+        "concept": "general",
+        "stem": "assume that if revenue=$8500 and expenses=$7100, find profit. [variant 03mar-8]"
+      },
+      {
+        "subject": "poa",
+        "type": "structured",
+        "marks": 6,
+        "question": "Consider that Explain why trial balance may still balance despite errors. Give two examples. [Variant 03Mar-9]",
+        "keywords": [
+          "omission",
+          "commission",
+          "principle",
+          "compensating errors"
+        ],
+        "concept": "general",
+        "stem": "consider that explain why trial balance may still balance despite errors. give two examples. [variant 03mar-9]"
+      }
+    ]
+  }
+}

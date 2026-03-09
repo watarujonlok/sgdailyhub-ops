@@ -1,0 +1,1295 @@
+{
+  "date": "2026-03-04",
+  "paper_id": "dd0753ea-ffde-46d9-8fec-423ee4fe7dc2",
+  "subjects": {
+    "English": [
+      {
+        "type": "mcq",
+        "question": "Select the sentence with the strongest formal tone.",
+        "marks": 2,
+        "choices": [
+          "Kids these days are glued to phones.",
+          "The prevalence of prolonged screen exposure warrants targeted digital well-being interventions.",
+          "Phones are kind of bad, I guess.",
+          "Screens are ruining everything."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "short",
+        "question": "State one counter-argument to this claim: 'All school assessments should be open-book'.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate whether AI grammar tools should be allowed in graded essays. Give one support and one safeguard.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Identify the best topic sentence for a paragraph on public library relevance.",
+        "marks": 2,
+        "choices": [
+          "Libraries still matter in modern cities because they provide equitable access to verified information, quiet study spaces, and community programmes.",
+          "Libraries are old buildings.",
+          "People read less now.",
+          "Libraries have books."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "mcq",
+        "question": "Choose the most credible rebuttal sentence for an essay claiming 'homework should be abolished'.",
+        "marks": 2,
+        "choices": [
+          "Homework is perfect and has no downsides.",
+          "Homework should stay because tradition matters.",
+          "A moderated homework load can reinforce retrieval practice when tasks are purposeful and feedback is timely.",
+          "Students dislike homework so it should continue."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "short",
+        "question": "State one hidden assumption in this claim: 'Co-curricular activities should be graded'.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "In 6-8 sentences, evaluate one benefit and one risk of implementing phone lockers during lessons in Singapore schools.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Analyse how diction and sentence structure can shape urgency in a speech about climate action.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "State one limitation of using only online sources in a research assignment.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "In 6-8 sentences, assess whether anonymous peer feedback improves writing quality. Include one limitation.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Compare two persuasive techniques in a school campaign poster and assess which is more effective for teenagers.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Give one reason why anecdotal evidence can weaken an argumentative paragraph.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "Which introduction best frames a balanced argumentative essay on later school start times?",
+        "marks": 2,
+        "choices": [
+          "School should start late because students are lazy.",
+          "Delaying school start times can improve adolescent learning outcomes, but implementation should consider transport and family constraints.",
+          "Everyone knows mornings are hard.",
+          "Late starts are always better in every country."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate a policy to cap homework time per subject. Give one likely benefit and one implementation problem.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Explain one way connotation changes the tone of a sentence about social media use.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Write a PEEL paragraph arguing whether project work should carry more exam weight. Use one concrete example.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Rewrite this informal sentence into formal English: 'Kids cram last minute and then freak out'.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Provide one precise improvement to this claim: 'Public transport is bad'.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate the statement: 'Tuition widens inequality more than it improves outcomes.' Give one support and one challenge.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Which thesis is most specific and arguable for an essay on AI in education?",
+        "marks": 2,
+        "choices": [
+          "AI is good and bad.",
+          "Schools should ban AI tools immediately.",
+          "AI-assisted learning should be permitted for drafting and revision, provided assessment safeguards preserve independent thinking.",
+          "Technology is the future."
+        ],
+        "answer": 2
+      }
+    ],
+    "E-Math": [
+      {
+        "type": "short",
+        "question": "After a 20% discount, a laptop costs $512. Find the original price.",
+        "marks": 4,
+        "answer_text": 640.0
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (1,1) and (6,11). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=2.0, c=-1.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (0,7) and (4,-1). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=-2.0, c=7.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (3,12) and (9,0). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=-2.0, c=18.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (2,10) and (7,20). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=2.0, c=6.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (3,-2) and (9,10). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=2.0, c=-8.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (4,9) and (12,1). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=-1.0, c=13.0"
+      },
+      {
+        "type": "short",
+        "question": "After a 15% discount, a laptop costs $238. Find the original price.",
+        "marks": 4,
+        "answer_text": 280.0
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (-1,4) and (5,-8). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=-2.0, c=2.0"
+      },
+      {
+        "type": "mcq",
+        "question": "Solve: 6(x-3) = 4(x+3)",
+        "choices": [
+          "x=14",
+          "x=15",
+          "x=16",
+          "No real solution"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "After a 12% discount, a laptop costs $704. Find the original price.",
+        "marks": 4,
+        "answer_text": 800.0
+      },
+      {
+        "type": "mcq",
+        "question": "Solve: 4(x-7) = 2(x+7)",
+        "choices": [
+          "x=20",
+          "x=21",
+          "x=22",
+          "No real solution"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "After a 30% discount, a laptop costs $196. Find the original price.",
+        "marks": 4,
+        "answer_text": 280.0
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (5,5) and (11,17). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=2.0, c=-5.0"
+      },
+      {
+        "type": "mcq",
+        "question": "Solve: 5(x-4) = 3(x+4)",
+        "choices": [
+          "x=15",
+          "x=16",
+          "x=17",
+          "No real solution"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "mcq",
+        "question": "Solve: 7(x-2) = 5(x+2)",
+        "choices": [
+          "x=11",
+          "x=12",
+          "x=13",
+          "No real solution"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "After a 25% discount, a laptop costs $378. Find the original price.",
+        "marks": 4,
+        "answer_text": 504.0
+      },
+      {
+        "type": "mcq",
+        "question": "Solve: 3(x-5) = 2(x+5)",
+        "choices": [
+          "x=24",
+          "x=25",
+          "x=26",
+          "No real solution"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (2,-6) and (10,2). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=1.0, c=-8.0"
+      },
+      {
+        "type": "structured",
+        "question": "A line passes through (2,3) and (8,15). Find (i) the gradient, (ii) its equation in y=mx+c form.",
+        "marks": 6,
+        "answer_text": "m=2.0, c=-1.0"
+      }
+    ],
+    "A-Math": [
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 5x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "15x^2 - 10x + 4",
+          "5x^2 - 10x + 4",
+          "15x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 128",
+        "marks": 4,
+        "answer_text": 7
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 512",
+        "marks": 4,
+        "answer_text": 9
+      },
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 7x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "21x^2 - 10x + 4",
+          "7x^2 - 10x + 4",
+          "21x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 11x + 18 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 4x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "12x^2 - 10x + 4",
+          "4x^2 - 10x + 4",
+          "12x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 8x + 12 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 7x + 6 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 6x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "18x^2 - 10x + 4",
+          "6x^2 - 10x + 4",
+          "18x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 64",
+        "marks": 4,
+        "answer_text": 6
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 256",
+        "marks": 4,
+        "answer_text": 8
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 16",
+        "marks": 4,
+        "answer_text": 4
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 10x + 21 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 9x + 14 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 3x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "9x^2 - 10x + 4",
+          "3x^2 - 10x + 4",
+          "9x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 12x + 35 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Differentiate y = 2x^3 - 5x^2 + 4x - 9",
+        "choices": [
+          "6x^2 - 10x + 4",
+          "2x^2 - 10x + 4",
+          "6x - 10",
+          "0"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 14x + 45 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Solve for x: 2^x = 32",
+        "marks": 4,
+        "answer_text": 5
+      },
+      {
+        "type": "structured",
+        "question": "Solve x^2 - 13x + 40 = 0. Show clear working (factorisation or formula).",
+        "marks": 6
+      }
+    ],
+    "Combined Science": [
+      {
+        "type": "mcq",
+        "question": "An acidic solution has pH 2. Compared with pH 4, it has...",
+        "choices": [
+          "100 times higher [H+]",
+          "2 times lower [H+]",
+          "100 times lower [H+]",
+          "same [H+]"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "A wave has frequency 5 Hz and speed 20 m/s. Calculate wavelength and explain one factor that changes wave speed.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "For a wave, if frequency increases while speed stays constant, wavelength...",
+        "choices": [
+          "increases",
+          "becomes zero",
+          "decreases",
+          "stays undefined"
+        ],
+        "answer": 2,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 132 m in 11 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 12.0
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 300 m in 25 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 12.0
+      },
+      {
+        "type": "structured",
+        "question": "Explain one cause and one effect of global warming relevant to Southeast Asia.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 210 m in 14 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 15.0
+      },
+      {
+        "type": "structured",
+        "question": "Explain why powdered marble reacts faster than marble chips with the same volume and concentration of acid. State one controlled variable.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 84 m in 7 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 12.0
+      },
+      {
+        "type": "structured",
+        "question": "A student investigates cooling of hot water in two cups. Describe two variables to control and explain why this improves reliability.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Compare metals and non-metals using conductivity and bonding to explain their properties.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 96 m in 8 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 12.0
+      },
+      {
+        "type": "mcq",
+        "question": "In collision theory, increasing concentration usually increases reaction rate because...",
+        "choices": [
+          "particles become larger",
+          "there are more frequent successful collisions",
+          "activation energy becomes zero",
+          "temperature always decreases"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Describe how to separate a mixture of sand, salt and water, and justify each step.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 180 m in 12 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 15.0
+      },
+      {
+        "type": "mcq",
+        "question": "In food tests, Benedict's test is used to detect...",
+        "choices": [
+          "starch",
+          "protein",
+          "reducing sugar",
+          "lipids"
+        ],
+        "answer": 2,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "A cyclist covers 250 m in 20 s. Calculate speed.",
+        "marks": 4,
+        "answer_text": 12.5
+      },
+      {
+        "type": "structured",
+        "question": "Describe one chemical test each for hydrogen and oxygen, including expected observation.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "A car travels at constant velocity on a straight road. The resultant force is...",
+        "choices": [
+          "maximum",
+          "zero",
+          "increasing",
+          "equal to mass"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Explain why overuse of antibiotics can increase antibiotic-resistant bacteria in a population.",
+        "marks": 6
+      }
+    ],
+    "Pure Chemistry": [
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 20.0 cm3 of 0.40 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.008
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 40.0 cm3 of 0.30 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.012
+      },
+      {
+        "type": "structured",
+        "question": "Using ionic bonding, explain why sodium chloride has high melting point and conducts only when molten/aqueous.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 15.0 cm3 of 0.50 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.0075
+      },
+      {
+        "type": "mcq",
+        "question": "During electrolysis of copper(II) sulfate with copper electrodes, at the cathode copper ions are...",
+        "choices": [
+          "oxidised",
+          "reduced",
+          "unchanged",
+          "neutralised"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "mcq",
+        "question": "Which process is exothermic?",
+        "choices": [
+          "thermal decomposition of calcium carbonate",
+          "neutralisation of acid and alkali",
+          "electrolysis of molten lead bromide",
+          "photosynthesis"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Explain why rusting needs both oxygen and water, and suggest one prevention method.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "A student titrates HCl with NaOH. Describe how to obtain an accurate end-point.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Describe observations and write a balanced equation for zinc reacting with dilute sulfuric acid.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 50.0 cm3 of 0.10 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.005000000000000001
+      },
+      {
+        "type": "structured",
+        "question": "Explain why increasing pressure favours the Haber process forward reaction, using moles of gas.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 30.0 cm3 of 0.15 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.0045
+      },
+      {
+        "type": "structured",
+        "question": "Given a reactivity series, predict displacement outcomes for CuSO4 with Mg and Ag, with equations.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "The relative atomic mass is best described as...",
+        "choices": [
+          "mass of one atom in grams",
+          "weighted average mass of isotopes compared to 1/12 of carbon-12",
+          "number of protons and neutrons only",
+          "same for all isotopes"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "mcq",
+        "question": "A catalyst works by...",
+        "choices": [
+          "increasing yield at equilibrium",
+          "lowering activation energy",
+          "increasing reactant moles",
+          "raising enthalpy change"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "mcq",
+        "question": "Acid + metal carbonate gives...",
+        "choices": [
+          "salt + hydrogen",
+          "salt + water + carbon dioxide",
+          "salt only",
+          "salt + chlorine"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "State and explain one environmental impact of sulfur dioxide emissions.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Calculate empirical formula from 40.0% C, 6.7% H, 53.3% O.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 35.0 cm3 of 0.25 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.00875
+      },
+      {
+        "type": "short",
+        "question": "Calculate moles of NaOH in 25.0 cm3 of 0.20 mol/dm3 solution.",
+        "marks": 4,
+        "answer_text": 0.005000000000000001
+      }
+    ],
+    "Pure Physics": [
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 850 kg accelerating at 2.4 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 2040.0
+      },
+      {
+        "type": "mcq",
+        "question": "Current is measured using...",
+        "choices": [
+          "voltmeter in series",
+          "ammeter in series",
+          "ammeter in parallel",
+          "ohmmeter in parallel"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 1200 kg accelerating at 1.8 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 2160.0
+      },
+      {
+        "type": "mcq",
+        "question": "If resultant force on an object is zero, the object must be...",
+        "choices": [
+          "at rest only",
+          "moving at constant velocity or at rest",
+          "accelerating",
+          "speeding up"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 1400 kg accelerating at 0.9 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 1260.0
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 750 kg accelerating at 3.0 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 2250.0
+      },
+      {
+        "type": "structured",
+        "question": "Explain, using kinetic particle model, why gas pressure increases at constant volume when temperature rises.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 900 kg accelerating at 2.2 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 1980.0000000000002
+      },
+      {
+        "type": "structured",
+        "question": "State one advantage and one limitation of using nuclear fission for electricity generation.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 1000 kg accelerating at 1.2 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 1200.0
+      },
+      {
+        "type": "mcq",
+        "question": "A convex lens forms a real image when object is...",
+        "choices": [
+          "between lens and focal point",
+          "at focal point",
+          "beyond focal length",
+          "at optical centre"
+        ],
+        "answer": 2,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Compare renewable sources (solar vs hydro) for Singapore context: one benefit and one challenge each.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Describe an experiment to determine density of an irregular solid, including apparatus and key precautions.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Unit of power is...",
+        "choices": [
+          "J",
+          "N",
+          "W",
+          "Pa"
+        ],
+        "answer": 2,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "A wave has frequency 8 Hz and wavelength 0.50 m. Calculate speed and describe one factor affecting wave speed.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "A transformer works with...",
+        "choices": [
+          "DC only",
+          "AC and electromagnetic induction",
+          "chemical reactions",
+          "electrostatic induction"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Calculate the resultant force for mass 650 kg accelerating at 1.5 m/s\u00b2.",
+        "marks": 4,
+        "answer_text": 975.0
+      },
+      {
+        "type": "structured",
+        "question": "A resistor of 12 \u03a9 is connected to a 9 V supply. Calculate current and power dissipated.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Explain why momentum is conserved in collisions in an isolated system.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Draw/describe ray paths for a diverging lens and explain image characteristics.",
+        "marks": 6
+      }
+    ],
+    "Pure Biology": [
+      {
+        "type": "short",
+        "question": "State two adaptations of root hair cells for absorption.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State two structural differences between arteries and veins.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Compare DNA replication and protein synthesis: one similarity and two differences.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Define diffusion and give one biological example.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Explain photosynthesis limiting factors and how a controlled experiment could test one factor.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Enzymes are most affected by pH because pH can alter the enzyme's...",
+        "choices": [
+          "mass number",
+          "active site shape",
+          "number of atoms",
+          "state of matter"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "State two differences between mitosis and meiosis.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate the statement: 'Vaccination protects both individuals and communities.' Include one limitation.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Xylem mainly transports...",
+        "choices": [
+          "sucrose",
+          "water and mineral ions",
+          "amino acids",
+          "oxygen"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Describe the pathway of blood through the heart and lungs, naming chambers and major vessels.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Describe one way smoking affects the respiratory system.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "In human circulation, valves in veins function to...",
+        "choices": [
+          "increase blood pressure",
+          "prevent backflow of blood",
+          "oxygenate blood",
+          "reduce pulse"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Explain causes and consequences of eutrophication in freshwater ecosystems.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Explain why insulin is needed in blood glucose regulation.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "Main site of aerobic respiration in cells is...",
+        "choices": [
+          "ribosome",
+          "mitochondrion",
+          "nucleus",
+          "chloroplast"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Using a named food chain, explain how energy transfer limits trophic levels.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Explain the effect of temperature on enzyme activity, including optimum temperature and denaturation.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Describe how nephron structure enables ultrafiltration and selective reabsorption.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Osmosis is the net movement of...",
+        "choices": [
+          "solute molecules from high to low concentration",
+          "water molecules through a partially permeable membrane from high water potential to low water potential",
+          "water molecules from low to high concentration of water",
+          "any particles using ATP"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "Explain why resting heart rate may decrease with endurance training.",
+        "marks": 4
+      }
+    ],
+    "Humanities (SS/Hist/Geog)": [
+      {
+        "type": "short",
+        "question": "State one economic benefit of globalisation for Singapore.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "Give one reason why source purpose matters in reliability analysis.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Assess two strategies Singapore can use to reduce urban heat island effects, and judge which is more sustainable.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "State one challenge of meritocracy in contemporary Singapore society.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one reason why water security is strategically important for Singapore.",
+        "marks": 4
+      },
+      {
+        "type": "short",
+        "question": "State one impact of tourism growth on urban infrastructure.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Compare two causes of conflict in Cold War case studies and assess which was more decisive.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Historical reliability is strengthened when a source is...",
+        "choices": [
+          "anonymous but dramatic",
+          "supported by context and corroboration",
+          "popular on social media",
+          "written much later without evidence"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "State one social impact of rising cost of living in Singapore and give a specific example.",
+        "marks": 4
+      },
+      {
+        "type": "structured",
+        "question": "Using SBQ approach, explain how you would test reliability of a source on decolonisation.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "Identify one pull factor for migration to global cities.",
+        "marks": 4
+      },
+      {
+        "type": "mcq",
+        "question": "For Singapore's ageing population, one likely fiscal challenge is...",
+        "choices": [
+          "lower healthcare demand",
+          "higher healthcare and pension-related expenditure",
+          "fewer dependency ratios",
+          "automatic GDP growth"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate the effectiveness of public housing policy in promoting social cohesion.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "In geography, urban heat island refers to...",
+        "choices": [
+          "cooler city centres than rural zones",
+          "warmer urban areas due to built surfaces and human activity",
+          "seasonal monsoon only",
+          "ozone depletion"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate whether globalisation narrows or widens inequality in Southeast Asia.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "A policy trade-off means...",
+        "choices": [
+          "there are no costs",
+          "improving one objective may worsen another",
+          "all groups benefit equally",
+          "policy has failed"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate the statement: 'Meritocracy creates fairness for all.' Give one support and one challenge with evidence.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Discuss one social and one economic consequence of an ageing population, with policy responses.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "In SBQ, the most reliable way to test a source claim is to...",
+        "choices": [
+          "count emotional words",
+          "cross-reference with other sources and evaluate provenance",
+          "prefer the longest quote",
+          "assume official sources are always true"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Assess whether climate adaptation should be prioritised over mitigation for low-lying cities.",
+        "marks": 6
+      }
+    ],
+    "POA": [
+      {
+        "type": "mcq",
+        "question": "Revenue is best defined as...",
+        "choices": [
+          "owner's capital introduced",
+          "income earned from ordinary activities",
+          "all cash received",
+          "assets purchased"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $9900 and expenses are $6880, calculate profit.",
+        "marks": 4,
+        "answer_text": 3020
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $12400 and expenses are $8300, calculate profit.",
+        "marks": 4,
+        "answer_text": 4100
+      },
+      {
+        "type": "structured",
+        "question": "Prepare journal entries for: owner started business with cash $20,000; paid rent $1,200 by cheque; received cash sales $2,500.",
+        "marks": 6
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $10450 and expenses are $7770, calculate profit.",
+        "marks": 4,
+        "answer_text": 2680
+      },
+      {
+        "type": "structured",
+        "question": "From given data (current assets $18,000; current liabilities $9,000), compute current ratio and interpret.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "The accounting equation is...",
+        "choices": [
+          "Assets = Liabilities + Owner's Equity",
+          "Profit = Assets - Liabilities",
+          "Cash = Revenue - Expenses",
+          "Capital = Assets + Liabilities"
+        ],
+        "answer": 0,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $9600 and expenses are $7150, calculate profit.",
+        "marks": 4,
+        "answer_text": 2450
+      },
+      {
+        "type": "structured",
+        "question": "Explain accrual concept using an example of outstanding electricity expense.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "Depreciation is charged mainly to...",
+        "choices": [
+          "increase asset value",
+          "match cost of non-current asset to periods benefiting",
+          "record market price changes only",
+          "eliminate liabilities"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "mcq",
+        "question": "A trial balance balances. This proves that...",
+        "choices": [
+          "all entries are correct",
+          "there are no errors of principle",
+          "total debits equal total credits only",
+          "profit is correct"
+        ],
+        "answer": 2,
+        "marks": 2
+      },
+      {
+        "type": "structured",
+        "question": "Distinguish between trade receivables and trade payables, and explain one liquidity implication.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Evaluate one benefit and one limitation of using gross profit margin to assess performance.",
+        "marks": 6
+      },
+      {
+        "type": "mcq",
+        "question": "If total assets increase and liabilities stay unchanged, then owner's equity...",
+        "choices": [
+          "must decrease",
+          "must increase",
+          "must be zero",
+          "is unaffected"
+        ],
+        "answer": 1,
+        "marks": 2
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $8800 and expenses are $6430, calculate profit.",
+        "marks": 4,
+        "answer_text": 2370
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $15000 and expenses are $11780, calculate profit.",
+        "marks": 4,
+        "answer_text": 3220
+      },
+      {
+        "type": "short",
+        "question": "If revenue is $13200 and expenses are $9050, calculate profit.",
+        "marks": 4,
+        "answer_text": 4150
+      },
+      {
+        "type": "structured",
+        "question": "A business buys equipment for $12,000 with useful life 5 years and no residual value. Calculate annual straight-line depreciation and explain impact on profit.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "Explain why a trial balance can still balance even when errors exist. Give two named error types with examples.",
+        "marks": 6
+      },
+      {
+        "type": "structured",
+        "question": "State two internal control measures for cash handling and explain how each reduces fraud risk.",
+        "marks": 6
+      }
+    ]
+  }
+}

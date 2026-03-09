@@ -1,0 +1,363 @@
+Daily Full Exam Paper — 2026-03-08 (UTC)
+Paper ID: d2f4b6a8-2026-03-08-refresh
+Instructions: Attempt all questions. Show working where required. Marks are indicated in brackets.
+
+=== English (20 Questions) ===
+1. Pick the strongest thesis for an essay on school start times. [2]
+   A. Mornings are hard.
+   B. Schools should trial later starts for upper levels and evaluate effects on attendance and sleep.
+   C. Students are tired.
+   D. Timetables are complicated.
+2. Write one counter-argument to: “Homework should be fully replaced by AI tutors.” [4]
+3. In 6–8 sentences, evaluate one benefit and one risk of anonymous class feedback forms. [6]
+4. Which sentence uses evidence most accurately? [2]
+   A. A lot of people feel stressed.
+   B. In a school survey (n=320), 58% reported sleeping under 7 hours on weekdays.
+   C. Stress is everywhere now.
+   D. Students always sleep late.
+5. Rewrite in formal register: “The plan sounds cool but kinda fails in practice.” [4]
+6. Identify one flaw in: “My friend topped the class after buying notes, so bought notes cause top grades.” [4]
+7. Evaluate whether lecture recordings should expire after one term instead of staying online permanently. [6]
+8. Best rebuttal to “More tests always mean better learning” is: [2]
+   A. Students dislike tests.
+   B. Assessment quality, feedback timing, and recovery time matter more than frequency.
+   C. Exams are stressful.
+   D. Teachers are busy.
+9. Turn “students read less” into a measurable claim. [4]
+10. Explain how parallelism strengthens persuasive speeches. [4]
+11. Most credible source for national literacy trends is: [2]
+   A. Viral thread
+   B. Official longitudinal report with methodology
+   C. Influencer video
+   D. Anonymous comment section
+12. State one limitation of using only social media comments as evidence. [4]
+13. Write one PEEL paragraph: Should oral presentation marks count in final grades? [6]
+14. Choose the strongest balanced opening line. [2]
+   A. Uniforms are useless.
+   B. Uniform policies can support school identity, but affordability and comfort must be addressed.
+   C. Everyone hates uniforms.
+   D. Uniforms fix discipline completely.
+15. In 6–8 sentences, assess whether AI grammar tools should be allowed in first drafts only. [6]
+16. Explain the connotation difference between “frugal” and “stingy.” [4]
+17. Why is selective evidence (cherry-picking) unethical in argument writing? [4]
+18. Best connector: “____ attendance improved, average punctuality worsened.” [2]
+   A. Therefore
+   B. However
+   C. For instance
+   D. Similarly
+19. Evaluate: “Publicly ranking schools in finer detail improves accountability.” Include one harm. [6]
+20. Write one thesis with a numeric target for reducing late-coming. [4]
+
+--- English Answer Key ---
+1.B 2.Valid counter-argument 3.Balanced evaluation 4.B 5.Formal equivalent
+6.Correlation-causation flaw 7.Benefit+risk+judgement 8.B 9.Metric+timeframe claim
+10.Structure-effect link 11.B 12.Sampling/authenticity bias 13.Valid PEEL
+14.B 15.Balanced judgement 16.Connotation/register explained
+17.Misrepresentation reduces validity 18.B 19.Support+harm+judgement
+20.Arguable thesis with measurable metric
+
+=== E-Math (20 Questions) ===
+1. Solve: 9(x-2)=3(x+10). [2]
+   A. x=8  B. x=6  C. x=5  D. x=4
+2. A phone costs $272 after a 15% discount. Find original price. [4]
+3. Find gradient and equation of the line through (1,4) and (7,16). [6]
+4. Solve simultaneously: 3x+2y=22 and x-y=2. [6]
+5. Arithmetic sequence: 14, 18, 22, ... Find the 30th term. [4]
+6. Factorise: 8x^2-6x-5. [4]
+7. A box has 4 red, 9 blue, 7 yellow counters. Find P(blue or yellow). [4]
+8. Rectangle area is 180 cm^2. Length is 3 cm more than width. Find dimensions. [6]
+9. Solve inequality: 5-3x <= 14. [2]
+   A. x>=-3  B. x<=3  C. x>=3  D. x<=-3
+10. Expand and simplify: (3x-4)(2x+5). [4]
+11. Ratio boys:girls = 7:9. Total students = 304. Find number of girls. [4]
+12. Write 0.000092 in standard form. [2]
+   A. 9.2×10^-5  B. 92×10^-6  C. 9.2×10^5  D. 0.92×10^-4
+13. A van travels 315 km in 4 h 30 min. Find average speed. [4]
+14. Solve: x^2-11x+24=0. [4]
+15. Find k if (x+2) is a factor of x^2+kx-24. [4]
+16. Radius of a circle is 14 cm. Find circumference (π=22/7). [4]
+17. Given f(x)=5x+3, find f^-1(x). [4]
+18. Mean of 12 numbers is 19. Sum of first 11 numbers is 196. Find the 12th number. [4]
+19. For y=4x-18, find x when y=10. [4]
+20. Price increases by 10% then decreases by 10%. Overall change is: [2]
+   A. no change  B. 1% decrease  C. 1% increase  D. 2% decrease
+
+--- E-Math Answer Key ---
+1.C 2.$320 3.m=2, y=2x+2 4.x=26/5, y=16/5
+5.130 6.(4x-5)(2x+1) 7.4/5 8.w=12,l=15 9.A
+10.6x^2+7x-20 11.171 12.A 13.70 km/h 14.x=3 or 8
+15.k=10 16.88 cm 17.(x-3)/5 18.32 19.7 20.B
+
+=== A-Math (20 Questions) ===
+1. Differentiate y=6x^3-5x^2+9. [2]
+   A. 18x^2-10x  B. 6x^2-10x  C. 18x-10  D. 18x^2-5
+2. Find ∫(12x^2-4x+7)dx. [4]
+3. Solve 5^(x-1)=125. [4]
+4. Solve x^2+3x-28=0. [4]
+5. Given y=(3x+1)^4, find dy/dx. [6]
+6. Find stationary point of y=x^2-8x+20 and state nature. [6]
+7. Given log10(2)=0.3010, find log10(200). [4]
+8. Solve simultaneously: y=3x-2 and y=x^2-x-2. [6]
+9. Differentiate y=(4x-7)^(-2). [4]
+10. Exact value of cos45°sin45° is: [2]
+   A. 1  B. 1/2  C. √2/2  D. 0
+11. Solve 2cosθ=√3 for 0°≤θ≤360°. [4]
+12. If f(x)=x^2-4x+1, find f(3) and f(-1). [4]
+13. Complete the square: x^2+10x+7. [4]
+14. Solve inequality: 4x+3 > 2x-9. [4]
+15. Differentiate y=(x^2+16)/x. [4]
+16. Find gradient of tangent to y=2x^3-5x at x=1. [4]
+17. Solve ln(2x+1)=3. [4]
+18. Geometric sequence: 3, 6, 12, ... Find 8th term. [4]
+19. Equation of normal to y=x^2+2x at x=0. [6]
+20. If tanθ=5/12 and θ acute, find cosθ. [2]
+   A. 5/13  B. 12/13  C. 13/12  D. 12/5
+
+--- A-Math Answer Key ---
+1.A 2.4x^3-2x^2+7x+C 3.4 4.x=4 or -7 5.12(3x+1)^3
+6.(4,4), minimum 7.2.3010 8.x=0 or 4; y=-2 or 10
+9.-8(4x-7)^-3 10.B 11.30°,330° 12.-2 and 6
+13.(x+5)^2-18 14.x>-6 15.1-16/x^2 16.1
+17.(e^3-1)/2 18.384 19.y=-(1/2)x 20.B
+
+=== Combined Science (20 Questions) ===
+1. A skater moves 96 m in 8 s. Calculate speed. [4]
+2. Explain why smaller particle size can increase reaction rate. [4]
+3. Which pH value is acidic? [2]
+   A. 9  B. 7  C. 2  D. 11
+4. A wave has speed 24 m/s and frequency 6 Hz. Find wavelength. [4]
+5. State one role of white blood cells. [4]
+6. Explain why increasing acid concentration speeds reaction with magnesium ribbon. [6]
+7. Name the test for carbon dioxide and expected result. [4]
+8. A cyclist accelerates from 4 m/s to 16 m/s in 6 s. Find acceleration. [4]
+9. Which is a physical change? [2]
+   A. rusting iron  B. burning gas  C. dissolving sugar  D. souring milk
+10. Give one method to reduce spread of malaria and explain how it works. [4]
+11. State one advantage and one limitation of solar energy. [4]
+12. Current is 1.8 A and resistance is 15 Ω. Find voltage. [4]
+13. Why does a catalyst not alter the final equilibrium composition? [4]
+14. Describe how to separate ethanol from a water-ethanol mixture. [4]
+15. A runner covers 1500 m in 5 min. Find average speed in m/s. [4]
+16. Main site of photosynthesis is: [2]
+   A. nucleus  B. chloroplast  C. vacuole  D. ribosome
+17. Explain one environmental impact of eutrophication. [4]
+18. Give two differences between AC and DC current. [6]
+19. A 20 kg trolley is pulled with 60 N. Find acceleration. [4]
+20. Suggest one control variable in an osmosis potato experiment. [4]
+
+--- Combined Science Answer Key ---
+1.12 m/s 2.Greater surface area -> more successful collisions 3.C
+4.4 m 5.Phagocytosis/antibody production 6.More particles per volume, more frequent successful collisions
+7.Limewater turns milky 8.2 m/s^2 9.C 10.Valid vector-control method + mechanism
+11.Valid pair 12.27 V 13.Speeds forward/reverse equally
+14.Fractional distillation 15.5 m/s 16.B 17.Oxygen depletion/fish death
+18.Direction flow + frequency differences 19.3 m/s^2 20.Any valid control variable
+
+=== Pure Chemistry (20 Questions) ===
+1. Calculate moles in 0.500 dm3 of 0.30 mol/dm3 HNO3. [4]
+2. Write balanced equation: Al + O2 -> Al2O3. [4]
+3. Correct statement is: [2]
+   A. Isotopes have same nucleon number
+   B. Isotopes have same proton number but different neutron number
+   C. Electrons determine element identity
+   D. Neutrons equal protons always
+4. Describe test for sulfate ions. [4]
+5. Explain why ionic compounds conduct when molten but not when solid. [6]
+6. Determine empirical formula: 40.0% C, 6.7% H, 53.3% O. [6]
+7. Effect of decreasing temperature on exothermic Haber process yield: [4]
+8. Reduction is: [2]
+   A. loss of electrons  B. gain of electrons  C. gain of oxygen  D. loss of hydrogen
+9. 0.25 mol solute in 500 cm3 solution. Find concentration. [4]
+10. Explain, using kinetic theory, why higher temperature speeds reactions. [4]
+11. State observations when zinc reacts with dilute sulfuric acid. [4]
+12. Give one industrial use of ammonia and one safety precaution in handling gases. [4]
+13. In electrolysis of molten lead(II) bromide, product at cathode is: [2]
+   A. bromine  B. lead  C. oxygen  D. hydrogen
+14. Distinguish strong and weak acids in terms of ionisation. [6]
+15. Calculate Mr of CaCO3. [4]
+16. Explain two methods to prevent rusting of iron bridges. [4]
+17. Write ionic equation for neutralisation. [4]
+18. Why may methyl orange be preferred over phenolphthalein in strong acid-weak alkali titration? [4]
+19. Acid + metal gives: [2]
+   A. salt + water  B. salt + hydrogen  C. oxide + water  D. hydrogen + oxygen
+20. A 7.2 g sample of MgO contains 4.32 g magnesium. Find mass of oxygen. [4]
+
+--- Pure Chemistry Answer Key ---
+1.0.15 mol 2.4Al+3O2->2Al2O3 3.B
+4.Acidify then add barium nitrate/chloride -> white ppt (insoluble in acid)
+5.Ions fixed in lattice when solid; mobile when molten
+6.CH2O 7.Yield increases 8.B 9.0.50 mol/dm3
+10.More particles exceed activation energy 11.Fizzing, gas evolved, zinc dissolves, slight warming
+12.Valid use + precaution 13.B 14.Strong fully ionise, weak partially ionise
+15.100 16.Barrier coating + sacrificial/galvanising methods
+17.H+ + OH- -> H2O 18.Sharper endpoint range for that titration type
+19.B 20.2.88 g
+
+=== Pure Physics (20 Questions) ===
+1. Calculate force if mass=1500 kg and acceleration=2.4 m/s^2. [4]
+2. State Newton’s Second Law in words. [4]
+3. A 24 Ω resistor carries 0.5 A. Find potential difference. [4]
+4. SI unit of power is: [2]
+   A. J  B. N  C. W  D. Pa
+5. Frequency 25 Hz, wavelength 0.40 m. Find wave speed. [4]
+6. Explain why pressure depends on both force and area. [4]
+7. State one function of a circuit breaker. [4]
+8. A 0.40 kg ball moving at 12 m/s has momentum: [4]
+9. Which component is used to measure current? [2]
+   A. Voltmeter  B. Ammeter  C. Transformer  D. Thermistor
+10. Describe energy changes in a roller coaster from top of slope to bottom. [6]
+11. Calculate power if 5400 J is transferred in 3 minutes. [4]
+12. Why are dull black surfaces good absorbers of infrared radiation? [4]
+13. Give one reason transmission cables use very high voltages. [4]
+14. A car slows from 30 m/s to 18 m/s in 4 s. Find acceleration. [4]
+15. Define work done and give formula. [4]
+16. In an isolated system, total energy is: [2]
+   A. conserved  B. always increasing  C. zero  D. random
+17. Image in plane mirror is: [4]
+18. Find weight of 7.8 kg object (g=10 N/kg). [4]
+19. Give one benefit and one drawback of hydroelectric power. [6]
+20. Light bends toward the normal when entering a medium where it: [2]
+   A. travels faster  B. travels slower  C. has no frequency  D. has no energy
+
+--- Pure Physics Answer Key ---
+1.3600 N 2.Rate of change of momentum proportional to resultant force (F=ma for constant mass)
+3.12 V 4.C 5.10 m/s 6.P=F/A explanation
+7.Trips and breaks circuit during overcurrent/fault
+8.4.8 kg m/s 9.B 10.GPE -> KE (+heat/sound losses)
+11.30 W 12.Good absorber/emitter due to surface properties
+13.Lower current for same power -> reduced I^2R losses
+14.-3 m/s^2 15.Work done = force × distance moved in force direction
+16.A 17.Virtual, upright, same size, laterally inverted, equal distance behind mirror
+18.78 N 19.Valid benefit + limitation 20.B
+
+=== Pure Biology (20 Questions) ===
+1. Define active transport. [4]
+2. State two adaptations of xylem vessels for water transport. [4]
+3. Main function of stomata is to: [2]
+   A. absorb minerals  B. control gas exchange and water loss  C. make proteins  D. produce hormones
+4. Explain why enzymes have optimum pH values. [6]
+5. Name one reactant of photosynthesis. [4]
+6. Describe two adaptations of red blood cells for oxygen transport. [4]
+7. Structure that prevents backflow in veins: [2]
+   A. cilia  B. valves  C. villi  D. alveoli
+8. Explain one way smoking increases risk of coronary heart disease. [4]
+9. State one role of the liver in metabolism. [4]
+10. Give two adaptations of the small intestine for absorption. [4]
+11. Meiosis produces: [2]
+   A. two diploid cells  B. four haploid cells  C. one zygote  D. identical body cells
+12. Describe hormonal control when blood glucose falls between meals. [6]
+13. State one cause of obesity and one health consequence. [4]
+14. Give one function of the skin in homeostasis. [4]
+15. Genetic engineering can be used to: [2]
+   A. clone only plants  B. transfer useful genes between organisms  C. stop all mutation  D. replace meiosis
+16. Explain why antibiotics do not work against viruses. [6]
+17. Define transpiration. [4]
+18. Site of protein synthesis is: [2]
+   A. ribosome  B. nucleus  C. chloroplast  D. vacuole
+19. State two limiting factors for photosynthesis. [4]
+20. Explain oxygen debt after vigorous exercise. [4]
+
+--- Pure Biology Answer Key ---
+1.Movement against concentration gradient using energy
+2.Lignified hollow tubes + no end walls/cytoplasm (any 2 valid)
+3.B 4.Active site shape depends on pH; extremes denature/alter binding
+5.CO2 or water 6.Biconcave shape + no nucleus + haemoglobin (any 2)
+7.B 8.CO damages lining/raises BP/reduces O2 carrying etc.
+9.Glycogen storage, deamination, detoxification (any 1)
+10.Large SA (villi/microvilli) + good blood supply + thin epithelium (any 2)
+11.B 12.Glucagon secretion -> glycogen breakdown -> blood glucose rises
+13.Valid cause + consequence 14.Temperature regulation via sweating/vasodilation etc.
+15.B 16.Antibiotics target bacterial structures; viruses replicate in host cells
+17.Loss of water vapour from leaves via stomata
+18.A 19.Light intensity/CO2/temperature (any 2) 20.Extra oxygen needed to oxidise lactic acid and restore normal state
+
+=== Humanities (SS/Hist/Geog) (20 Questions) ===
+1. Define “opportunity cost.” [4]
+2. Best method to test source reliability is: [2]
+   A. judge handwriting
+   B. cross-reference with provenance and contextual knowledge
+   C. count paragraphs
+   D. trust official-looking logos
+3. State one pull factor attracting migrants to cities. [4]
+4. Assess one gain and one risk of widespread e-payments. [6]
+5. Explain how inflation affects low-income households more severely. [4]
+6. Evaluate: “Social mobility is determined only by individual effort.” [6]
+7. Urban flooding risk is worsened by: [2]
+   A. permeable surfaces  B. blocked drainage and heavy concretisation  C. mangrove restoration  D. roof gardens
+8. State one economic impact of low birth rates. [4]
+9. Describe one policy that can reduce traffic congestion. [4]
+10. Compare education campaigns vs fines for reducing littering. [6]
+11. In SBQ, “purpose” asks for: [2]
+   A. source length  B. intended audience and desired effect  C. font type  D. year only
+12. Give one way echo chambers can intensify social divisions. [4]
+13. Discuss one vulnerability of tourism-dependent economies. [4]
+14. Assess whether congestion pricing is equitable across income groups. [6]
+15. “Stakeholder” refers to: [2]
+   A. policy document  B. party affected by decisions  C. legal loophole  D. tax category
+16. Why do governments track unemployment data monthly? [4]
+17. Evaluate two approaches to counter online misinformation. [6]
+18. One challenge in redevelopment projects is: [2]
+   A. no budget limits  B. trade-off between heritage value and economic return  C. no resident concerns  D. no land scarcity
+19. Explain why corroboration strengthens historical claims. [4]
+20. Assess whether hybrid work can sustainably reduce peak-hour crowding. [6]
+
+--- Humanities Answer Key ---
+1.Value of next best alternative forgone
+2.B 3.Valid pull factor 4.Balanced judgement
+5.Cost-of-living burden/regressive impact explanation
+6.Support+limitations+judgement 7.B 8.Valid impact
+9.Valid policy + mechanism 10.Comparison + justified stand
+11.B 12.Valid mechanism 13.Seasonality/external shock vulnerability
+14.Equity-efficiency analysis 15.B 16.Labour planning/inflation/social stability reasons
+17.Two strategies + evaluation 18.B 19.Reduces bias, checks consistency
+20.Balanced evaluation with conditions
+
+=== POA (20 Questions) ===
+1. Which is a current asset? [2]
+   A. Machinery  B. Trade receivables  C. Long-term loan  D. Capital
+2. Revenue=$44,800 and expenses=$39,260. Find profit. [4]
+3. Journal entry: paid supplier $3,200 by bank transfer. [4]
+4. Distinguish capital expenditure and revenue expenditure. [4]
+5. Asset costs $50,000, residual $5,000, useful life 9 years. Annual straight-line depreciation? [4]
+6. Which error is not revealed by a trial balance? [2]
+   A. one-sided posting
+   B. complete omission of transaction
+   C. wrong side entry
+   D. transposition in one account only
+7. Current ratio=1.8:1 and current liabilities=$80,000. Find current assets. [4]
+8. Explain prudence concept with bad debt allowance example. [6]
+9. Gross profit margin measures: [2]
+   A. liquidity  B. profitability from trading activities  C. gearing  D. asset replacement
+10. Opening capital $120,000; additional capital $8,000; profit $14,500; drawings $11,000. Closing capital? [4]
+11. State one internal control for inventory and why useful. [4]
+12. A bank reconciliation statement may include: [2]
+   A. accrued revenue  B. uncredited deposits  C. depreciation  D. carriage outwards
+13. Classify: inventory, bank overdraft, rent expense. [6]
+14. If gross profit margin falls while sales rise, one possible interpretation is: [2]
+   A. better mark-up
+   B. higher cost of sales proportion
+   C. lower expenses always
+   D. stronger liquidity automatically
+15. Journal entry for credit sale of goods $5,400. [4]
+16. Give one limitation of comparing ratios across different accounting years with inflation. [4]
+17. Cost=$480, selling price=$600. Find mark-up %. [4]
+18. Error of commission means: [2]
+   A. posting to wrong account of same class
+   B. omitted transaction
+   C. duplicate full entry
+   D. wrong original amount both sides
+19. Explain why depreciation affects profit even without current cash outflow. [6]
+20. If assets decrease by $4,500 and liabilities decrease by $1,200, equity changes by: [2]
+   A. -$3,300  B. +$3,300  C. -$5,700  D. +$5,700
+
+--- POA Answer Key ---
+1.B 2.$5,540 3.Dr Trade Payables 3200; Cr Bank 3200
+4.Capital: long-term asset benefit; Revenue: current period expense
+5.$5,000 6.B 7.$144,000
+8.Do not overstate profit/assets; recognise expected receivable losses
+9.B 10.$131,500 11.Valid control + reason
+12.B 13.Inventory-current asset; overdraft-current liability; rent expense-income statement expense
+14.B 15.Dr Trade Receivables 5400; Cr Sales 5400
+16.Inflation distorts comparability of figures
+17.25% 18.A 19.Matching concept, allocate asset cost across useful life
+20.A

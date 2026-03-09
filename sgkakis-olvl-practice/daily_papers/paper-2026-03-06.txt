@@ -1,0 +1,666 @@
+Daily Full Exam Paper — 2026-03-06 (UTC)
+Paper ID: 9f2b7458-2ab2-4329-9a97-55f77f8d18a0
+Instructions: Attempt all questions. Show working where required. Marks are indicated in brackets.
+
+=== English (20 Questions) ===
+1. Which thesis is best for an argument on school canteen pricing fairness? [2]
+   A. Food is expensive.
+   B. Prices should be fair.
+   C. Tiered pricing with transparent cost breakdowns can protect access while sustaining vendors.
+   D. Everyone likes cheaper meals.
+2. Write one counter-argument to: “Attendance should be graded in every subject.” [4]
+   Answer: ______________________________
+3. In 6–8 sentences, assess one benefit and one risk of AI-generated revision plans. [6]
+   Answer: ______________________________
+4. Pick the strongest topic sentence for a paragraph on public reading habits. [2]
+   A. People read books.
+   B. Reading trends are changing because digital formats, pricing, and commute time influence choices.
+   C. Libraries are quiet.
+   D. Phones are common.
+5. Rewrite in formal tone: “My class just mugs content the night before and panics.” [4]
+   Answer: ______________________________
+6. State one hidden assumption in: “Project-based learning is always more authentic than tests.” [4]
+   Answer: ______________________________
+7. Evaluate whether banning phones during recess improves student well-being. Give one support and one limitation. [6]
+   Answer: ______________________________
+8. Choose the strongest rebuttal to “More homework always leads to better grades.” [2]
+   A. Homework is boring.
+   B. Outcomes depend on feedback quality, task design, and student recovery time.
+   C. Students complain often.
+   D. Teachers are busy.
+9. Improve this vague claim into one measurable statement: “Public transport is unreliable.” [4]
+   Answer: ______________________________
+10. Explain how sentence rhythm can strengthen urgency in a speech on online scams. [6]
+   Answer: ______________________________
+11. Which source is most credible for an essay on teen sleep? [2]
+   A. Viral social media thread
+   B. Peer-reviewed longitudinal study
+   C. Anonymous forum post
+   D. Personal anecdote
+12. State one weakness of relying only on self-reported study hours in research. [4]
+   Answer: ______________________________
+13. Write one PEEL paragraph on whether oral communication should carry exam weight. [6]
+   Answer: ______________________________
+14. Which opening best frames a balanced essay on reducing tuition dependency? [2]
+   A. Tuition should be banned now.
+   B. Reducing tuition reliance may improve equity, but policy design must protect weaker learners.
+   C. Tuition is popular.
+   D. Everyone needs tuition.
+15. In 6–8 sentences, evaluate whether school influencer campaigns can improve anti-vaping attitudes. [6]
+   Answer: ______________________________
+16. Explain one tone difference between “cost-aware plan” and “bare-minimum plan.” [4]
+   Answer: ______________________________
+17. Give one reason ad hominem attacks weaken persuasive writing. [4]
+   Answer: ______________________________
+18. Choose the best contrast transition. [2]
+   A. Likewise
+   B. Nevertheless
+   C. Firstly therefore
+   D. Because
+19. Evaluate: “Hybrid learning should remain after pandemics.” Include one exception case. [6]
+   Answer: ______________________________
+20. Write one arguable thesis with metric on reducing procrastination in upper secondary students. [4]
+   Answer: ______________________________
+
+--- English Answer Key ---
+1. C
+2. Any valid counter-argument with reason
+3. Balanced judgement with benefit + risk
+4. B
+5. Any formal equivalent
+6. Any defensible assumption
+7. Support + limitation + judgement
+8. B
+9. Specific claim with metric/timeframe
+10. Technique-effect explanation
+11. B
+12. Mentions bias/inaccuracy limits
+13. PEEL with clear example
+14. B
+15. Balanced evaluation
+16. Connotation and tone explained
+17. Focus shifts from claim to person
+18. B
+19. Support + exception + judgement
+20. Thesis with action + measurable outcome
+
+=== E-Math (20 Questions) ===
+1. Solve: 9(x-2)=5(x+6). [2]
+   A. x=12
+   B. x=10
+   C. x=8
+   D. x=6
+2. A bicycle is sold at 22% discount for $468. Find original price. [4]
+   Answer: ______________________________
+3. A line passes through (-3,4) and (5,12). Find gradient and equation in y=mx+c. [6]
+   Answer: ______________________________
+4. Solve simultaneously: 3x+2y=22 and x-y=4. [6]
+   Answer: ______________________________
+5. Find the 12th term of arithmetic sequence 4, 9, 14, ... [4]
+   Answer: ______________________________
+6. Factorise completely: 8x^2-2x-3. [4]
+   Answer: ______________________________
+7. A box contains 6 black, 5 white, 4 yellow marbles. Find P(not white). [4]
+   Answer: ______________________________
+8. Perimeter of rectangle is 70 cm. Length is 4 cm less than three times width. Find dimensions. [6]
+   Answer: ______________________________
+9. Solve inequality: 5-3x ≥ -10. [2]
+   A. x≤5
+   B. x≥5
+   C. x≤-5
+   D. x≥-5
+10. Expand and simplify: (3x+2)(x-7). [4]
+   Answer: ______________________________
+11. Ratio of adults:children is 9:7. If adults = 108, find total people. [4]
+   Answer: ______________________________
+12. Write 0.000093 in standard form. [2]
+   A. 9.3×10^-5
+   B. 93×10^-6
+   C. 9.3×10^5
+   D. 0.93×10^-4
+13. A van travels 189 km in 2 h 6 min. Find average speed (km/h). [4]
+   Answer: ______________________________
+14. Solve: x^2-11x+24=0. [4]
+   Answer: ______________________________
+15. Find k if (x+2) is a factor of x^2+kx-24. [4]
+   Answer: ______________________________
+16. A circle has diameter 14 cm. Find circumference (use π=22/7). [4]
+   Answer: ______________________________
+17. Given f(x)=2x+5, find f^-1(x). [4]
+   Answer: ______________________________
+18. Mean of six numbers is 21. Five numbers are 18, 20, 24, 16, 22. Find sixth number. [4]
+   Answer: ______________________________
+19. For y=2x-9, find y when x=7. [4]
+   Answer: ______________________________
+20. A product is marked up 40% then discounted 25%. Overall change from cost price is: [2]
+   A. 5% increase
+   B. 5% decrease
+   C. no change
+   D. 10% increase
+
+--- E-Math Answer Key ---
+1. B
+2. 600
+3. m=1, y=x+7
+4. x=6, y=2
+5. 59
+6. (4x-3)(2x+1)
+7. 2/3
+8. width=11, length=29
+9. A
+10. 3x^2-19x-14
+11. 192
+12. A
+13. 90
+14. x=3 or 8
+15. k=10
+16. 44 cm
+17. (x-5)/2
+18. 26
+19. 5
+20. A
+
+=== A-Math (20 Questions) ===
+1. Differentiate y=7x^3-5x+9. [2]
+   A. 21x^2-5
+   B. 7x^2-5
+   C. 21x-5
+   D. 0
+2. Find ∫(6x^2-4x+3)dx. [4]
+   Answer: ______________________________
+3. Solve 5^(x-1)=125. [4]
+   Answer: ______________________________
+4. Solve x^2-4x-45=0. [4]
+   Answer: ______________________________
+5. Given y=(3x+2)^4, find dy/dx. [6]
+   Answer: ______________________________
+6. Find stationary point of y=x^2-10x+1 and state nature. [6]
+   Answer: ______________________________
+7. Given log10(2)=0.3010, find log10(200). [4]
+   Answer: ______________________________
+8. Solve simultaneous equations: y=3x-2 and y=x^2-4x+1. [6]
+   Answer: ______________________________
+9. Differentiate y=(5x-1)^(1/2). [4]
+   Answer: ______________________________
+10. Find exact value of cos45°cos45°-sin45°sin45°. [2]
+   A. 1
+   B. 0
+   C. 1/2
+   D. -1
+11. Solve 2cosθ=√3 for 0°≤θ≤360°. [4]
+   Answer: ______________________________
+12. Given f(x)=x^2-3x+2, find f(5) and f(-1). [4]
+   Answer: ______________________________
+13. Express 3x^2+18x-1 in form a(x-h)^2+k. [4]
+   Answer: ______________________________
+14. Solve 2x-7 < 3x+5. [4]
+   Answer: ______________________________
+15. Differentiate y=(x^2+4)/x. [4]
+   Answer: ______________________________
+16. Find gradient of tangent to y=2x^3-x at x=-1. [4]
+   Answer: ______________________________
+17. Solve ln(2x+1)=3. [4]
+   Answer: ______________________________
+18. A geometric sequence starts 3, 6, 12,... Find 8th term. [4]
+   Answer: ______________________________
+19. Find equation of normal to y=x^2+1 at x=2. [6]
+   Answer: ______________________________
+20. If tanθ=5/12 and θ acute, find cosθ. [2]
+   A. 12/13
+   B. 5/13
+   C. 13/12
+   D. 12/5
+
+--- A-Math Answer Key ---
+1. A
+2. 2x^3-2x^2+3x+C
+3. 4
+4. x=9 or -5
+5. 12(3x+2)^3
+6. (5,-24), minimum
+7. 2.3010
+8. x=1 or 6
+9. 5/(2√(5x-1))
+10. B
+11. 30°,330°
+12. 12 and 6
+13. 3(x+3)^2-28
+14. x>-12
+15. 1-4/x^2
+16. 5
+17. (e^3-1)/2
+18. 384
+19. y=-(1/4)x+6
+20. A
+
+=== Combined Science (20 Questions) ===
+1. A trolley moves 54 m in 4.5 s. Calculate speed. [4]
+   Answer: ______________________________
+2. Explain why a higher acid concentration usually increases reaction rate. [4]
+   Answer: ______________________________
+3. A neutral aqueous solution at 25°C has pH: [2]
+   A. 1 B. 6 C. 7 D. 13
+4. A wave has speed 30 m/s and frequency 10 Hz. Find wavelength. [4]
+   Answer: ______________________________
+5. State one function of white blood cells. [4]
+   Answer: ______________________________
+6. Explain why powdered zinc reacts faster than zinc granules with dilute acid. [6]
+   Answer: ______________________________
+7. Name the test for hydrogen gas and expected result. [4]
+   Answer: ______________________________
+8. A motorcycle accelerates from 6 m/s to 24 m/s in 9 s. Find acceleration. [4]
+   Answer: ______________________________
+9. Which is a physical change? [2]
+   A. burning magnesium
+   B. rusting nail
+   C. melting wax
+   D. souring milk
+10. Describe one way to reduce food-borne illness spread and explain why it works. [4]
+   Answer: ______________________________
+11. State one advantage of solar energy and one limitation. [4]
+   Answer: ______________________________
+12. Voltage is 9 V and current is 0.3 A. Find resistance. [4]
+   Answer: ______________________________
+13. Why does increasing temperature raise successful collision frequency? [4]
+   Answer: ______________________________
+14. Describe a method to separate sand, salt and water. [4]
+   Answer: ______________________________
+15. A student runs 1.8 km in 10 min. Find average speed in m/s. [4]
+   Answer: ______________________________
+16. Site of photosynthesis in plant cells is: [2]
+   A. chloroplast B. nucleus C. cell membrane D. vacuole
+17. Explain one harmful effect of excessive fertilizer use on lakes. [4]
+   Answer: ______________________________
+18. Give two differences between AC and DC. [6]
+   Answer: ______________________________
+19. A 12 kg object experiences a force of 30 N. Find acceleration. [4]
+   Answer: ______________________________
+20. Suggest one controlled variable in a transpiration rate experiment. [4]
+   Answer: ______________________________
+
+--- Combined Science Answer Key ---
+1. 12 m/s
+2. More particles per unit volume -> more frequent successful collisions
+3. C
+4. 3 m
+5. Defends against pathogens (e.g. phagocytosis/antibody production)
+6. Greater surface area -> higher collision rate
+7. Lighted splint gives 'pop' sound
+8. 2 m/s^2
+9. C
+10. Any valid hygiene method + mechanism
+11. Any valid advantage + limitation
+12. 30 Ω
+13. More particles exceed activation energy; collisions more energetic
+14. Filtration then evaporation/crystallisation
+15. 3 m/s
+16. A
+17. Eutrophication/oxygen depletion harming aquatic life
+18. Direction of current + frequency/polarity differences
+19. 2.5 m/s^2
+20. Any valid control (wind speed/light/temp/leaf area)
+
+=== Pure Chemistry (20 Questions) ===
+1. Calculate moles in 0.150 dm3 of 0.60 mol/dm3 HNO3. [4]
+   Answer: ______________________________
+2. Write balanced equation: 2Na + Cl2 -> ... [4]
+   Answer: ______________________________
+3. Which statement about isotopes is correct? [2]
+   A. Same proton number, different nucleon number
+   B. Same neutrons, different protons
+   C. Different electrons always
+   D. Same nucleon number only
+4. Describe test for sulfate ions. [4]
+   Answer: ______________________________
+5. Explain why giant ionic compounds have high melting points. [6]
+   Answer: ______________________________
+6. Find empirical formula for 40.0% C, 6.7% H, 53.3% O. [6]
+   Answer: ______________________________
+7. State effect of increasing temperature on Haber equilibrium yield and rate. [4]
+   Answer: ______________________________
+8. Reduction is best defined as: [2]
+   A. loss of oxygen
+   B. gain of electrons
+   C. loss of electrons
+   D. gain of hydrogen only
+9. Calculate concentration if 0.12 mol solute is dissolved in 300 cm3 solution. [4]
+   Answer: ______________________________
+10. Explain how catalysts increase reaction rate. [4]
+   Answer: ______________________________
+11. Describe observations when calcium reacts with water. [4]
+   Answer: ______________________________
+12. State one use of ammonia and one hazard. [4]
+   Answer: ______________________________
+13. In electrolysis of molten aluminium oxide, product at cathode is: [2]
+   A. oxygen B. aluminium C. hydrogen D. chlorine
+14. Distinguish reversible and irreversible reactions with one example each. [6]
+   Answer: ______________________________
+15. Calculate Mr of Ca(OH)2. [4]
+   Answer: ______________________________
+16. Explain why galvanising protects iron from rusting. [4]
+   Answer: ______________________________
+17. Write ionic equation for neutralisation of H+ by OH-. [4]
+   Answer: ______________________________
+18. State one reason a white tile is used in titration. [4]
+   Answer: ______________________________
+19. Metal + acid usually gives: [2]
+   A. salt + water
+   B. salt + hydrogen
+   C. salt + oxygen
+   D. metal oxide
+20. A 2.4 g sample of magnesium forms 4.0 g magnesium oxide. Find oxygen mass gained. [4]
+   Answer: ______________________________
+
+--- Pure Chemistry Answer Key ---
+1. 0.09 mol
+2. 2Na + Cl2 -> 2NaCl
+3. A
+4. Acidify then add barium nitrate; white precipitate
+5. Strong electrostatic attraction between oppositely charged ions
+6. CH2O
+7. Yield decreases, rate increases
+8. B
+9. 0.40 mol/dm3
+10. Lowers activation energy via alternative pathway
+11. Effervescence, movement, alkaline solution, H2 evolved
+12. Fertiliser/refrigeration + toxic/irritant hazard
+13. B
+14. Valid distinction + examples
+15. 74
+16. Zinc barrier + sacrificial protection
+17. H+ + OH- -> H2O
+18. Easier to detect endpoint colour change
+19. B
+20. 1.6 g
+
+=== Pure Physics (20 Questions) ===
+1. Calculate force when m=950 kg, a=1.4 m/s². [4]
+   Answer: ______________________________
+2. State Newton’s Second Law in words. [4]
+   Answer: ______________________________
+3. A 24 Ω resistor is connected to 12 V. Find current. [4]
+   Answer: ______________________________
+4. SI unit of চাপ (pressure) is: [2]
+   A. N B. J C. Pa D. W
+5. A wave has f=12 Hz and λ=0.25 m. Find speed. [4]
+   Answer: ______________________________
+6. Explain why pressure in gases rises when volume decreases at constant temperature. [4]
+   Answer: ______________________________
+7. Give one advantage of parallel circuits in homes. [4]
+   Answer: ______________________________
+8. A 3 kg cart moving at 4 m/s has momentum of: [4]
+   Answer: ______________________________
+9. Which mirror forms upright virtual images of similar size? [2]
+   A. convex mirror B. concave mirror C. plane mirror D. lens mirror
+10. Describe energy changes in a rechargeable battery during charging. [6]
+   Answer: ______________________________
+11. Calculate power if 900 J is transferred in 30 s. [4]
+   Answer: ______________________________
+12. Why does insulation material reduce heat transfer by conduction? [4]
+   Answer: ______________________________
+13. State one role of a step-up transformer in transmission. [4]
+   Answer: ______________________________
+14. A car slows from 18 m/s to 6 m/s in 3 s. Find acceleration. [4]
+   Answer: ______________________________
+15. Define work done and give formula. [4]
+   Answer: ______________________________
+16. In an isolated system, total energy is: [2]
+   A. destroyed B. created C. conserved D. doubled
+17. Explain image characteristics of a convex lens when object is beyond 2F. [4]
+   Answer: ______________________________
+18. Find weight of 4.2 kg mass (g=10 N/kg). [4]
+   Answer: ______________________________
+19. State one benefit and one risk of hydroelectric power. [6]
+   Answer: ______________________________
+20. Light enters glass from air and bends toward normal because light: [2]
+   A. speeds up B. slows down C. stops D. changes frequency
+
+--- Pure Physics Answer Key ---
+1. 1330 N
+2. Rate of change of momentum proportional to resultant force (F=ma for constant mass)
+3. 0.5 A
+4. C
+5. 3 m/s
+6. Molecules collide with walls more frequently
+7. Appliances work independently
+8. 12 kg m/s
+9. C
+10. Electrical -> chemical (stored) + some thermal loss
+11. 30 W
+12. Poor conductor/trapped air lowers conduction
+13. Raises voltage to reduce transmission losses
+14. -4 m/s^2
+15. Energy transferred when force moves object: W=Fs
+16. C
+17. Real, inverted, diminished, between F and 2F
+18. 42 N
+19. Renewable low emissions + habitat displacement/flooding risk
+20. B
+
+=== Pure Biology (20 Questions) ===
+1. Define active transport. [4]
+   Answer: ______________________________
+2. State two differences between xylem and phloem structure. [4]
+   Answer: ______________________________
+3. Main role of stomata is to: [2]
+   A. absorb minerals
+   B. regulate gas exchange and water loss
+   C. produce chlorophyll
+   D. transport glucose
+4. Explain why enzymes are substrate-specific. [6]
+   Answer: ______________________________
+5. Name one product of anaerobic respiration in human muscle. [4]
+   Answer: ______________________________
+6. Describe how red blood cells are adapted for oxygen transport. [4]
+   Answer: ______________________________
+7. Which component carries dissolved nutrients and hormones? [2]
+   A. plasma B. platelets C. RBC D. WBC
+8. Explain one way smoking increases coronary heart disease risk. [4]
+   Answer: ______________________________
+9. State role of guard cells. [4]
+   Answer: ______________________________
+10. Give two adaptations of the ileum for absorption. [4]
+   Answer: ______________________________
+11. Meiosis results in: [2]
+   A. two identical diploid cells
+   B. four genetically varied haploid cells
+   C. one diploid zygote
+   D. no chromosome change
+12. Describe negative feedback in thermoregulation when body temperature rises. [6]
+   Answer: ______________________________
+13. Give one cause and one effect of deforestation on biodiversity. [4]
+   Answer: ______________________________
+14. State one role of liver in homeostasis. [4]
+   Answer: ______________________________
+15. DNA replication occurs before: [2]
+   A. cytokinesis only
+   B. cell division
+   C. photosynthesis
+   D. osmosis
+16. Explain why vaccination schedules often require booster doses. [6]
+   Answer: ______________________________
+17. Define transpiration. [4]
+   Answer: ______________________________
+18. Site of protein synthesis is: [2]
+   A. mitochondrion B. ribosome C. nucleus D. chloroplast
+19. State two limiting factors of plant growth in field conditions. [4]
+   Answer: ______________________________
+20. Explain why breathing rate rises during vigorous exercise. [4]
+   Answer: ______________________________
+
+--- Pure Biology Answer Key ---
+1. Movement of substances against concentration gradient using energy
+2. Any two valid structural differences
+3. B
+4. Active site complementary to substrate
+5. Lactic acid (lactate)
+6. Biconcave, no nucleus, haemoglobin-rich, flexible
+7. A
+8. Damages blood vessels/increases plaque and clot risk
+9. Control stomatal opening/closing
+10. Large SA (villi/microvilli), thin epithelium, rich blood supply
+11. B
+12. Sweating + vasodilation + reduced heat production
+13. Any valid cause/effect
+14. Deamination, glycogen storage, detoxification, etc.
+15. B
+16. Memory response wanes; boosters raise antibody levels
+17. Loss of water vapour from aerial parts via stomata
+18. B
+19. Any two valid factors (light/water/minerals/temp/space)
+20. Higher O2 demand and CO2 removal
+
+=== Humanities (SS/Hist/Geog) (20 Questions) ===
+1. Define utility in decision-making context. [4]
+   Answer: ______________________________
+2. Which method best tests reliability of a political cartoon source? [2]
+   A. Count colours
+   B. Cross-reference message with contextual evidence and purpose
+   C. Measure page size
+   D. Check if it is funny
+3. State one pull factor attracting skilled migrants to Singapore. [4]
+   Answer: ______________________________
+4. Assess one benefit and one cost of platform-based gig work growth. [6]
+   Answer: ______________________________
+5. Explain how opportunity cost applies to healthcare budgeting. [4]
+   Answer: ______________________________
+6. Evaluate claim: “Economic growth automatically reduces inequality.” [6]
+   Answer: ______________________________
+7. Urban flooding risk increases with: [2]
+   A. higher permeable surfaces
+   B. more concrete cover and intense rainfall
+   C. lower population density
+   D. polar winds only
+8. State one social impact of rapid ageing population. [4]
+   Answer: ______________________________
+9. Describe one policy that can improve transport accessibility for elderly citizens. [4]
+   Answer: ______________________________
+10. Compare hard engineering and nature-based solutions for coastal protection. [6]
+   Answer: ______________________________
+11. In source analysis, provenance includes: [2]
+   A. only grammar
+   B. origin, purpose and context
+   C. colour scheme
+   D. length of extract
+12. Give one reason digital divide can widen inequality. [4]
+   Answer: ______________________________
+13. Discuss one effect of rising rental costs on small local businesses. [4]
+   Answer: ______________________________
+14. Assess whether congestion pricing improves urban liveability. [6]
+   Answer: ______________________________
+15. A policy trade-off means: [2]
+   A. all outcomes improve
+   B. pursuing one objective may impose cost on another
+   C. policy has no measurable effect
+   D. no budget required
+16. State one reason governments track unemployment rate closely. [4]
+   Answer: ______________________________
+17. Evaluate two actions to reduce online misinformation spread. [6]
+   Answer: ______________________________
+18. One challenge in multicultural policymaking is: [2]
+   A. no differing values
+   B. balancing equity and shared norms
+   C. no legal framework
+   D. no media influence
+19. Explain why corroboration strengthens historical explanation. [4]
+   Answer: ______________________________
+20. Assess whether remote work permanently changes CBD land-use demand. [6]
+   Answer: ______________________________
+
+--- Humanities (SS/Hist/Geog) Answer Key ---
+1. Satisfaction/benefit from choices
+2. B
+3. Any valid pull factor
+4. Balanced cost-benefit judgement
+5. Choosing one service means forgoing another
+6. Support + limitation + judgement
+7. B
+8. Any valid social impact
+9. Any valid policy + mechanism
+10. Comparative analysis + judgement
+11. B
+12. Unequal access to devices/connectivity/skills
+13. Margin pressure/closures/relocation etc.
+14. Contextual evaluation
+15. B
+16. Labour market and policy planning indicator
+17. Two measures + evaluation
+18. B
+19. Tests consistency and bias
+20. Balanced long-term assessment
+
+=== POA (20 Questions) ===
+1. Which is a current asset? [2]
+   A. bank overdraft B. inventory C. long-term loan D. capital
+2. If revenue=$24,300 and expenses=$17,850, calculate profit. [4]
+   Answer: ______________________________
+3. Journal entry: paid supplier $3,200 by cheque. [4]
+   Answer: ______________________________
+4. Distinguish capital expenditure from revenue expenditure with one example each. [4]
+   Answer: ______________________________
+5. Machine costs $45,000, residual value $5,000, useful life 8 years. Find annual straight-line depreciation. [4]
+   Answer: ______________________________
+6. Trial balance totals agree. This confirms that: [2]
+   A. no errors exist
+   B. each account is correctly classified
+   C. debit total equals credit total
+   D. net profit is correct
+7. Compute quick ratio: quick assets $36,000, current liabilities $24,000. [4]
+   Answer: ______________________________
+8. Explain prudence concept with one receivables example. [6]
+   Answer: ______________________________
+9. Net profit margin formula is: [2]
+   A. Net profit/Revenue ×100%
+   B. Gross profit/Cost of sales ×100%
+   C. Revenue/Net profit ×100%
+   D. Net profit/Assets ×100%
+10. Opening capital $72,000, additional capital $8,000, profit $9,500, drawings $6,500. Find closing capital. [4]
+   Answer: ______________________________
+11. State one internal control for inventory and explain usefulness. [4]
+   Answer: ______________________________
+12. Bank reconciliation helps to identify: [2]
+   A. depreciation rate
+   B. differences between cash book and bank statement
+   C. sales strategy
+   D. gross profit only
+13. Classify as asset/liability/equity: trade receivables, accrued expense, owner’s capital. [6]
+   Answer: ______________________________
+14. If discount allowed increases, net receivables likely: [2]
+   A. increase B. decrease C. unchanged D. double
+15. Journal entry for credit sale of goods $1,900. [4]
+   Answer: ______________________________
+16. State one limitation of comparing gross profit margins across firms. [4]
+   Answer: ______________________________
+17. Cost=$160, selling price=$212. Find markup %. [4]
+   Answer: ______________________________
+18. Error of principle means: [2]
+   A. transaction omitted entirely
+   B. wrong amount both sides
+   C. correct amount posted to wrong class of account
+   D. arithmetic carry error
+19. Explain why provisions for doubtful debts affect profit before bad debt is written off. [6]
+   Answer: ______________________________
+20. If assets decrease by $4,000 and liabilities decrease by $1,500, change in equity is: [2]
+   A. -$2,500 B. -$5,500 C. +$2,500 D. +$5,500
+
+--- POA Answer Key ---
+1. B
+2. 6450
+3. Dr Trade Payables 3200; Cr Bank 3200
+4. Non-current benefit vs day-to-day cost with examples
+5. 5000
+6. C
+7. 1.5:1
+8. Anticipate losses (allowance for doubtful debts)
+9. A
+10. 83000
+11. Any valid control + fraud/error reduction reason
+12. B
+13. Receivables-asset; accrued expense-liability; capital-equity
+14. B
+15. Dr Trade Receivables 1900; Cr Sales 1900
+16. Different accounting policies/business models
+17. 32.5%
+18. C
+19. Matching/prudence: expected credit losses recognised early
+20. A

@@ -175,7 +175,22 @@ def handle_text(chat_id, uid, mid, text):
                 return send(chat_id, err, mid)
             act = "approve" if cmd == "/vpnapprove" else "reject"
             d = vpn_post(f"/api/vpn/{act}/{urllib.parse.quote(rid)}")
-            return send(chat_id, f"{act}d: {rid}" if d.get("ok") else f"failed: {d}", mid)
+            if not d.get("ok"):
+                return send(chat_id, f"failed: {d}", mid)
+
+            if act == "approve":
+                for _ in range(90):
+                    st = vpn_get(f"/api/vpn/status/{urllib.parse.quote(rid)}")
+                    if st.get("download_url"):
+                        try:
+                            vpn_post(f"/api/vpn/email-ready/{urllib.parse.quote(rid)}")
+                        except Exception:
+                            pass
+                        return send(chat_id, f"approved+ready: {rid}\n{st.get('download_url')}", mid)
+                    time.sleep(1)
+                return send(chat_id, f"approved: {rid}\nProvision queued. Use /vpnfix {rid} if needed.", mid)
+
+            return send(chat_id, f"{act}d: {rid}", mid)
 
         if cmd == "/vpnfix":
             if not rest:
