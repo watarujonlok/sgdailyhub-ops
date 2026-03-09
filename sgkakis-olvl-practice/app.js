@@ -176,14 +176,19 @@ function signatureOf(set) {
   return set.map(q => `${q.subject}|${q.type}|${q.q}`).join('||');
 }
 
+function cleanQuestionText(q) {
+  return String(q || '').replace(/\s*\[Set\s*\d+\]\s*$/i, '').trim();
+}
+
 function mapFromApi(p) {
   const subjectLabel = SUBJECTS.find(s => s.id === p.subject)?.label || p.subject;
+  const qText = cleanQuestionText(p.question);
   if (p.type === 'mcq') {
     return {
       subject: subjectLabel,
       type: 'mcq',
       marks: p.marks,
-      q: p.question,
+      q: qText,
       choices: p.choices,
       answer: p.answer,
       keywords: p.keywords || []
@@ -193,12 +198,17 @@ function mapFromApi(p) {
     subject: subjectLabel,
     type: p.type,
     marks: p.marks,
-    q: p.question,
+    q: qText,
     keywords: p.keywords || []
   };
 }
 
 let lastPaperId = '';
+
+function hasDuplicateQuestions(paper) {
+  const arr = (paper || []).map(q => `${q.subject}|${(q.q || '').toLowerCase().trim()}`);
+  return new Set(arr).size !== arr.length;
+}
 
 async function fetchPaper(key) {
   const res = await fetch(`/olvl-api/generate-paper?t=${Date.now()}`, {
@@ -261,7 +271,7 @@ async function generateSet() {
     let candidate = fetched.paper;
     let pid = fetched.paperId;
     let tries = 0;
-    while ((signatureOf(candidate) === lastSetSignature || (pid && pid === lastPaperId)) && tries < 5) {
+    while ((signatureOf(candidate) === lastSetSignature || (pid && pid === lastPaperId) || hasDuplicateQuestions(candidate)) && tries < 8) {
       fetched = await fetchPaper(subjectSelect.value);
       candidate = fetched.paper;
       pid = fetched.paperId;
